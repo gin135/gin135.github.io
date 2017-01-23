@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-01-23 19:11+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: TH
+#: igawk.1:1
+#, no-wrap
+msgid "IGAWK"
+msgstr ""
+
+#. type: TH
+#: igawk.1:1
+#, no-wrap
+msgid "Nov 3 1999"
+msgstr ""
+
+#. type: TH
+#: igawk.1:1
+#, no-wrap
+msgid "Free Software Foundation"
+msgstr ""
+
+#. type: TH
+#: igawk.1:1
+#, no-wrap
+msgid "Utility Commands"
+msgstr ""
+
+#. type: SH
+#: igawk.1:2
+#, no-wrap
+msgid "NAME"
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:4
+msgid "igawk - gawk with include files"
+msgstr ""
+
+#. type: SH
+#: igawk.1:4
+#, no-wrap
+msgid "SYNOPSIS"
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:14
+msgid ""
+"B<igawk> [ all I<gawk> options ] B<-f> I<program-file> [ B<-\\^-> ] file "
+".\\^.\\^."
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:24
+msgid "B<igawk> [ all I<gawk> options ] [ B<-\\^-> ] I<program-text> file .\\^.\\^."
+msgstr ""
+
+#. type: SH
+#: igawk.1:24
+#, no-wrap
+msgid "DESCRIPTION"
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:28
+msgid ""
+"I<Igawk> is a simple shell script that adds the ability to have ``include "
+"files'' to I<gawk>(1)."
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:34
+msgid ""
+"AWK programs for I<igawk> are the same as for I<gawk>, except that, in "
+"addition, you may have lines like"
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:38
+msgid "B<@include getopt.awk>"
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:45
+msgid ""
+"in your program to include the file B<getopt.awk> from either the current "
+"directory or one of the other directories in the search path."
+msgstr ""
+
+#. type: SH
+#: igawk.1:45
+#, no-wrap
+msgid "OPTIONS"
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:51
+msgid ""
+"See I<gawk>(1)  for a full description of the AWK language and the options "
+"that I<gawk> supports."
+msgstr ""
+
+#. type: SH
+#: igawk.1:51
+#, no-wrap
+msgid "EXAMPLES"
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:56
+#, no-wrap
+msgid ""
+"B<cat E<lt>E<lt> EOF E<gt> test.awk\n"
+"@include getopt.awk>\n"
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:62
+#, no-wrap
+msgid ""
+"B<BEGIN {\n"
+"\twhile (getopt(ARGC, ARGV, \"am:q\") != -1)\n"
+"\t\t\\&.\\^.\\^.\n"
+"}\n"
+"EOF>\n"
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:64
+#, no-wrap
+msgid "B<igawk -f test.awk>\n"
+msgstr ""
+
+#. type: SH
+#: igawk.1:66
+#, no-wrap
+msgid "SEE ALSO"
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:68
+msgid "I<gawk>(1)"
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:71
+msgid ""
+"I<Effective AWK Programming>, Edition 1.0, published by the Free Software "
+"Foundation, 1995."
+msgstr ""
+
+#. type: SH
+#: igawk.1:71
+#, no-wrap
+msgid "AUTHOR"
+msgstr ""
+
+#. type: Plain text
+#: igawk.1:73
+msgid "Arnold Robbins (B<arnold@skeeve.com>)."
+msgstr ""

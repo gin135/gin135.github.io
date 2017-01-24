@@ -1,73 +1,48 @@
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
 .TH IGAWK 1 "Nov 3 1999" "Free Software Foundation" "Utility Commands"
-.SH NAME
-igawk \- gawk with include files
-.SH SYNOPSIS
-.B igawk
-[ all
-.I gawk
-options ]
-.B \-f
-.I program-file
-[
-.B \-\^\-
-] file .\^.\^.
+.SH 名前
+igawk \- インクルードファイルを用いるgawk
+.SH 書式
+\fBigawk\fP [ all \fIgawk\fP options ] \fB\-f\fP \fIprogram\-file\fP [ \fB\-\^\-\fP ] file
+\&.\^.\^.
 .br
-.B igawk
-[ all
-.I gawk
-options ]
-[
-.B \-\^\-
-]
-.I program-text
-file .\^.\^.
-.SH DESCRIPTION
-.I Igawk
-is a simple shell script that adds the ability to have ``include files'' to
-.IR gawk (1).
+\fBigawk\fP [ all \fIgawk\fP options ] [ \fB\-\^\-\fP ] \fIprogram\-text\fP file .\^.\^.
+.SH 説明
+\fIIgawk\fPは、\fIgawk\fP(1)に「インクルードファイル」機能を追加する、簡素なシェルスクリプトである。
 .PP
-AWK programs for
-.I igawk
-are the same as for
-.IR gawk ,
-except that, in addition, you may have lines like
+\fIigawk\fPで扱うAWKプログラムは\fIgawk\fPと同じであるが、カレントディレクトリもしくは検索パスディレクトリにあるファイル\fBgetopt.awk\fPをインクルードする為に、
 .RS
 .sp
-.ft B
-@include getopt.awk
-.ft R
+\fB@include getopt.awk\fP
 .sp
 .RE
-in your program to include the file
-.B getopt.awk
-from either the current directory or one of the other directories
-in the search path.
-.SH OPTIONS
-See
-.IR gawk (1)
-for a full description of the AWK language and the options that
-.I gawk
-supports.
-.SH EXAMPLES
+のような行をプログラムに書くことが可能である。
+.SH オプション
+AWK言語および\fIgawk\fPがサポートするオプションに関する完全な説明は、\fIgawk\fP(1)を参照すること。
+.SH 例
 .nf
-.ft B
-cat << EOF > test.awk
-@include getopt.awk
+\fBcat << EOF > test.awk
+@include getopt.awk\fP
 .sp
-BEGIN {
+\fBBEGIN {
 	while (getopt(ARGC, ARGV, "am:q") != \-1)
 		\&.\^.\^.
 }
-EOF
+EOF\fP
 .sp
-igawk \-f test.awk
-.ft R
+\fBigawk \-f test.awk\fP
 .fi
-.SH SEE ALSO
-.IR gawk (1)
+.SH 関連項目
+\fIgawk\fP(1)
 .PP
-.IR "Effective AWK Programming" ,
-Edition 1.0, published by the Free Software Foundation, 1995.
-.SH AUTHOR
-Arnold Robbins
-.RB ( arnold@skeeve.com ).
+\fIEffective AWK Programming\fP, Edition 1.0, published by the Free Software
+Foundation, 1995.
+(訳者注: Effective AWK Programming, Edition 1.0
+は、古い版の解説書です。最新版は、GNUのWebサイトで公開されています。
+.BR https://www.gnu.org/software/gawk/manual/
+.SH 著者
+Arnold Robbins (\fBarnold@skeeve.com\fP).

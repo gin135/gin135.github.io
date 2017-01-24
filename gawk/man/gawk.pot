@@ -954,7 +954,7 @@ msgstr ""
 #: gawk.1:708
 #, no-wrap
 msgid "Command Line Directories"
-msgstr ""
+msgstr "コマンドラインディレクトリ"
 
 #. type: Plain text
 #: gawk.1:717
@@ -994,7 +994,7 @@ msgstr ""
 #: gawk.1:741
 #, no-wrap
 msgid "Records"
-msgstr ""
+msgstr "レコード"
 
 #. type: Plain text
 #: gawk.1:765
@@ -1015,7 +1015,7 @@ msgstr ""
 #: gawk.1:765
 #, no-wrap
 msgid "Fields"
-msgstr ""
+msgstr "フィールド"
 
 #. type: Plain text
 #: gawk.1:799
@@ -1104,7 +1104,7 @@ msgstr ""
 #: gawk.1:878
 #, no-wrap
 msgid "Built-in Variables"
-msgstr ""
+msgstr "組み込み変数"
 
 #. type: Plain text
 #: gawk.1:882
@@ -1895,7 +1895,7 @@ msgstr ""
 #: gawk.1:1331
 #, no-wrap
 msgid "Arrays"
-msgstr ""
+msgstr "配列"
 
 #. type: Plain text
 #: gawk.1:1344
@@ -1996,7 +1996,7 @@ msgstr ""
 #: gawk.1:1420
 #, no-wrap
 msgid "Variable Typing And Conversion"
-msgstr ""
+msgstr "変数型と変換"
 
 #. type: Plain text
 #: gawk.1:1427
@@ -2085,7 +2085,7 @@ msgstr ""
 #: gawk.1:1501
 #, no-wrap
 msgid "Octal and Hexadecimal Constants"
-msgstr ""
+msgstr "8進/16進数定数"
 
 #. type: Plain text
 #: gawk.1:1511
@@ -2099,7 +2099,7 @@ msgstr ""
 #: gawk.1:1511
 #, no-wrap
 msgid "String Constants"
-msgstr ""
+msgstr "文字定数"
 
 #. type: Plain text
 #: gawk.1:1517
@@ -2306,7 +2306,7 @@ msgstr ""
 #: gawk.1:1616
 #, no-wrap
 msgid "Patterns"
-msgstr ""
+msgstr "パターン"
 
 #. type: Plain text
 #: gawk.1:1618
@@ -2415,7 +2415,7 @@ msgstr ""
 #: gawk.1:1718
 #, no-wrap
 msgid "Regular Expressions"
-msgstr ""
+msgstr "正規表現"
 
 #. type: Plain text
 #: gawk.1:1722
@@ -2989,7 +2989,7 @@ msgstr ""
 #: gawk.1:2009
 #, no-wrap
 msgid "Actions"
-msgstr ""
+msgstr "アクション"
 
 #. type: Plain text
 #: gawk.1:2018
@@ -3004,7 +3004,7 @@ msgstr ""
 #: gawk.1:2018
 #, no-wrap
 msgid "Operators"
-msgstr ""
+msgstr "演算子"
 
 #. type: Plain text
 #: gawk.1:2021
@@ -3191,7 +3191,7 @@ msgstr ""
 #: gawk.1:2103
 #, no-wrap
 msgid "Control Statements"
-msgstr ""
+msgstr "制御構文"
 
 #. type: Plain text
 #: gawk.1:2107
@@ -3240,7 +3240,7 @@ msgstr ""
 #: gawk.1:2128
 #, no-wrap
 msgid "I/O Statements"
-msgstr ""
+msgstr "入出力構文"
 
 #. type: Plain text
 #: gawk.1:2131
@@ -3514,7 +3514,7 @@ msgstr ""
 #: gawk.1:2313
 #, no-wrap
 msgid "The I<printf>\\^ Statement"
-msgstr ""
+msgstr "I<printf>\\^構文"
 
 #. type: Plain text
 #: gawk.1:2322
@@ -3794,7 +3794,7 @@ msgstr ""
 #: gawk.1:2534
 #, no-wrap
 msgid "Special File Names"
-msgstr ""
+msgstr "特殊ファイル名"
 
 #. type: Plain text
 #: gawk.1:2551
@@ -3931,7 +3931,7 @@ msgstr ""
 #: gawk.1:2625
 #, no-wrap
 msgid "Numeric Functions"
-msgstr ""
+msgstr "数値関数"
 
 #. type: Plain text
 #: gawk.1:2628
@@ -4046,7 +4046,7 @@ msgstr ""
 #: gawk.1:2672
 #, no-wrap
 msgid "String Functions"
-msgstr ""
+msgstr "文字列関数"
 
 #. type: Plain text
 #: gawk.1:2676
@@ -4313,7 +4313,7 @@ msgstr ""
 #: gawk.1:3021
 #, no-wrap
 msgid "Time Functions"
-msgstr ""
+msgstr "時間関数"
 
 #. type: Plain text
 #: gawk.1:3027
@@ -4387,7 +4387,7 @@ msgstr ""
 #: gawk.1:3097
 #, no-wrap
 msgid "Bit Manipulations Functions"
-msgstr ""
+msgstr "ビット操作関数"
 
 #. type: Plain text
 #: gawk.1:3106
@@ -4474,7 +4474,7 @@ msgstr ""
 #: gawk.1:3137
 #, no-wrap
 msgid "Type Function"
-msgstr ""
+msgstr "型関数"
 
 #. type: Plain text
 #: gawk.1:3139
@@ -4496,7 +4496,7 @@ msgstr ""
 #: gawk.1:3144
 #, no-wrap
 msgid "Internationalization Functions"
-msgstr ""
+msgstr "国際化関数"
 
 #. type: Plain text
 #: gawk.1:3148

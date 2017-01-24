@@ -74,7 +74,7 @@ msgstr ""
 #: gawk.1:17
 #, no-wrap
 msgid "NAME"
-msgstr ""
+msgstr "名前"
 
 #. type: Plain text
 #: gawk.1:19
@@ -85,7 +85,7 @@ msgstr ""
 #: gawk.1:19
 #, no-wrap
 msgid "SYNOPSIS"
-msgstr ""
+msgstr "書式"
 
 #. type: Plain text
 #: gawk.1:27
@@ -105,7 +105,7 @@ msgstr ""
 #: gawk.1:35
 #, no-wrap
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "説明"
 
 #. type: Plain text
 #: gawk.1:48
@@ -149,7 +149,7 @@ msgstr ""
 #: gawk.1:90
 #, no-wrap
 msgid "OPTION FORMAT"
-msgstr ""
+msgstr "オプション書式"
 
 #. type: Plain text
 #: gawk.1:98
@@ -181,7 +181,7 @@ msgstr ""
 #: gawk.1:114
 #, no-wrap
 msgid "OPTIONS"
-msgstr ""
+msgstr "オプション"
 
 #. type: Plain text
 #: gawk.1:121
@@ -813,7 +813,7 @@ msgstr ""
 #: gawk.1:557
 #, no-wrap
 msgid "AWK PROGRAM EXECUTION"
-msgstr ""
+msgstr "AWKプログラムの実行"
 
 #. type: Plain text
 #: gawk.1:561
@@ -973,7 +973,7 @@ msgstr ""
 #: gawk.1:729
 #, no-wrap
 msgid "VARIABLES, RECORDS AND FIELDS"
-msgstr ""
+msgstr "変数、レコード、フィールド"
 
 #. type: Plain text
 #: gawk.1:741
@@ -2244,7 +2244,7 @@ msgstr ""
 #: gawk.1:1572
 #, no-wrap
 msgid "PATTERNS AND ACTIONS"
-msgstr ""
+msgstr "パターンとアクション"
 
 #. type: Plain text
 #: gawk.1:1582
@@ -4527,7 +4527,7 @@ msgstr ""
 #: gawk.1:3225
 #, no-wrap
 msgid "USER-DEFINED FUNCTIONS"
-msgstr ""
+msgstr "ユーザ定義関数"
 
 #. type: Plain text
 #: gawk.1:3227
@@ -4656,7 +4656,7 @@ msgstr ""
 #: gawk.1:3311
 #, no-wrap
 msgid "DYNAMICALLY LOADING NEW FUNCTIONS"
-msgstr ""
+msgstr "動的読込の新機能"
 
 #. type: Plain text
 #: gawk.1:3319
@@ -4670,7 +4670,7 @@ msgstr ""
 #: gawk.1:3319
 #, no-wrap
 msgid "SIGNALS"
-msgstr ""
+msgstr "シグナル"
 
 #. type: Plain text
 #: gawk.1:3334
@@ -4686,7 +4686,7 @@ msgstr ""
 #: gawk.1:3334
 #, no-wrap
 msgid "INTERNATIONALIZATION"
-msgstr ""
+msgstr "国際化"
 
 #. type: Plain text
 #: gawk.1:3341
@@ -4810,7 +4810,7 @@ msgstr ""
 #: gawk.1:3413
 #, no-wrap
 msgid "POSIX COMPATIBILITY"
-msgstr ""
+msgstr "POSIX互換"
 
 #. type: Plain text
 #: gawk.1:3426
@@ -4869,7 +4869,7 @@ msgstr ""
 #: gawk.1:3485
 #, no-wrap
 msgid "HISTORICAL FEATURES"
-msgstr ""
+msgstr "歴史的機能"
 
 #. type: Plain text
 #: gawk.1:3493
@@ -4910,7 +4910,7 @@ msgstr ""
 #: gawk.1:3515
 #, no-wrap
 msgid "GNU EXTENSIONS"
-msgstr ""
+msgstr "GNU拡張"
 
 #. type: Plain text
 #: gawk.1:3528
@@ -5103,7 +5103,7 @@ msgstr ""
 #: gawk.1:3761
 #, no-wrap
 msgid "ENVIRONMENT VARIABLES"
-msgstr ""
+msgstr "環境変数"
 
 #. type: Plain text
 #: gawk.1:3776
@@ -5153,7 +5153,7 @@ msgstr ""
 #: gawk.1:3814
 #, no-wrap
 msgid "EXIT STATUS"
-msgstr ""
+msgstr "終了ステータス"
 
 #. type: Plain text
 #: gawk.1:3822
@@ -5187,7 +5187,7 @@ msgstr ""
 #: gawk.1:3841
 #, no-wrap
 msgid "VERSION INFORMATION"
-msgstr ""
+msgstr "バージョン情報"
 
 #. type: Plain text
 #: gawk.1:3845
@@ -5198,7 +5198,7 @@ msgstr ""
 #: gawk.1:3845
 #, no-wrap
 msgid "AUTHORS"
-msgstr ""
+msgstr "著者"
 
 #. type: Plain text
 #: gawk.1:3851
@@ -5237,7 +5237,7 @@ msgstr ""
 #: gawk.1:3876
 #, no-wrap
 msgid "BUG REPORTS"
-msgstr ""
+msgstr "バグ報告"
 
 #. type: Plain text
 #: gawk.1:3887
@@ -5284,7 +5284,7 @@ msgstr ""
 #: gawk.1:3920
 #, no-wrap
 msgid "BUGS"
-msgstr ""
+msgstr "バグ"
 
 #. type: Plain text
 #: gawk.1:3925
@@ -5297,7 +5297,7 @@ msgstr ""
 #: gawk.1:3925
 #, no-wrap
 msgid "SEE ALSO"
-msgstr ""
+msgstr "関連項目"
 
 #. type: Plain text
 #: gawk.1:3937
@@ -5326,7 +5326,7 @@ msgstr ""
 #: gawk.1:3948
 #, no-wrap
 msgid "EXAMPLES"
-msgstr ""
+msgstr "例"
 
 #. type: Plain text
 #: gawk.1:3951
@@ -5399,7 +5399,7 @@ msgstr ""
 #: gawk.1:3983
 #, no-wrap
 msgid "ACKNOWLEDGEMENTS"
-msgstr ""
+msgstr "謝辞"
 
 #. type: Plain text
 #: gawk.1:3987
@@ -5412,7 +5412,7 @@ msgstr ""
 #: gawk.1:3987
 #, no-wrap
 msgid "COPYING PERMISSIONS"
-msgstr ""
+msgstr "COPYING PERMISSIONS"
 
 #. type: Plain text
 #: gawk.1:3992

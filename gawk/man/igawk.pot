@@ -20,25 +20,25 @@ msgstr ""
 #: igawk.1:1
 #, no-wrap
 msgid "IGAWK"
-msgstr ""
+msgstr "IGAWK"
 
 #. type: TH
 #: igawk.1:1
 #, no-wrap
 msgid "Nov 3 1999"
-msgstr ""
+msgstr "Nov 3 1999"
 
 #. type: TH
 #: igawk.1:1
 #, no-wrap
 msgid "Free Software Foundation"
-msgstr ""
+msgstr "Free Software Foundation"
 
 #. type: TH
 #: igawk.1:1
 #, no-wrap
 msgid "Utility Commands"
-msgstr ""
+msgstr "Utility Commands"
 
 #. type: SH
 #: igawk.1:2
@@ -63,11 +63,13 @@ msgid ""
 "B<igawk> [ all I<gawk> options ] B<-f> I<program-file> [ B<-\\^-> ] file "
 ".\\^.\\^."
 msgstr ""
+"B<igawk> [ all I<gawk> options ] B<-f> I<program-file> [ B<-\\^-> ] file "
+".\\^.\\^."
 
 #. type: Plain text
 #: igawk.1:24
 msgid "B<igawk> [ all I<gawk> options ] [ B<-\\^-> ] I<program-text> file .\\^.\\^."
-msgstr ""
+msgstr "B<igawk> [ all I<gawk> options ] [ B<-\\^-> ] I<program-text> file .\\^.\\^."
 
 #. type: SH
 #: igawk.1:24
@@ -92,7 +94,7 @@ msgstr ""
 #. type: Plain text
 #: igawk.1:38
 msgid "B<@include getopt.awk>"
-msgstr ""
+msgstr "B<@include getopt.awk>"
 
 #. type: Plain text
 #: igawk.1:45
@@ -127,6 +129,8 @@ msgid ""
 "B<cat E<lt>E<lt> EOF E<gt> test.awk\n"
 "@include getopt.awk>\n"
 msgstr ""
+"B<cat E<lt>E<lt> EOF E<gt> test.awk\n"
+"@include getopt.awk>\n"
 
 #. type: Plain text
 #: igawk.1:62
@@ -138,12 +142,17 @@ msgid ""
 "}\n"
 "EOF>\n"
 msgstr ""
+"B<BEGIN {\n"
+"\twhile (getopt(ARGC, ARGV, \"am:q\") != -1)\n"
+"\t\t\\&.\\^.\\^.\n"
+"}\n"
+"EOF>\n"
 
 #. type: Plain text
 #: igawk.1:64
 #, no-wrap
 msgid "B<igawk -f test.awk>\n"
-msgstr ""
+msgstr "B<igawk -f test.awk>\n"
 
 #. type: SH
 #: igawk.1:66
@@ -154,7 +163,7 @@ msgstr "関連項目"
 #. type: Plain text
 #: igawk.1:68
 msgid "I<gawk>(1)"
-msgstr ""
+msgstr "I<gawk>(1)"
 
 #. type: Plain text
 #: igawk.1:71
@@ -172,4 +181,4 @@ msgstr "著者"
 #. type: Plain text
 #: igawk.1:73
 msgid "Arnold Robbins (B<arnold@skeeve.com>)."
-msgstr ""
+msgstr "Arnold Robbins (B<arnold@skeeve.com>)."

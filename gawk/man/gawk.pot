@@ -20,55 +20,55 @@ msgstr ""
 #: gawk.1:1
 #, no-wrap
 msgid "\\s-1POSIX\\s+1"
-msgstr ""
+msgstr "\\s-1POSIX\\s+1"
 
 #. type: ds UX
 #: gawk.1:2
 #, no-wrap
 msgid "\\s-1UNIX\\s+1"
-msgstr ""
+msgstr "\\s-1UNIX\\s+1"
 
 #. type: ds GN
 #: gawk.1:3
 #, no-wrap
 msgid "\\s-1GNU\\s+1"
-msgstr ""
+msgstr "\\s-1GNU\\s+1"
 
 #. type: ds AK
 #: gawk.1:4
 #, no-wrap
 msgid "\\s-1AWK\\s+1"
-msgstr ""
+msgstr "\\s-1AWK\\s+1"
 
 #. type: ds EP
 #: gawk.1:5
 #, no-wrap
 msgid "I<GAWK: Effective AWK Programming>"
-msgstr ""
+msgstr "I<GAWK: Effective AWK Programming>"
 
 #. type: TH
 #: gawk.1:16
 #, no-wrap
 msgid "GAWK"
-msgstr ""
+msgstr "GAWK"
 
 #. type: TH
 #: gawk.1:16
 #, no-wrap
 msgid "Mar 7 2016"
-msgstr ""
+msgstr "Mar 7 2016"
 
 #. type: TH
 #: gawk.1:16
 #, no-wrap
 msgid "Free Software Foundation"
-msgstr ""
+msgstr "Free Software Foundation"
 
 #. type: TH
 #: gawk.1:16
 #, no-wrap
 msgid "Utility Commands"
-msgstr ""
+msgstr "Utility Commands"
 
 #. type: SH
 #: gawk.1:17
@@ -93,6 +93,8 @@ msgid ""
 "B<gawk> [ \\*(PX or \\*(GN style options ] B<-f> I<program-file> [ B<-\\^-> "
 "] file .\\|.\\|."
 msgstr ""
+"B<gawk> [ \\*(PX or \\*(GN style options ] B<-f> I<program-file> [ B<-\\^-> "
+"] file .\\|.\\|."
 
 #. type: Plain text
 #: gawk.1:35
@@ -100,6 +102,8 @@ msgid ""
 "B<gawk> [ \\*(PX or \\*(GN style options ] [ B<-\\^-> ] I<program-text> file "
 ".\\|.\\|."
 msgstr ""
+"B<gawk> [ \\*(PX or \\*(GN style options ] [ B<-\\^-> ] I<program-text> file "
+".\\|.\\|."
 
 #. type: SH
 #: gawk.1:35
@@ -195,13 +199,13 @@ msgstr ""
 #: gawk.1:121
 #, no-wrap
 msgid "B<-f>I< program-file>"
-msgstr ""
+msgstr "B<-f>I< program-file>"
 
 #. type: TP
 #: gawk.1:124
 #, no-wrap
 msgid "B<-\\^-file>I< program-file>"
-msgstr ""
+msgstr "B<-\\^-file>I< program-file>"
 
 #. type: Plain text
 #: gawk.1:135
@@ -215,13 +219,13 @@ msgstr ""
 #: gawk.1:135
 #, no-wrap
 msgid "B<-F>I< fs>"
-msgstr ""
+msgstr "B<-F>I< fs>"
 
 #. type: TP
 #: gawk.1:138
 #, no-wrap
 msgid "B<-\\^-field-separator>I< fs>"
-msgstr ""
+msgstr "B<-\\^-field-separator>I< fs>"
 
 #. type: Plain text
 #: gawk.1:147
@@ -234,13 +238,13 @@ msgstr ""
 #: gawk.1:147
 #, no-wrap
 msgid "B<-v>I< var>B<\\^=\\^>I<val>"
-msgstr ""
+msgstr "B<-v>I< var>B<\\^=\\^>I<val>"
 
 #. type: TP
 #: gawk.1:150
 #, no-wrap
 msgid "B<-\\^-assign >I<var>B<\\^=\\^>I<val>"
-msgstr ""
+msgstr "B<-\\^-assign >I<var>B<\\^=\\^>I<val>"
 
 #. type: Plain text
 #: gawk.1:161
@@ -254,13 +258,13 @@ msgstr ""
 #: gawk.1:161
 #, no-wrap
 msgid "B<-b>"
-msgstr ""
+msgstr "B<-b>"
 
 #. type: TP
 #: gawk.1:164
 #, no-wrap
 msgid "B<-\\^-characters-as-bytes>"
-msgstr ""
+msgstr "B<-\\^-characters-as-bytes>"
 
 #. type: Plain text
 #: gawk.1:173
@@ -274,13 +278,13 @@ msgstr ""
 #: gawk.1:174
 #, no-wrap
 msgid "B<-c>"
-msgstr ""
+msgstr "B<-c>"
 
 #. type: TP
 #: gawk.1:177 gawk.1:1996
 #, no-wrap
 msgid "B<-\\^-traditional>"
-msgstr ""
+msgstr "B<-\\^-traditional>"
 
 #.  The use of
 #.  .B \-\^\-traditional
@@ -298,13 +302,13 @@ msgstr ""
 #: gawk.1:193
 #, no-wrap
 msgid "B<-C>"
-msgstr ""
+msgstr "B<-C>"
 
 #. type: TP
 #: gawk.1:196
 #, no-wrap
 msgid "B<-\\^-copyright>"
-msgstr ""
+msgstr "B<-\\^-copyright>"
 
 #. type: Plain text
 #: gawk.1:201
@@ -317,13 +321,13 @@ msgstr ""
 #: gawk.1:201
 #, no-wrap
 msgid "B<-d>[I<file>]"
-msgstr ""
+msgstr "B<-d>[I<file>]"
 
 #. type: TP
 #: gawk.1:204
 #, no-wrap
 msgid "B<-\\^-dump-variables>[B<=>I<file>]"
-msgstr ""
+msgstr "B<-\\^-dump-variables>[B<=>I<file>]"
 
 #. type: Plain text
 #: gawk.1:216
@@ -348,13 +352,13 @@ msgstr ""
 #: gawk.1:227
 #, no-wrap
 msgid "B<-D>[I<file>]"
-msgstr ""
+msgstr "B<-D>[I<file>]"
 
 #. type: TP
 #: gawk.1:230
 #, no-wrap
 msgid "B<-\\^-debug>[B<=>I<file>]"
-msgstr ""
+msgstr "B<-\\^-debug>[B<=>I<file>]"
 
 #. type: Plain text
 #: gawk.1:240
@@ -369,13 +373,13 @@ msgstr ""
 #: gawk.1:240
 #, no-wrap
 msgid "B<-e >I<program-text>"
-msgstr ""
+msgstr "B<-e >I<program-text>"
 
 #. type: TP
 #: gawk.1:243
 #, no-wrap
 msgid "B<-\\^-source>I< program-text>"
-msgstr ""
+msgstr "B<-\\^-source>I< program-text>"
 
 #. type: Plain text
 #: gawk.1:256
@@ -390,13 +394,13 @@ msgstr ""
 #: gawk.1:256
 #, no-wrap
 msgid "B<-E >I<file>"
-msgstr ""
+msgstr "B<-E >I<file>"
 
 #. type: TP
 #: gawk.1:259
 #, no-wrap
 msgid "B<-\\^-exec>I< file>"
-msgstr ""
+msgstr "B<-\\^-exec>I< file>"
 
 #. type: Plain text
 #: gawk.1:271
@@ -411,13 +415,13 @@ msgstr ""
 #: gawk.1:271
 #, no-wrap
 msgid "B<-g>"
-msgstr ""
+msgstr "B<-g>"
 
 #. type: TP
 #: gawk.1:274
 #, no-wrap
 msgid "B<-\\^-gen-pot>"
-msgstr ""
+msgstr "B<-\\^-gen-pot>"
 
 #. type: Plain text
 #: gawk.1:287
@@ -433,13 +437,13 @@ msgstr ""
 #: gawk.1:287
 #, no-wrap
 msgid "B<-h>"
-msgstr ""
+msgstr "B<-h>"
 
 #. type: TP
 #: gawk.1:290
 #, no-wrap
 msgid "B<-\\^-help>"
-msgstr ""
+msgstr "B<-\\^-help>"
 
 #. type: Plain text
 #: gawk.1:298
@@ -453,13 +457,13 @@ msgstr ""
 #: gawk.1:298
 #, no-wrap
 msgid "B<-i >I<include-file>"
-msgstr ""
+msgstr "B<-i >I<include-file>"
 
 #. type: TP
 #: gawk.1:301
 #, no-wrap
 msgid "B<-\\^-include>I< include-file>"
-msgstr ""
+msgstr "B<-\\^-include>I< include-file>"
 
 #. type: Plain text
 #: gawk.1:313
@@ -475,13 +479,13 @@ msgstr ""
 #: gawk.1:313
 #, no-wrap
 msgid "B<-l >I<lib>"
-msgstr ""
+msgstr "B<-l >I<lib>"
 
 #. type: TP
 #: gawk.1:316
 #, no-wrap
 msgid "B<-\\^-load>I< lib>"
-msgstr ""
+msgstr "B<-\\^-load>I< lib>"
 
 #. type: Plain text
 #: gawk.1:327
@@ -497,13 +501,13 @@ msgstr ""
 #: gawk.1:327
 #, no-wrap
 msgid "B<-L >[I<value>]"
-msgstr ""
+msgstr "B<-L >[I<value>]"
 
 #. type: TP
 #: gawk.1:330
 #, no-wrap
 msgid "B<-\\^-lint>[B<=>I<value>]"
-msgstr ""
+msgstr "B<-\\^-lint>[B<=>I<value>]"
 
 #. type: Plain text
 #: gawk.1:344
@@ -520,7 +524,7 @@ msgstr ""
 #: gawk.1:344
 #, no-wrap
 msgid "B<-M>"
-msgstr ""
+msgstr "B<-M>"
 
 #. type: TP
 #: gawk.1:347
@@ -539,13 +543,13 @@ msgstr ""
 #: gawk.1:354
 #, no-wrap
 msgid "B<-n>"
-msgstr ""
+msgstr "B<-n>"
 
 #. type: TP
 #: gawk.1:357
 #, no-wrap
 msgid "B<-\\^-non-decimal-data>"
-msgstr ""
+msgstr "B<-\\^-non-decimal-data>"
 
 #. type: Plain text
 #: gawk.1:362
@@ -558,13 +562,13 @@ msgstr ""
 #: gawk.1:362
 #, no-wrap
 msgid "B<-N>"
-msgstr ""
+msgstr "B<-N>"
 
 #. type: TP
 #: gawk.1:365
 #, no-wrap
 msgid "B<-\\^-use-lc-numeric>"
-msgstr ""
+msgstr "B<-\\^-use-lc-numeric>"
 
 #. type: Plain text
 #: gawk.1:381
@@ -582,13 +586,13 @@ msgstr ""
 #: gawk.1:393
 #, no-wrap
 msgid "B<-o>[I<file>]"
-msgstr ""
+msgstr "B<-o>[I<file>]"
 
 #. type: TP
 #: gawk.1:396
 #, no-wrap
 msgid "B<-\\^-pretty-print>[B<=>I<file>]"
-msgstr ""
+msgstr "B<-\\^-pretty-print>[B<=>I<file>]"
 
 #. type: Plain text
 #: gawk.1:408
@@ -601,13 +605,13 @@ msgstr ""
 #: gawk.1:408
 #, no-wrap
 msgid "B<-O>"
-msgstr ""
+msgstr "B<-O>"
 
 #. type: TP
 #: gawk.1:411
 #, no-wrap
 msgid "B<-\\^-optimize>"
-msgstr ""
+msgstr "B<-\\^-optimize>"
 
 #. type: Plain text
 #: gawk.1:419
@@ -622,13 +626,13 @@ msgstr ""
 #: gawk.1:419
 #, no-wrap
 msgid "B<-p>[I<prof-file>]"
-msgstr ""
+msgstr "B<-p>[I<prof-file>]"
 
 #. type: TP
 #: gawk.1:422
 #, no-wrap
 msgid "B<-\\^-profile>[B<=>I<prof-file>]"
-msgstr ""
+msgstr "B<-\\^-profile>[B<=>I<prof-file>]"
 
 #. type: Plain text
 #: gawk.1:431
@@ -643,13 +647,13 @@ msgstr ""
 #: gawk.1:431
 #, no-wrap
 msgid "B<-P>"
-msgstr ""
+msgstr "B<-P>"
 
 #. type: TP
 #: gawk.1:434 gawk.1:1989
 #, no-wrap
 msgid "B<-\\^-posix>"
-msgstr ""
+msgstr "B<-\\^-posix>"
 
 #. type: Plain text
 #: gawk.1:440
@@ -662,7 +666,7 @@ msgstr ""
 #: gawk.1:441 gawk.1:445 gawk.1:450 gawk.1:456 gawk.1:463 gawk.1:3535 gawk.1:3543 gawk.1:3549 gawk.1:3556 gawk.1:3563 gawk.1:3571 gawk.1:3575 gawk.1:3586 gawk.1:3591 gawk.1:3596 gawk.1:3601 gawk.1:3607 gawk.1:3612 gawk.1:3615 gawk.1:3620 gawk.1:3628 gawk.1:3635 gawk.1:3640 gawk.1:3645 gawk.1:3650 gawk.1:3656 gawk.1:3673 gawk.1:3696
 #, no-wrap
 msgid "\\(bu"
-msgstr ""
+msgstr "\\(bu"
 
 #. type: Plain text
 #: gawk.1:445
@@ -695,13 +699,13 @@ msgstr ""
 #: gawk.1:474
 #, no-wrap
 msgid "B<-r>"
-msgstr ""
+msgstr "B<-r>"
 
 #. type: TP
 #: gawk.1:477 gawk.1:2004
 #, no-wrap
 msgid "B<-\\^-re-interval>"
-msgstr ""
+msgstr "B<-\\^-re-interval>"
 
 #. type: Plain text
 #: gawk.1:494
@@ -718,13 +722,13 @@ msgstr ""
 #: gawk.1:494
 #, no-wrap
 msgid "B<-S>"
-msgstr ""
+msgstr "B<-S>"
 
 #. type: TP
 #: gawk.1:497
 #, no-wrap
 msgid "B<-\\^-sandbox>"
-msgstr ""
+msgstr "B<-\\^-sandbox>"
 
 #. type: Plain text
 #: gawk.1:512
@@ -740,13 +744,13 @@ msgstr ""
 #: gawk.1:512
 #, no-wrap
 msgid "B<-t>"
-msgstr ""
+msgstr "B<-t>"
 
 #. type: TP
 #: gawk.1:515
 #, no-wrap
 msgid "B<-\\^-lint-old>"
-msgstr ""
+msgstr "B<-\\^-lint-old>"
 
 #. type: Plain text
 #: gawk.1:521
@@ -759,13 +763,13 @@ msgstr ""
 #: gawk.1:521
 #, no-wrap
 msgid "B<-V>"
-msgstr ""
+msgstr "B<-V>"
 
 #. type: TP
 #: gawk.1:524
 #, no-wrap
 msgid "B<-\\^-version>"
-msgstr ""
+msgstr "B<-\\^-version>"
 
 #. type: Plain text
 #: gawk.1:539
@@ -782,7 +786,7 @@ msgstr ""
 #: gawk.1:539
 #, no-wrap
 msgid "B<-\\^->"
-msgstr ""
+msgstr "B<-\\^->"
 
 #. type: Plain text
 #: gawk.1:545
@@ -825,22 +829,22 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:564
 msgid "B<@include \">I<filename>B<\">"
-msgstr ""
+msgstr "B<@include \">I<filename>B<\">"
 
 #. type: Plain text
 #: gawk.1:566
 msgid "B<@load \">I<filename>B<\">"
-msgstr ""
+msgstr "B<@load \">I<filename>B<\">"
 
 #. type: Plain text
 #: gawk.1:568
 msgid "I<pattern>B<\t{ >I<action statements>B< }>"
-msgstr ""
+msgstr "I<pattern>B<\t{ >I<action statements>B< }>"
 
 #. type: Plain text
 #: gawk.1:570
 msgid "B<function >I<name>B<(>I<parameter list>B<) { >I<statements>B< }>"
-msgstr ""
+msgstr "B<function >I<name>B<(>I<parameter list>B<) { >I<statements>B< }>"
 
 #. type: Plain text
 #: gawk.1:592
@@ -1058,12 +1062,12 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:839
 msgid "B<n = 5>"
-msgstr ""
+msgstr "B<n = 5>"
 
 #. type: Plain text
 #: gawk.1:841
 msgid "B<print $n>"
-msgstr ""
+msgstr "B<print $n>"
 
 #. type: Plain text
 #: gawk.1:845
@@ -1111,7 +1115,7 @@ msgstr ""
 #: gawk.1:883
 #, no-wrap
 msgid "B<ARGC>"
-msgstr ""
+msgstr "B<ARGC>"
 
 #. type: Plain text
 #: gawk.1:888
@@ -1124,7 +1128,7 @@ msgstr ""
 #: gawk.1:888
 #, no-wrap
 msgid "B<ARGIND>"
-msgstr ""
+msgstr "B<ARGIND>"
 
 #. type: Plain text
 #: gawk.1:893
@@ -1135,7 +1139,7 @@ msgstr ""
 #: gawk.1:893
 #, no-wrap
 msgid "B<ARGV>"
-msgstr ""
+msgstr "B<ARGV>"
 
 #. type: Plain text
 #: gawk.1:902
@@ -1149,7 +1153,7 @@ msgstr ""
 #: gawk.1:902
 #, no-wrap
 msgid "B<BINMODE>"
-msgstr ""
+msgstr "B<BINMODE>"
 
 #. type: Plain text
 #: gawk.1:912
@@ -1167,7 +1171,7 @@ msgstr ""
 #: gawk.1:912
 #, no-wrap
 msgid "B<CONVFMT>"
-msgstr ""
+msgstr "B<CONVFMT>"
 
 #. type: Plain text
 #: gawk.1:915
@@ -1178,7 +1182,7 @@ msgstr ""
 #: gawk.1:915
 #, no-wrap
 msgid "B<ENVIRON>"
-msgstr ""
+msgstr "B<ENVIRON>"
 
 #. type: Plain text
 #: gawk.1:926
@@ -1194,7 +1198,7 @@ msgstr ""
 #: gawk.1:926
 #, no-wrap
 msgid "B<ERRNO>"
-msgstr ""
+msgstr "B<ERRNO>"
 
 #. type: Plain text
 #: gawk.1:939
@@ -1209,7 +1213,7 @@ msgstr ""
 #: gawk.1:939
 #, no-wrap
 msgid "B<FIELDWIDTHS>"
-msgstr ""
+msgstr "B<FIELDWIDTHS>"
 
 #. type: Plain text
 #: gawk.1:950
@@ -1223,7 +1227,7 @@ msgstr ""
 #: gawk.1:950
 #, no-wrap
 msgid "B<FILENAME>"
-msgstr ""
+msgstr "B<FILENAME>"
 
 #. type: Plain text
 #: gawk.1:963
@@ -1237,7 +1241,7 @@ msgstr ""
 #: gawk.1:963
 #, no-wrap
 msgid "B<FNR>"
-msgstr ""
+msgstr "B<FNR>"
 
 #. type: Plain text
 #: gawk.1:966
@@ -1248,7 +1252,7 @@ msgstr ""
 #: gawk.1:966
 #, no-wrap
 msgid "B<FPAT>"
-msgstr ""
+msgstr "B<FPAT>"
 
 #. type: Plain text
 #: gawk.1:980
@@ -1263,7 +1267,7 @@ msgstr ""
 #: gawk.1:980
 #, no-wrap
 msgid "B<FS>"
-msgstr ""
+msgstr "B<FS>"
 
 #. type: Plain text
 #: gawk.1:985
@@ -1274,7 +1278,7 @@ msgstr ""
 #: gawk.1:985
 #, no-wrap
 msgid "B<FUNCTAB>"
-msgstr ""
+msgstr "B<FUNCTAB>"
 
 #. type: Plain text
 #: gawk.1:996
@@ -1288,7 +1292,7 @@ msgstr ""
 #: gawk.1:996
 #, no-wrap
 msgid "B<IGNORECASE>"
-msgstr ""
+msgstr "B<IGNORECASE>"
 
 #. type: Plain text
 #: gawk.1:1034
@@ -1317,7 +1321,7 @@ msgstr ""
 #: gawk.1:1045
 #, no-wrap
 msgid "B<LINT>"
-msgstr ""
+msgstr "B<LINT>"
 
 #. type: Plain text
 #: gawk.1:1057
@@ -1333,7 +1337,7 @@ msgstr ""
 #: gawk.1:1057
 #, no-wrap
 msgid "B<NF>"
-msgstr ""
+msgstr "B<NF>"
 
 #. type: Plain text
 #: gawk.1:1060
@@ -1344,7 +1348,7 @@ msgstr ""
 #: gawk.1:1060
 #, no-wrap
 msgid "B<NR>"
-msgstr ""
+msgstr "B<NR>"
 
 #. type: Plain text
 #: gawk.1:1063
@@ -1355,7 +1359,7 @@ msgstr ""
 #: gawk.1:1063
 #, no-wrap
 msgid "B<OFMT>"
-msgstr ""
+msgstr "B<OFMT>"
 
 #. type: Plain text
 #: gawk.1:1066
@@ -1366,7 +1370,7 @@ msgstr ""
 #: gawk.1:1066
 #, no-wrap
 msgid "B<OFS>"
-msgstr ""
+msgstr "B<OFS>"
 
 #. type: Plain text
 #: gawk.1:1069
@@ -1377,7 +1381,7 @@ msgstr ""
 #: gawk.1:1069
 #, no-wrap
 msgid "B<ORS>"
-msgstr ""
+msgstr "B<ORS>"
 
 #. type: Plain text
 #: gawk.1:1072
@@ -1388,7 +1392,7 @@ msgstr ""
 #: gawk.1:1072
 #, no-wrap
 msgid "B<PREC>"
-msgstr ""
+msgstr "B<PREC>"
 
 #. type: Plain text
 #: gawk.1:1076
@@ -1401,7 +1405,7 @@ msgstr ""
 #: gawk.1:1076
 #, no-wrap
 msgid "B<PROCINFO>"
-msgstr ""
+msgstr "B<PROCINFO>"
 
 #. type: Plain text
 #: gawk.1:1089
@@ -1418,7 +1422,7 @@ msgstr ""
 #: gawk.1:1090
 #, no-wrap
 msgid "B<PROCINFO[\"egid\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"egid\"]>"
 
 #. type: Plain text
 #: gawk.1:1095
@@ -1429,7 +1433,7 @@ msgstr ""
 #: gawk.1:1095
 #, no-wrap
 msgid "B<PROCINFO[\"euid\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"euid\"]>"
 
 #. type: Plain text
 #: gawk.1:1100
@@ -1440,7 +1444,7 @@ msgstr ""
 #: gawk.1:1100
 #, no-wrap
 msgid "B<PROCINFO[\"FS\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"FS\"]>"
 
 #. type: Plain text
 #: gawk.1:1111
@@ -1454,7 +1458,7 @@ msgstr ""
 #: gawk.1:1111
 #, no-wrap
 msgid "B<PROCINFO[\"gid\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"gid\"]>"
 
 #. type: Plain text
 #: gawk.1:1116
@@ -1465,7 +1469,7 @@ msgstr ""
 #: gawk.1:1116
 #, no-wrap
 msgid "B<PROCINFO[\"identifiers\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"identifiers\"]>"
 
 #. type: Plain text
 #: gawk.1:1126
@@ -1481,7 +1485,7 @@ msgstr ""
 #: gawk.1:1127
 #, no-wrap
 msgid "B<\"array\">"
-msgstr ""
+msgstr "B<\"array\">"
 
 #. type: Plain text
 #: gawk.1:1130
@@ -1492,7 +1496,7 @@ msgstr ""
 #: gawk.1:1130
 #, no-wrap
 msgid "B<\"builtin\">"
-msgstr ""
+msgstr "B<\"builtin\">"
 
 #. type: Plain text
 #: gawk.1:1133
@@ -1503,7 +1507,7 @@ msgstr ""
 #: gawk.1:1133
 #, no-wrap
 msgid "B<\"extension\">"
-msgstr ""
+msgstr "B<\"extension\">"
 
 #. type: Plain text
 #: gawk.1:1139
@@ -1514,7 +1518,7 @@ msgstr ""
 #: gawk.1:1139
 #, no-wrap
 msgid "B<\"scalar\">"
-msgstr ""
+msgstr "B<\"scalar\">"
 
 #. type: Plain text
 #: gawk.1:1142
@@ -1525,7 +1529,7 @@ msgstr ""
 #: gawk.1:1142
 #, no-wrap
 msgid "B<\"untyped\">"
-msgstr ""
+msgstr "B<\"untyped\">"
 
 #. type: Plain text
 #: gawk.1:1147
@@ -1538,7 +1542,7 @@ msgstr ""
 #: gawk.1:1147
 #, no-wrap
 msgid "B<\"user\">"
-msgstr ""
+msgstr "B<\"user\">"
 
 #. type: Plain text
 #: gawk.1:1150
@@ -1549,7 +1553,7 @@ msgstr ""
 #: gawk.1:1151
 #, no-wrap
 msgid "B<PROCINFO[\"pgrpid\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"pgrpid\"]>"
 
 #. type: Plain text
 #: gawk.1:1154
@@ -1560,7 +1564,7 @@ msgstr ""
 #: gawk.1:1154
 #, no-wrap
 msgid "B<PROCINFO[\"pid\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"pid\"]>"
 
 #. type: Plain text
 #: gawk.1:1157
@@ -1571,7 +1575,7 @@ msgstr ""
 #: gawk.1:1157
 #, no-wrap
 msgid "B<PROCINFO[\"ppid\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"ppid\"]>"
 
 #. type: Plain text
 #: gawk.1:1160
@@ -1582,7 +1586,7 @@ msgstr ""
 #: gawk.1:1160
 #, no-wrap
 msgid "B<PROCINFO[\"strftime\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"strftime\"]>"
 
 #. type: Plain text
 #: gawk.1:1164
@@ -1593,7 +1597,7 @@ msgstr ""
 #: gawk.1:1164
 #, no-wrap
 msgid "B<PROCINFO[\"uid\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"uid\"]>"
 
 #. type: Plain text
 #: gawk.1:1169
@@ -1604,7 +1608,7 @@ msgstr ""
 #: gawk.1:1169
 #, no-wrap
 msgid "B<PROCINFO[\"version\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"version\"]>"
 
 #. type: Plain text
 #: gawk.1:1173
@@ -1622,7 +1626,7 @@ msgstr ""
 #: gawk.1:1176
 #, no-wrap
 msgid "B<PROCINFO[\"api_major\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"api_major\"]>"
 
 #. type: Plain text
 #: gawk.1:1179
@@ -1633,7 +1637,7 @@ msgstr ""
 #: gawk.1:1179
 #, no-wrap
 msgid "B<PROCINFO[\"api_minor\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"api_minor\"]>"
 
 #. type: Plain text
 #: gawk.1:1182
@@ -1651,7 +1655,7 @@ msgstr ""
 #: gawk.1:1186
 #, no-wrap
 msgid "B<PROCINFO[\"gmp_version\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"gmp_version\"]>"
 
 #. type: Plain text
 #: gawk.1:1191
@@ -1664,7 +1668,7 @@ msgstr ""
 #: gawk.1:1191
 #, no-wrap
 msgid "B<PROCINFO[\"mpfr_version\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"mpfr_version\"]>"
 
 #. type: Plain text
 #: gawk.1:1196
@@ -1677,7 +1681,7 @@ msgstr ""
 #: gawk.1:1196
 #, no-wrap
 msgid "B<PROCINFO[\"prec_max\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"prec_max\"]>"
 
 #. type: Plain text
 #: gawk.1:1200
@@ -1690,7 +1694,7 @@ msgstr ""
 #: gawk.1:1200
 #, no-wrap
 msgid "B<PROCINFO[\"prec_min\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"prec_min\"]>"
 
 #. type: Plain text
 #: gawk.1:1204
@@ -1708,7 +1712,7 @@ msgstr ""
 #: gawk.1:1209
 #, no-wrap
 msgid "B<PROCINFO[\">I<command>B<\", \"pty\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\">I<command>B<\", \"pty\"]>"
 
 #. type: Plain text
 #: gawk.1:1214
@@ -1721,7 +1725,7 @@ msgstr ""
 #: gawk.1:1214
 #, no-wrap
 msgid "B<PROCINFO[\">I<input>B<\", \"READ_TIMEOUT\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\">I<input>B<\", \"READ_TIMEOUT\"]>"
 
 #. type: Plain text
 #: gawk.1:1222
@@ -1735,7 +1739,7 @@ msgstr ""
 #: gawk.1:1222
 #, no-wrap
 msgid "B<PROCINFO[\"sorted_in\"]>"
-msgstr ""
+msgstr "B<PROCINFO[\"sorted_in\"]>"
 
 #. type: Plain text
 #: gawk.1:1245
@@ -1752,7 +1756,7 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:1248
 msgid "B<function cmp_func(i1, v1, i2, v2)>"
-msgstr ""
+msgstr "B<function cmp_func(i1, v1, i2, v2)>"
 
 #. type: Plain text
 #: gawk.1:1262
@@ -1767,7 +1771,7 @@ msgstr ""
 #: gawk.1:1263
 #, no-wrap
 msgid "B<ROUNDMODE>"
-msgstr ""
+msgstr "B<ROUNDMODE>"
 
 #. type: Plain text
 #: gawk.1:1274
@@ -1784,7 +1788,7 @@ msgstr ""
 #: gawk.1:1274
 #, no-wrap
 msgid "B<RS>"
-msgstr ""
+msgstr "B<RS>"
 
 #. type: Plain text
 #: gawk.1:1277
@@ -1795,7 +1799,7 @@ msgstr ""
 #: gawk.1:1277
 #, no-wrap
 msgid "B<RT>"
-msgstr ""
+msgstr "B<RT>"
 
 #. type: Plain text
 #: gawk.1:1286
@@ -1808,7 +1812,7 @@ msgstr ""
 #: gawk.1:1286
 #, no-wrap
 msgid "B<RSTART>"
-msgstr ""
+msgstr "B<RSTART>"
 
 #. type: Plain text
 #: gawk.1:1292
@@ -1821,7 +1825,7 @@ msgstr ""
 #: gawk.1:1292
 #, no-wrap
 msgid "B<RLENGTH>"
-msgstr ""
+msgstr "B<RLENGTH>"
 
 #. type: Plain text
 #: gawk.1:1297
@@ -1832,7 +1836,7 @@ msgstr ""
 #: gawk.1:1297
 #, no-wrap
 msgid "B<SUBSEP>"
-msgstr ""
+msgstr "B<SUBSEP>"
 
 #. type: Plain text
 #: gawk.1:1301
@@ -1845,7 +1849,7 @@ msgstr ""
 #: gawk.1:1301
 #, no-wrap
 msgid "B<SYMTAB>"
-msgstr ""
+msgstr "B<SYMTAB>"
 
 #. type: Plain text
 #: gawk.1:1306
@@ -1863,6 +1867,9 @@ msgid ""
 "SYMTAB[\"foo\"] = 4\n"
 "print foo    # prints 4>\n"
 msgstr ""
+"B<foo = 5\n"
+"SYMTAB[\"foo\"] = 4\n"
+"print foo    # prints 4>\n"
 
 #. type: Plain text
 #: gawk.1:1327
@@ -1875,7 +1882,7 @@ msgstr ""
 #: gawk.1:1327
 #, no-wrap
 msgid "B<TEXTDOMAIN>"
-msgstr ""
+msgstr "B<TEXTDOMAIN>"
 
 #. type: Plain text
 #: gawk.1:1331
@@ -1904,12 +1911,12 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:1348
 msgid "B<i = \"A\";\\^ j = \"B\";\\^ k = \"C\">"
-msgstr ""
+msgstr "B<i = \"A\";\\^ j = \"B\";\\^ k = \"C\">"
 
 #. type: Plain text
 #: gawk.1:1350
 msgid "B<x[i, j, k] = \"hello, world\\en\">"
-msgstr ""
+msgstr "B<x[i, j, k] = \"hello, world\\en\">"
 
 #. type: Plain text
 #: gawk.1:1357
@@ -1933,6 +1940,8 @@ msgid ""
 "B<if (val in array)\n"
 "\tprint array[val]>\n"
 msgstr ""
+"B<if (val in array)\n"
+"\tprint array[val]>\n"
 
 #. type: Plain text
 #: gawk.1:1374
@@ -1970,6 +1979,9 @@ msgid ""
 "a[2][1] = 6\n"
 "a[2][2] = 7>\n"
 msgstr ""
+"B<a[1] = 5\n"
+"a[2][1] = 6\n"
+"a[2][2] = 7>\n"
 
 #. type: Plain text
 #: gawk.1:1420
@@ -2028,6 +2040,9 @@ msgid ""
 "a = 12\n"
 "b = a \"\">\n"
 msgstr ""
+"B<CONVFMT = \"%2.2f\"\n"
+"a = 12\n"
+"b = a \"\">\n"
 
 #. type: Plain text
 #: gawk.1:1460
@@ -2098,7 +2113,7 @@ msgstr ""
 #: gawk.1:1518
 #, no-wrap
 msgid "B<\\e\\e>"
-msgstr ""
+msgstr "B<\\e\\e>"
 
 #. type: Plain text
 #: gawk.1:1521
@@ -2109,7 +2124,7 @@ msgstr ""
 #: gawk.1:1521
 #, no-wrap
 msgid "B<\\ea>"
-msgstr ""
+msgstr "B<\\ea>"
 
 #. type: Plain text
 #: gawk.1:1524
@@ -2122,7 +2137,7 @@ msgstr ""
 #: gawk.1:1524
 #, no-wrap
 msgid "B<\\eb>"
-msgstr ""
+msgstr "B<\\eb>"
 
 #. type: Plain text
 #: gawk.1:1527
@@ -2133,7 +2148,7 @@ msgstr ""
 #: gawk.1:1527
 #, no-wrap
 msgid "B<\\ef>"
-msgstr ""
+msgstr "B<\\ef>"
 
 #. type: Plain text
 #: gawk.1:1530
@@ -2144,7 +2159,7 @@ msgstr ""
 #: gawk.1:1530
 #, no-wrap
 msgid "B<\\en>"
-msgstr ""
+msgstr "B<\\en>"
 
 #. type: Plain text
 #: gawk.1:1533
@@ -2155,7 +2170,7 @@ msgstr ""
 #: gawk.1:1533
 #, no-wrap
 msgid "B<\\er>"
-msgstr ""
+msgstr "B<\\er>"
 
 #. type: Plain text
 #: gawk.1:1536
@@ -2166,7 +2181,7 @@ msgstr ""
 #: gawk.1:1536
 #, no-wrap
 msgid "B<\\et>"
-msgstr ""
+msgstr "B<\\et>"
 
 #. type: Plain text
 #: gawk.1:1539
@@ -2177,7 +2192,7 @@ msgstr ""
 #: gawk.1:1539
 #, no-wrap
 msgid "B<\\ev>"
-msgstr ""
+msgstr "B<\\ev>"
 
 #. type: Plain text
 #: gawk.1:1542
@@ -2188,7 +2203,7 @@ msgstr ""
 #: gawk.1:1542
 #, no-wrap
 msgid "B<\\ex>I<\\^hex digits>"
-msgstr ""
+msgstr "B<\\ex>I<\\^hex digits>"
 
 #. type: Plain text
 #: gawk.1:1551
@@ -2204,7 +2219,7 @@ msgstr ""
 #: gawk.1:1551
 #, no-wrap
 msgid "B<\\e>I<ddd>"
-msgstr ""
+msgstr "B<\\e>I<ddd>"
 
 #. type: Plain text
 #: gawk.1:1556
@@ -2218,7 +2233,7 @@ msgstr ""
 #: gawk.1:1556
 #, no-wrap
 msgid "B<\\e>I<c>"
-msgstr ""
+msgstr "B<\\e>I<c>"
 
 #. type: Plain text
 #: gawk.1:1560
@@ -2259,7 +2274,7 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:1585
 msgid "B<{ print }>"
-msgstr ""
+msgstr "B<{ print }>"
 
 #. type: Plain text
 #: gawk.1:1588
@@ -2315,6 +2330,18 @@ msgid ""
 "B<!>I< pattern>\n"
 "I<pattern1>B<, >I<pattern2>\n"
 msgstr ""
+"B<BEGIN>\n"
+"B<END>\n"
+"B<BEGINFILE>\n"
+"B<ENDFILE>\n"
+"B</>I<regular expression>B</>\n"
+"I<relational expression>\n"
+"I<pattern>B< && >I<pattern>\n"
+"I<pattern>B< || >I<pattern>\n"
+"I<pattern>B< ? >I<pattern>B< : >I<pattern>\n"
+"B<(>I<pattern>B<)>\n"
+"B<!>I< pattern>\n"
+"I<pattern1>B<, >I<pattern2>\n"
 
 #. type: Plain text
 #: gawk.1:1661
@@ -2401,7 +2428,7 @@ msgstr ""
 #: gawk.1:1722
 #, no-wrap
 msgid "I<c>"
-msgstr ""
+msgstr "I<c>"
 
 #. type: Plain text
 #: gawk.1:1726
@@ -2412,7 +2439,7 @@ msgstr ""
 #: gawk.1:1726
 #, no-wrap
 msgid "I<\\ec>"
-msgstr ""
+msgstr "I<\\ec>"
 
 #. type: Plain text
 #: gawk.1:1730
@@ -2423,7 +2450,7 @@ msgstr ""
 #: gawk.1:1730
 #, no-wrap
 msgid "B<.>"
-msgstr ""
+msgstr "B<.>"
 
 #. type: Plain text
 #: gawk.1:1735
@@ -2434,7 +2461,7 @@ msgstr ""
 #: gawk.1:1735 gawk.1:2031
 #, no-wrap
 msgid "B<^>"
-msgstr ""
+msgstr "B<^>"
 
 #. type: Plain text
 #: gawk.1:1738
@@ -2445,7 +2472,7 @@ msgstr ""
 #: gawk.1:1738 gawk.1:2025
 #, no-wrap
 msgid "B<$>"
-msgstr ""
+msgstr "B<$>"
 
 #. type: Plain text
 #: gawk.1:1741
@@ -2456,7 +2483,7 @@ msgstr ""
 #: gawk.1:1741
 #, no-wrap
 msgid "B<[>I<abc.\\|.\\|.>B<]>"
-msgstr ""
+msgstr "B<[>I<abc.\\|.\\|.>B<]>"
 
 #. type: Plain text
 #: gawk.1:1746
@@ -2469,7 +2496,7 @@ msgstr ""
 #: gawk.1:1746
 #, no-wrap
 msgid "B<[^>I<abc.\\|.\\|.>B<]>"
-msgstr ""
+msgstr "B<[^>I<abc.\\|.\\|.>B<]>"
 
 #. type: Plain text
 #: gawk.1:1750
@@ -2480,7 +2507,7 @@ msgstr ""
 #: gawk.1:1750
 #, no-wrap
 msgid "I<r1>B<|>I<r2>"
-msgstr ""
+msgstr "I<r1>B<|>I<r2>"
 
 #. type: Plain text
 #: gawk.1:1756
@@ -2491,7 +2518,7 @@ msgstr ""
 #: gawk.1:1756
 #, no-wrap
 msgid "I<r1r2>"
-msgstr ""
+msgstr "I<r1r2>"
 
 #. type: Plain text
 #: gawk.1:1762
@@ -2502,7 +2529,7 @@ msgstr ""
 #: gawk.1:1762
 #, no-wrap
 msgid "I<r\\^>B<+>"
-msgstr ""
+msgstr "I<r\\^>B<+>"
 
 #. type: Plain text
 #: gawk.1:1766
@@ -2513,7 +2540,7 @@ msgstr ""
 #: gawk.1:1766
 #, no-wrap
 msgid "I<r>B<*>"
-msgstr ""
+msgstr "I<r>B<*>"
 
 #. type: Plain text
 #: gawk.1:1770
@@ -2524,7 +2551,7 @@ msgstr ""
 #: gawk.1:1770
 #, no-wrap
 msgid "I<r\\^>B<?>"
-msgstr ""
+msgstr "I<r\\^>B<?>"
 
 #. type: Plain text
 #: gawk.1:1774
@@ -2535,7 +2562,7 @@ msgstr ""
 #: gawk.1:1774
 #, no-wrap
 msgid "B<(>I<r>B<)>"
-msgstr ""
+msgstr "B<(>I<r>B<)>"
 
 #. type: Plain text
 #: gawk.1:1778
@@ -2546,19 +2573,19 @@ msgstr ""
 #: gawk.1:1778
 #, no-wrap
 msgid "I<r>B<{>I<n>B<}>"
-msgstr ""
+msgstr "I<r>B<{>I<n>B<}>"
 
 #. type: TP
 #: gawk.1:1781
 #, no-wrap
 msgid "I<r>B<{>I<n>B<,}>"
-msgstr ""
+msgstr "I<r>B<{>I<n>B<,}>"
 
 #. type: TP
 #: gawk.1:1784
 #, no-wrap
 msgid "I<r>B<{>I<n>B<,>I<m>B<}>"
-msgstr ""
+msgstr "I<r>B<{>I<n>B<,>I<m>B<}>"
 
 #. type: Plain text
 #: gawk.1:1805
@@ -2574,7 +2601,7 @@ msgstr ""
 #: gawk.1:1805
 #, no-wrap
 msgid "B<\\ey>"
-msgstr ""
+msgstr "B<\\ey>"
 
 #. type: Plain text
 #: gawk.1:1809
@@ -2585,7 +2612,7 @@ msgstr ""
 #: gawk.1:1809
 #, no-wrap
 msgid "B<\\eB>"
-msgstr ""
+msgstr "B<\\eB>"
 
 #. type: Plain text
 #: gawk.1:1812
@@ -2596,7 +2623,7 @@ msgstr ""
 #: gawk.1:1812
 #, no-wrap
 msgid "B<\\eE<lt>>"
-msgstr ""
+msgstr "B<\\eE<lt>>"
 
 #. type: Plain text
 #: gawk.1:1815
@@ -2607,7 +2634,7 @@ msgstr ""
 #: gawk.1:1815
 #, no-wrap
 msgid "B<\\eE<gt>>"
-msgstr ""
+msgstr "B<\\eE<gt>>"
 
 #. type: Plain text
 #: gawk.1:1818
@@ -2618,7 +2645,7 @@ msgstr ""
 #: gawk.1:1818
 #, no-wrap
 msgid "B<\\es>"
-msgstr ""
+msgstr "B<\\es>"
 
 #. type: Plain text
 #: gawk.1:1821
@@ -2629,7 +2656,7 @@ msgstr ""
 #: gawk.1:1821
 #, no-wrap
 msgid "B<\\eS>"
-msgstr ""
+msgstr "B<\\eS>"
 
 #. type: Plain text
 #: gawk.1:1824
@@ -2640,7 +2667,7 @@ msgstr ""
 #: gawk.1:1824
 #, no-wrap
 msgid "B<\\ew>"
-msgstr ""
+msgstr "B<\\ew>"
 
 #. type: Plain text
 #: gawk.1:1827
@@ -2651,7 +2678,7 @@ msgstr ""
 #: gawk.1:1827
 #, no-wrap
 msgid "B<\\eW>"
-msgstr ""
+msgstr "B<\\eW>"
 
 #. type: Plain text
 #: gawk.1:1830
@@ -2662,7 +2689,7 @@ msgstr ""
 #: gawk.1:1830
 #, no-wrap
 msgid "B<\\e`>"
-msgstr ""
+msgstr "B<\\e`>"
 
 #. type: Plain text
 #: gawk.1:1833
@@ -2673,7 +2700,7 @@ msgstr ""
 #: gawk.1:1833
 #, no-wrap
 msgid "B<\\e'>"
-msgstr ""
+msgstr "B<\\e'>"
 
 #. type: Plain text
 #: gawk.1:1836
@@ -2711,7 +2738,7 @@ msgstr ""
 #: gawk.1:1857
 #, no-wrap
 msgid "B<[:alnum:]>"
-msgstr ""
+msgstr "B<[:alnum:]>"
 
 #. type: Plain text
 #: gawk.1:1860
@@ -2722,7 +2749,7 @@ msgstr ""
 #: gawk.1:1860
 #, no-wrap
 msgid "B<[:alpha:]>"
-msgstr ""
+msgstr "B<[:alpha:]>"
 
 #. type: Plain text
 #: gawk.1:1863
@@ -2733,7 +2760,7 @@ msgstr ""
 #: gawk.1:1863
 #, no-wrap
 msgid "B<[:blank:]>"
-msgstr ""
+msgstr "B<[:blank:]>"
 
 #. type: Plain text
 #: gawk.1:1866
@@ -2744,7 +2771,7 @@ msgstr ""
 #: gawk.1:1866
 #, no-wrap
 msgid "B<[:cntrl:]>"
-msgstr ""
+msgstr "B<[:cntrl:]>"
 
 #. type: Plain text
 #: gawk.1:1869
@@ -2755,7 +2782,7 @@ msgstr ""
 #: gawk.1:1869
 #, no-wrap
 msgid "B<[:digit:]>"
-msgstr ""
+msgstr "B<[:digit:]>"
 
 #. type: Plain text
 #: gawk.1:1872
@@ -2766,7 +2793,7 @@ msgstr ""
 #: gawk.1:1872
 #, no-wrap
 msgid "B<[:graph:]>"
-msgstr ""
+msgstr "B<[:graph:]>"
 
 #. type: Plain text
 #: gawk.1:1878
@@ -2779,7 +2806,7 @@ msgstr ""
 #: gawk.1:1878
 #, no-wrap
 msgid "B<[:lower:]>"
-msgstr ""
+msgstr "B<[:lower:]>"
 
 #. type: Plain text
 #: gawk.1:1881
@@ -2790,7 +2817,7 @@ msgstr ""
 #: gawk.1:1881
 #, no-wrap
 msgid "B<[:print:]>"
-msgstr ""
+msgstr "B<[:print:]>"
 
 #. type: Plain text
 #: gawk.1:1884
@@ -2801,7 +2828,7 @@ msgstr ""
 #: gawk.1:1884
 #, no-wrap
 msgid "B<[:punct:]>"
-msgstr ""
+msgstr "B<[:punct:]>"
 
 #. type: Plain text
 #: gawk.1:1888
@@ -2814,7 +2841,7 @@ msgstr ""
 #: gawk.1:1888
 #, no-wrap
 msgid "B<[:space:]>"
-msgstr ""
+msgstr "B<[:space:]>"
 
 #. type: Plain text
 #: gawk.1:1891
@@ -2825,7 +2852,7 @@ msgstr ""
 #: gawk.1:1891
 #, no-wrap
 msgid "B<[:upper:]>"
-msgstr ""
+msgstr "B<[:upper:]>"
 
 #. type: Plain text
 #: gawk.1:1894
@@ -2836,7 +2863,7 @@ msgstr ""
 #: gawk.1:1894
 #, no-wrap
 msgid "B<[:xdigit:]>"
-msgstr ""
+msgstr "B<[:xdigit:]>"
 
 #. type: Plain text
 #: gawk.1:1897
@@ -2988,7 +3015,7 @@ msgstr ""
 #: gawk.1:2022
 #, no-wrap
 msgid "B<(>\\&.\\|.\\|.B<)>"
-msgstr ""
+msgstr "B<(>\\&.\\|.\\|.B<)>"
 
 #. type: Plain text
 #: gawk.1:2025
@@ -3004,7 +3031,7 @@ msgstr ""
 #: gawk.1:2028
 #, no-wrap
 msgid "B<++ -\\^->"
-msgstr ""
+msgstr "B<++ -\\^->"
 
 #. type: Plain text
 #: gawk.1:2031
@@ -3022,7 +3049,7 @@ msgstr ""
 #: gawk.1:2035
 #, no-wrap
 msgid "B<+ - !>"
-msgstr ""
+msgstr "B<+ - !>"
 
 #. type: Plain text
 #: gawk.1:2038
@@ -3033,7 +3060,7 @@ msgstr ""
 #: gawk.1:2038
 #, no-wrap
 msgid "B<* / %>"
-msgstr ""
+msgstr "B<* / %>"
 
 #. type: Plain text
 #: gawk.1:2041
@@ -3044,7 +3071,7 @@ msgstr ""
 #: gawk.1:2041
 #, no-wrap
 msgid "B<+ ->"
-msgstr ""
+msgstr "B<+ ->"
 
 #. type: Plain text
 #: gawk.1:2044
@@ -3055,7 +3082,7 @@ msgstr ""
 #: gawk.1:2044 gawk.1:2415
 #, no-wrap
 msgid "I<space>"
-msgstr ""
+msgstr "I<space>"
 
 #. type: Plain text
 #: gawk.1:2047
@@ -3066,7 +3093,7 @@ msgstr ""
 #: gawk.1:2047
 #, no-wrap
 msgid "B<|   |&>"
-msgstr ""
+msgstr "B<|   |&>"
 
 #. type: Plain text
 #: gawk.1:2054
@@ -3077,7 +3104,7 @@ msgstr ""
 #: gawk.1:2054
 #, no-wrap
 msgid "B<E<lt> E<gt> E<lt>= E<gt>= != ==>"
-msgstr ""
+msgstr "B<E<lt> E<gt> E<lt>= E<gt>= != ==>"
 
 #. type: Plain text
 #: gawk.1:2057
@@ -3088,7 +3115,7 @@ msgstr ""
 #: gawk.1:2057
 #, no-wrap
 msgid "B<~ !~>"
-msgstr ""
+msgstr "B<~ !~>"
 
 #. type: Plain text
 #: gawk.1:2073
@@ -3104,7 +3131,7 @@ msgstr ""
 #: gawk.1:2073
 #, no-wrap
 msgid "B<in>"
-msgstr ""
+msgstr "B<in>"
 
 #. type: Plain text
 #: gawk.1:2076
@@ -3115,7 +3142,7 @@ msgstr ""
 #: gawk.1:2076
 #, no-wrap
 msgid "B<&&>"
-msgstr ""
+msgstr "B<&&>"
 
 #. type: Plain text
 #: gawk.1:2079
@@ -3126,7 +3153,7 @@ msgstr ""
 #: gawk.1:2079
 #, no-wrap
 msgid "B<||>"
-msgstr ""
+msgstr "B<||>"
 
 #. type: Plain text
 #: gawk.1:2082
@@ -3137,7 +3164,7 @@ msgstr ""
 #: gawk.1:2082
 #, no-wrap
 msgid "B<?:>"
-msgstr ""
+msgstr "B<?:>"
 
 #. type: Plain text
 #: gawk.1:2098
@@ -3151,7 +3178,7 @@ msgstr ""
 #: gawk.1:2098
 #, no-wrap
 msgid "B<= += -= *= /= %= ^=>"
-msgstr ""
+msgstr "B<= += -= *= /= %= ^=>"
 
 #. type: Plain text
 #: gawk.1:2103
@@ -3192,6 +3219,22 @@ msgid ""
 ">[ B<default: >I<statement >]\n"
 "B<}>\n"
 msgstr ""
+"B<if (>I<condition>B<) >I<statement> [ B<else>I< statement >]\n"
+"B<while (>I<condition>B<) >I<statement >\n"
+"B<do >I<statement >B<while (>I<condition>B<)>\n"
+"B<for (>I<expr1>B<; >I<expr2>B<; >I<expr3>B<) >I<statement>\n"
+"B<for (>I<var >B<in>I< array>B<) >I<statement>\n"
+"B<break>\n"
+"B<continue>\n"
+"B<delete >I<array\\^>B<[\\^>I<index\\^>B<]>\n"
+"B<delete >I<array\\^>\n"
+"B<exit> [ I<expression> ]\n"
+"B<{ >I<statements >B<}>\n"
+"B<switch (>I<expression>B<) {\n"
+"case >I<value>B<|>I<regex>B< : >I<statement\n"
+"\\&.\\^.\\^.\n"
+">[ B<default: >I<statement >]\n"
+"B<}>\n"
 
 #. type: SS
 #: gawk.1:2128
@@ -3208,7 +3251,7 @@ msgstr ""
 #: gawk.1:2132
 #, no-wrap
 msgid "B<close(>I<file >[B<, >I<how>]B<)>"
-msgstr ""
+msgstr "B<close(>I<file >[B<, >I<how>]B<)>"
 
 #. type: Plain text
 #: gawk.1:2141
@@ -3222,7 +3265,7 @@ msgstr ""
 #: gawk.1:2141
 #, no-wrap
 msgid "B<getline>"
-msgstr ""
+msgstr "B<getline>"
 
 #. type: Plain text
 #: gawk.1:2150
@@ -3233,7 +3276,7 @@ msgstr ""
 #: gawk.1:2150
 #, no-wrap
 msgid "B<getline E<lt>>I<file>"
-msgstr ""
+msgstr "B<getline E<lt>>I<file>"
 
 #. type: Plain text
 #: gawk.1:2159
@@ -3244,7 +3287,7 @@ msgstr ""
 #: gawk.1:2159
 #, no-wrap
 msgid "B<getline>I< var>"
-msgstr ""
+msgstr "B<getline>I< var>"
 
 #. type: Plain text
 #: gawk.1:2167
@@ -3255,7 +3298,7 @@ msgstr ""
 #: gawk.1:2167
 #, no-wrap
 msgid "B<getline>I< var>B< E<lt>>I<file>"
-msgstr ""
+msgstr "B<getline>I< var>B< E<lt>>I<file>"
 
 #. type: Plain text
 #: gawk.1:2174
@@ -3266,7 +3309,7 @@ msgstr ""
 #: gawk.1:2174
 #, no-wrap
 msgid "I<command>B< | getline >[I<var>]"
-msgstr ""
+msgstr "I<command>B< | getline >[I<var>]"
 
 #. type: Plain text
 #: gawk.1:2184
@@ -3279,7 +3322,7 @@ msgstr ""
 #: gawk.1:2184
 #, no-wrap
 msgid "I<command>B< |& getline >[I<var>]"
-msgstr ""
+msgstr "I<command>B< |& getline >[I<var>]"
 
 #. type: Plain text
 #: gawk.1:2202
@@ -3294,7 +3337,7 @@ msgstr ""
 #: gawk.1:2202
 #, no-wrap
 msgid "B<next>"
-msgstr ""
+msgstr "B<next>"
 
 #. type: Plain text
 #: gawk.1:2212
@@ -3308,7 +3351,7 @@ msgstr ""
 #: gawk.1:2212
 #, no-wrap
 msgid "B<nextfile>"
-msgstr ""
+msgstr "B<nextfile>"
 
 #. type: Plain text
 #: gawk.1:2228
@@ -3324,7 +3367,7 @@ msgstr ""
 #: gawk.1:2228
 #, no-wrap
 msgid "B<print>"
-msgstr ""
+msgstr "B<print>"
 
 #. type: Plain text
 #: gawk.1:2233
@@ -3337,7 +3380,7 @@ msgstr ""
 #: gawk.1:2233
 #, no-wrap
 msgid "B<print>I< expr-list>"
-msgstr ""
+msgstr "B<print>I< expr-list>"
 
 #. type: Plain text
 #: gawk.1:2240
@@ -3350,7 +3393,7 @@ msgstr ""
 #: gawk.1:2240
 #, no-wrap
 msgid "B<print>I< expr-list>B< E<gt>>I<file>"
-msgstr ""
+msgstr "B<print>I< expr-list>B< E<gt>>I<file>"
 
 #. type: Plain text
 #: gawk.1:2248
@@ -3363,7 +3406,7 @@ msgstr ""
 #: gawk.1:2248
 #, no-wrap
 msgid "B<printf>I< fmt, expr-list>"
-msgstr ""
+msgstr "B<printf>I< fmt, expr-list>"
 
 #. type: Plain text
 #: gawk.1:2252
@@ -3374,7 +3417,7 @@ msgstr ""
 #: gawk.1:2252
 #, no-wrap
 msgid "B<printf>I< fmt, expr-list>B< E<gt>>I<file>"
-msgstr ""
+msgstr "B<printf>I< fmt, expr-list>B< E<gt>>I<file>"
 
 #. type: Plain text
 #: gawk.1:2256
@@ -3385,7 +3428,7 @@ msgstr ""
 #: gawk.1:2256
 #, no-wrap
 msgid "B<system(>I<cmd-line>B<)>"
-msgstr ""
+msgstr "B<system(>I<cmd-line>B<)>"
 
 #. type: Plain text
 #: gawk.1:2263
@@ -3399,7 +3442,7 @@ msgstr ""
 #: gawk.1:2263
 #, no-wrap
 msgid "\\&B<fflush(>[I<file\\^>]B<)>"
-msgstr ""
+msgstr "\\&B<fflush(>[I<file\\^>]B<)>"
 
 #. type: Plain text
 #: gawk.1:2272
@@ -3418,7 +3461,7 @@ msgstr ""
 #: gawk.1:2277
 #, no-wrap
 msgid "B<print .\\|.\\|. E<gt>E<gt>>I< file>"
-msgstr ""
+msgstr "B<print .\\|.\\|. E<gt>E<gt>>I< file>"
 
 #. type: Plain text
 #: gawk.1:2281
@@ -3429,7 +3472,7 @@ msgstr ""
 #: gawk.1:2281
 #, no-wrap
 msgid "B<print .\\|.\\|. |>I< command>"
-msgstr ""
+msgstr "B<print .\\|.\\|. |>I< command>"
 
 #. type: Plain text
 #: gawk.1:2284
@@ -3440,7 +3483,7 @@ msgstr ""
 #: gawk.1:2284
 #, no-wrap
 msgid "B<print .\\|.\\|. |&>I< command>"
-msgstr ""
+msgstr "B<print .\\|.\\|. |&>I< command>"
 
 #. type: Plain text
 #: gawk.1:2290
@@ -3484,7 +3527,7 @@ msgstr ""
 #: gawk.1:2322
 #, no-wrap
 msgid "B<%c>"
-msgstr ""
+msgstr "B<%c>"
 
 #. type: Plain text
 #: gawk.1:2330
@@ -3498,7 +3541,7 @@ msgstr ""
 #: gawk.1:2330
 #, no-wrap
 msgid "B<%d>,B< %i>"
-msgstr ""
+msgstr "B<%d>,B< %i>"
 
 #. type: Plain text
 #: gawk.1:2333
@@ -3509,7 +3552,7 @@ msgstr ""
 #: gawk.1:2333
 #, no-wrap
 msgid "B<%e>,B< %E>"
-msgstr ""
+msgstr "B<%e>,B< %E>"
 
 #. type: Plain text
 #: gawk.1:2343
@@ -3523,7 +3566,7 @@ msgstr ""
 #: gawk.1:2343
 #, no-wrap
 msgid "B<%f>,B< %F>"
-msgstr ""
+msgstr "B<%f>,B< %F>"
 
 #. type: Plain text
 #: gawk.1:2358
@@ -3538,7 +3581,7 @@ msgstr ""
 #: gawk.1:2358
 #, no-wrap
 msgid "B<%g>,B< %G>"
-msgstr ""
+msgstr "B<%g>,B< %G>"
 
 #. type: Plain text
 #: gawk.1:2371
@@ -3551,7 +3594,7 @@ msgstr ""
 #: gawk.1:2371
 #, no-wrap
 msgid "B<%o>"
-msgstr ""
+msgstr "B<%o>"
 
 #. type: Plain text
 #: gawk.1:2374
@@ -3562,7 +3605,7 @@ msgstr ""
 #: gawk.1:2374
 #, no-wrap
 msgid "B<%u>"
-msgstr ""
+msgstr "B<%u>"
 
 #. type: Plain text
 #: gawk.1:2378
@@ -3573,7 +3616,7 @@ msgstr ""
 #: gawk.1:2378
 #, no-wrap
 msgid "B<%s>"
-msgstr ""
+msgstr "B<%s>"
 
 #. type: Plain text
 #: gawk.1:2381
@@ -3584,7 +3627,7 @@ msgstr ""
 #: gawk.1:2381
 #, no-wrap
 msgid "B<%x>,B< %X>"
-msgstr ""
+msgstr "B<%x>,B< %X>"
 
 #. type: Plain text
 #: gawk.1:2390
@@ -3597,7 +3640,7 @@ msgstr ""
 #: gawk.1:2390
 #, no-wrap
 msgid "B<%%>"
-msgstr ""
+msgstr "B<%%>"
 
 #. type: Plain text
 #: gawk.1:2395
@@ -3615,7 +3658,7 @@ msgstr ""
 #: gawk.1:2399
 #, no-wrap
 msgid "I<count>B<$>"
-msgstr ""
+msgstr "I<count>B<$>"
 
 #. type: Plain text
 #: gawk.1:2412
@@ -3630,7 +3673,7 @@ msgstr ""
 #: gawk.1:2412 gawk.1:2551
 #, no-wrap
 msgid "B<->"
-msgstr ""
+msgstr "B<->"
 
 #. type: Plain text
 #: gawk.1:2415
@@ -3648,7 +3691,7 @@ msgstr ""
 #: gawk.1:2419
 #, no-wrap
 msgid "B<+>"
-msgstr ""
+msgstr "B<+>"
 
 #. type: Plain text
 #: gawk.1:2426
@@ -3662,7 +3705,7 @@ msgstr ""
 #: gawk.1:2426
 #, no-wrap
 msgid "B<#>"
-msgstr ""
+msgstr "B<#>"
 
 #. type: Plain text
 #: gawk.1:2455
@@ -3678,7 +3721,7 @@ msgstr ""
 #: gawk.1:2455
 #, no-wrap
 msgid "B<0>"
-msgstr ""
+msgstr "B<0>"
 
 #. type: Plain text
 #: gawk.1:2464
@@ -3693,7 +3736,7 @@ msgstr ""
 #: gawk.1:2464
 #, no-wrap
 msgid "B<'>"
-msgstr ""
+msgstr "B<'>"
 
 #. type: Plain text
 #: gawk.1:2473
@@ -3709,7 +3752,7 @@ msgstr ""
 #: gawk.1:2473
 #, no-wrap
 msgid "I<width>"
-msgstr ""
+msgstr "I<width>"
 
 #. type: Plain text
 #: gawk.1:2479
@@ -3722,7 +3765,7 @@ msgstr ""
 #: gawk.1:2479
 #, no-wrap
 msgid "B<\\&.>I<prec>"
-msgstr ""
+msgstr "B<\\&.>I<prec>"
 
 #. type: Plain text
 #: gawk.1:2508
@@ -3772,13 +3815,13 @@ msgstr ""
 #: gawk.1:2554
 #, no-wrap
 msgid "B</dev/stdin>"
-msgstr ""
+msgstr "B</dev/stdin>"
 
 #. type: TP
 #: gawk.1:2557
 #, no-wrap
 msgid "B</dev/stdout>"
-msgstr ""
+msgstr "B</dev/stdout>"
 
 #. type: Plain text
 #: gawk.1:2560
@@ -3789,7 +3832,7 @@ msgstr ""
 #: gawk.1:2560
 #, no-wrap
 msgid "B</dev/stderr>"
-msgstr ""
+msgstr "B</dev/stderr>"
 
 #. type: Plain text
 #: gawk.1:2563
@@ -3800,7 +3843,7 @@ msgstr ""
 #: gawk.1:2563
 #, no-wrap
 msgid "B</dev/fd/\\^>I<n>"
-msgstr ""
+msgstr "B</dev/fd/\\^>I<n>"
 
 #. type: Plain text
 #: gawk.1:2567
@@ -3825,7 +3868,7 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:2581
 msgid "B<print \"You blew it!\" | \"cat 1E<gt>&2\">"
-msgstr ""
+msgstr "B<print \"You blew it!\" | \"cat 1E<gt>&2\">"
 
 #. type: Plain text
 #: gawk.1:2587
@@ -3838,19 +3881,19 @@ msgstr ""
 #: gawk.1:2587
 #, no-wrap
 msgid "B</inet/tcp/>I<lport>B</>I<rhost>B</>I<rport>"
-msgstr ""
+msgstr "B</inet/tcp/>I<lport>B</>I<rhost>B</>I<rport>"
 
 #. type: TP
 #: gawk.1:2590
 #, no-wrap
 msgid "B</inet4/tcp/>I<lport>B</>I<rhost>B</>I<rport>"
-msgstr ""
+msgstr "B</inet4/tcp/>I<lport>B</>I<rhost>B</>I<rport>"
 
 #. type: TP
 #: gawk.1:2593
 #, no-wrap
 msgid "B</inet6/tcp/>I<lport>B</>I<rhost>B</>I<rport>"
-msgstr ""
+msgstr "B</inet6/tcp/>I<lport>B</>I<rhost>B</>I<rport>"
 
 #. type: Plain text
 #: gawk.1:2615
@@ -3865,19 +3908,19 @@ msgstr ""
 #: gawk.1:2615
 #, no-wrap
 msgid "B</inet/udp/>I<lport>B</>I<rhost>B</>I<rport>"
-msgstr ""
+msgstr "B</inet/udp/>I<lport>B</>I<rhost>B</>I<rport>"
 
 #. type: TP
 #: gawk.1:2618
 #, no-wrap
 msgid "B</inet4/udp/>I<lport>B</>I<rhost>B</>I<rport>"
-msgstr ""
+msgstr "B</inet4/udp/>I<lport>B</>I<rhost>B</>I<rport>"
 
 #. type: TP
 #: gawk.1:2621
 #, no-wrap
 msgid "B</inet6/udp/>I<lport>B</>I<rhost>B</>I<rport>"
-msgstr ""
+msgstr "B</inet6/udp/>I<lport>B</>I<rhost>B</>I<rport>"
 
 #. type: Plain text
 #: gawk.1:2625
@@ -3899,7 +3942,7 @@ msgstr ""
 #: gawk.1:2629
 #, no-wrap
 msgid "B<atan2(>I<y>B<,>I< x>B<)>"
-msgstr ""
+msgstr "B<atan2(>I<y>B<,>I< x>B<)>"
 
 #. type: Plain text
 #: gawk.1:2634
@@ -3910,7 +3953,7 @@ msgstr ""
 #: gawk.1:2634
 #, no-wrap
 msgid "B<cos(>I<expr>B<)>"
-msgstr ""
+msgstr "B<cos(>I<expr>B<)>"
 
 #. type: Plain text
 #: gawk.1:2639
@@ -3921,7 +3964,7 @@ msgstr ""
 #: gawk.1:2639
 #, no-wrap
 msgid "B<exp(>I<expr>B<)>"
-msgstr ""
+msgstr "B<exp(>I<expr>B<)>"
 
 #. type: Plain text
 #: gawk.1:2642
@@ -3932,7 +3975,7 @@ msgstr ""
 #: gawk.1:2642
 #, no-wrap
 msgid "B<int(>I<expr>B<)>"
-msgstr ""
+msgstr "B<int(>I<expr>B<)>"
 
 #. type: Plain text
 #: gawk.1:2645
@@ -3943,7 +3986,7 @@ msgstr ""
 #: gawk.1:2645
 #, no-wrap
 msgid "B<log(>I<expr>B<)>"
-msgstr ""
+msgstr "B<log(>I<expr>B<)>"
 
 #. type: Plain text
 #: gawk.1:2648
@@ -3954,7 +3997,7 @@ msgstr ""
 #: gawk.1:2648
 #, no-wrap
 msgid "B<rand()>"
-msgstr ""
+msgstr "B<rand()>"
 
 #. type: Plain text
 #: gawk.1:2654
@@ -3967,7 +4010,7 @@ msgstr ""
 #: gawk.1:2654
 #, no-wrap
 msgid "B<sin(>I<expr>B<)>"
-msgstr ""
+msgstr "B<sin(>I<expr>B<)>"
 
 #. type: Plain text
 #: gawk.1:2659
@@ -3978,7 +4021,7 @@ msgstr ""
 #: gawk.1:2659
 #, no-wrap
 msgid "B<sqrt(>I<expr>B<)>"
-msgstr ""
+msgstr "B<sqrt(>I<expr>B<)>"
 
 #. type: Plain text
 #: gawk.1:2663
@@ -3989,7 +4032,7 @@ msgstr ""
 #: gawk.1:2663
 #, no-wrap
 msgid "\\&B<srand(>[I<expr\\^>]B<)>"
-msgstr ""
+msgstr "\\&B<srand(>[I<expr\\^>]B<)>"
 
 #. type: Plain text
 #: gawk.1:2672
@@ -4014,7 +4057,7 @@ msgstr ""
 #: gawk.1:2677
 #, no-wrap
 msgid "B<asort(>I<s >[B<, >I<d> [B<, >I<how>] ]B<)>"
-msgstr ""
+msgstr "B<asort(>I<s >[B<, >I<d> [B<, >I<how>] ]B<)>"
 
 #. type: Plain text
 #: gawk.1:2716
@@ -4034,7 +4077,7 @@ msgstr ""
 #: gawk.1:2716
 #, no-wrap
 msgid "B<asorti(>I<s >[B<, >I<d> [B<, >I<how>] ]B<)>"
-msgstr ""
+msgstr "B<asorti(>I<s >[B<, >I<d> [B<, >I<how>] ]B<)>"
 
 #. type: Plain text
 #: gawk.1:2735
@@ -4052,7 +4095,7 @@ msgstr ""
 #: gawk.1:2735
 #, no-wrap
 msgid "B<gensub(>I<r>B<, >I<s>B<, >I<h >[B<, >I<t>]B<)>"
-msgstr ""
+msgstr "B<gensub(>I<r>B<, >I<s>B<, >I<h >[B<, >I<t>]B<)>"
 
 #. type: Plain text
 #: gawk.1:2782
@@ -4073,7 +4116,7 @@ msgstr ""
 #: gawk.1:2782
 #, no-wrap
 msgid "B<gsub(>I<r>B<, >I<s >[B<, >I<t>]B<)>"
-msgstr ""
+msgstr "B<gsub(>I<r>B<, >I<s >[B<, >I<t>]B<)>"
 
 #. type: Plain text
 #: gawk.1:2811
@@ -4091,7 +4134,7 @@ msgstr ""
 #: gawk.1:2811
 #, no-wrap
 msgid "B<index(>I<s>B<,>I< t>B<)>"
-msgstr ""
+msgstr "B<index(>I<s>B<,>I< t>B<)>"
 
 #. type: Plain text
 #: gawk.1:2823
@@ -4105,7 +4148,7 @@ msgstr ""
 #: gawk.1:2823
 #, no-wrap
 msgid "B<length(>[I<s>]B<)>"
-msgstr ""
+msgstr "B<length(>[I<s>]B<)>"
 
 #. type: Plain text
 #: gawk.1:2835
@@ -4119,7 +4162,7 @@ msgstr ""
 #: gawk.1:2835
 #, no-wrap
 msgid "B<match(>I<s>B<, >I<r >[B<, >I<a>]B<)>"
-msgstr ""
+msgstr "B<match(>I<s>B<, >I<r >[B<, >I<a>]B<)>"
 
 #. type: Plain text
 #: gawk.1:2852
@@ -4146,7 +4189,7 @@ msgstr ""
 #: gawk.1:2877
 #, no-wrap
 msgid "B<patsplit(>I<s>B<, >I<a >[B<, >I<r> [B<, >I<seps>] ]B<)>"
-msgstr ""
+msgstr "B<patsplit(>I<s>B<, >I<a >[B<, >I<r> [B<, >I<seps>] ]B<)>"
 
 #. type: Plain text
 #: gawk.1:2910
@@ -4164,7 +4207,7 @@ msgstr ""
 #: gawk.1:2910
 #, no-wrap
 msgid "B<split(>I<s>B<, >I<a >[B<, >I<r> [B<, >I<seps>] ]B<)>"
-msgstr ""
+msgstr "B<split(>I<s>B<, >I<a >[B<, >I<r> [B<, >I<seps>] ]B<)>"
 
 #. type: Plain text
 #: gawk.1:2950
@@ -4185,7 +4228,7 @@ msgstr ""
 #: gawk.1:2950
 #, no-wrap
 msgid "B<sprintf(>I<fmt>B<,>I< expr-list>B<)>"
-msgstr ""
+msgstr "B<sprintf(>I<fmt>B<,>I< expr-list>B<)>"
 
 #. type: Plain text
 #: gawk.1:2957
@@ -4196,7 +4239,7 @@ msgstr ""
 #: gawk.1:2957
 #, no-wrap
 msgid "B<strtonum(>I<str>B<)>"
-msgstr ""
+msgstr "B<strtonum(>I<str>B<)>"
 
 #. type: Plain text
 #: gawk.1:2979
@@ -4211,7 +4254,7 @@ msgstr ""
 #: gawk.1:2979
 #, no-wrap
 msgid "B<sub(>I<r>B<, >I<s >[B<, >I<t>]B<)>"
-msgstr ""
+msgstr "B<sub(>I<r>B<, >I<s >[B<, >I<t>]B<)>"
 
 #. type: Plain text
 #: gawk.1:2984
@@ -4222,7 +4265,7 @@ msgstr ""
 #: gawk.1:2984
 #, no-wrap
 msgid "B<substr(>I<s>B<, >I<i >[B<, >I<n>]B<)>"
-msgstr ""
+msgstr "B<substr(>I<s>B<, >I<i >[B<, >I<n>]B<)>"
 
 #. type: Plain text
 #: gawk.1:2996
@@ -4235,7 +4278,7 @@ msgstr ""
 #: gawk.1:2996
 #, no-wrap
 msgid "B<tolower(>I<str>B<)>"
-msgstr ""
+msgstr "B<tolower(>I<str>B<)>"
 
 #. type: Plain text
 #: gawk.1:3004
@@ -4249,7 +4292,7 @@ msgstr ""
 #: gawk.1:3004
 #, no-wrap
 msgid "B<toupper(>I<str>B<)>"
-msgstr ""
+msgstr "B<toupper(>I<str>B<)>"
 
 #. type: Plain text
 #: gawk.1:3012
@@ -4284,7 +4327,7 @@ msgstr ""
 #: gawk.1:3028
 #, no-wrap
 msgid "B<mktime(>I<datespec>B<)>"
-msgstr ""
+msgstr "B<mktime(>I<datespec>B<)>"
 
 #. type: Plain text
 #: gawk.1:3065
@@ -4311,7 +4354,7 @@ msgstr ""
 #: gawk.1:3065
 #, no-wrap
 msgid "B<strftime(>[I<format >[B<, >I<timestamp>[B<, >I<utc-flag>]]]B<)>"
-msgstr ""
+msgstr "B<strftime(>[I<format >[B<, >I<timestamp>[B<, >I<utc-flag>]]]B<)>"
 
 #. type: Plain text
 #: gawk.1:3093
@@ -4331,7 +4374,7 @@ msgstr ""
 #: gawk.1:3093
 #, no-wrap
 msgid "B<systime()>"
-msgstr ""
+msgstr "B<systime()>"
 
 #. type: Plain text
 #: gawk.1:3097
@@ -4359,7 +4402,7 @@ msgstr ""
 #: gawk.1:3106
 #, no-wrap
 msgid "B<and(>I<v1>B<, >I<v2 >[, ...]B<)>"
-msgstr ""
+msgstr "B<and(>I<v1>B<, >I<v2 >[, ...]B<)>"
 
 #. type: Plain text
 #: gawk.1:3110
@@ -4372,7 +4415,7 @@ msgstr ""
 #: gawk.1:3110
 #, no-wrap
 msgid "B<compl(>I<val>B<)>"
-msgstr ""
+msgstr "B<compl(>I<val>B<)>"
 
 #. type: Plain text
 #: gawk.1:3114
@@ -4383,7 +4426,7 @@ msgstr ""
 #: gawk.1:3114
 #, no-wrap
 msgid "B<lshift(>I<val>B<, >I<count>B<)>"
-msgstr ""
+msgstr "B<lshift(>I<val>B<, >I<count>B<)>"
 
 #. type: Plain text
 #: gawk.1:3121
@@ -4394,7 +4437,7 @@ msgstr ""
 #: gawk.1:3121
 #, no-wrap
 msgid "B<or(>I<v1>B<, >I<v2 >[, ...]B<)>"
-msgstr ""
+msgstr "B<or(>I<v1>B<, >I<v2 >[, ...]B<)>"
 
 #. type: Plain text
 #: gawk.1:3125
@@ -4407,7 +4450,7 @@ msgstr ""
 #: gawk.1:3125
 #, no-wrap
 msgid "B<rshift(>I<val>B<, >I<count>B<)>"
-msgstr ""
+msgstr "B<rshift(>I<val>B<, >I<count>B<)>"
 
 #. type: Plain text
 #: gawk.1:3132
@@ -4418,7 +4461,7 @@ msgstr ""
 #: gawk.1:3132
 #, no-wrap
 msgid "B<xor(>I<v1>B<, >I<v2 >[, ...]B<)>"
-msgstr ""
+msgstr "B<xor(>I<v1>B<, >I<v2 >[, ...]B<)>"
 
 #. type: Plain text
 #: gawk.1:3136
@@ -4442,7 +4485,7 @@ msgstr ""
 #: gawk.1:3139
 #, no-wrap
 msgid "B<isarray(>I<x>B<)>"
-msgstr ""
+msgstr "B<isarray(>I<x>B<)>"
 
 #. type: Plain text
 #: gawk.1:3144
@@ -4466,7 +4509,7 @@ msgstr ""
 #: gawk.1:3148
 #, no-wrap
 msgid "B<bindtextdomain(>I<directory >[B<, >I<domain>]B<)>"
-msgstr ""
+msgstr "B<bindtextdomain(>I<directory >[B<, >I<domain>]B<)>"
 
 #. type: Plain text
 #: gawk.1:3160
@@ -4488,7 +4531,7 @@ msgstr ""
 #: gawk.1:3172
 #, no-wrap
 msgid "B<dcgettext(>I<string >[B<, >I<domain >[B<, >I<category>]]B<)>"
-msgstr ""
+msgstr "B<dcgettext(>I<string >[B<, >I<domain >[B<, >I<category>]]B<)>"
 
 #. type: Plain text
 #: gawk.1:3187
@@ -4513,6 +4556,8 @@ msgid ""
 "B<dcngettext(>I<string1>B<, >I<string2>B<, >I<number >[B<, >I<domain >[B<, "
 ">I<category>]]B<)>"
 msgstr ""
+"B<dcngettext(>I<string1>B<, >I<string2>B<, >I<number >[B<, >I<domain >[B<, "
+">I<category>]]B<)>"
 
 #. type: Plain text
 #: gawk.1:3216
@@ -4537,7 +4582,7 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:3230
 msgid "B<function >I<name>B<(>I<parameter list>B<) { >I<statements >B<}>"
-msgstr ""
+msgstr "B<function >I<name>B<(>I<parameter list>B<) { >I<statements >B<}>"
 
 #. type: Plain text
 #: gawk.1:3236
@@ -4567,12 +4612,16 @@ msgid ""
 "\t\\&.\\|.\\|.\n"
 "}>\n"
 msgstr ""
+"B<function  f(p, q,     a, b)\t# a and b are local\n"
+"{\n"
+"\t\\&.\\|.\\|.\n"
+"}>\n"
 
 #. type: Plain text
 #: gawk.1:3251
 #, no-wrap
 msgid "B</abc/\t{ .\\|.\\|. ; f(1, 2) ; .\\|.\\|. }>\n"
-msgstr ""
+msgstr "B</abc/\t{ .\\|.\\|. ; f(1, 2) ; .\\|.\\|. }>\n"
 
 #. type: Plain text
 #: gawk.1:3260
@@ -4618,6 +4667,11 @@ msgid ""
 "\t\\&.\\|.\\|.\n"
 "}>\n"
 msgstr ""
+"B<function myfunc()\n"
+"{\n"
+"\tprint \"myfunc called\"\n"
+"\t\\&.\\|.\\|.\n"
+"}>\n"
 
 #. type: Plain text
 #: gawk.1:3292
@@ -4629,6 +4683,11 @@ msgid ""
 "\t.\\|.\\|.\n"
 "}>\n"
 msgstr ""
+"B<{\t.\\|.\\|.\n"
+"\tthe_func = \"myfunc\"\n"
+"\t@the_func()\t# call through the_func to myfunc\n"
+"\t.\\|.\\|.\n"
+"}>\n"
 
 #. type: Plain text
 #: gawk.1:3297
@@ -4701,7 +4760,7 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:3345
 msgid "B<gawk 'BEGIN { print \"hello, world\" }'>"
-msgstr ""
+msgstr "B<gawk 'BEGIN { print \"hello, world\" }'>"
 
 #. type: Plain text
 #: gawk.1:3351
@@ -4711,7 +4770,7 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:3355
 msgid "B<gawk 'BEGIN { print _\"hello, world\" }'>"
-msgstr ""
+msgstr "B<gawk 'BEGIN { print _\"hello, world\" }'>"
 
 #. type: Plain text
 #: gawk.1:3361
@@ -4729,7 +4788,7 @@ msgstr ""
 #: gawk.1:3364
 #, no-wrap
 msgid "1."
-msgstr ""
+msgstr "1."
 
 #. type: Plain text
 #: gawk.1:3371
@@ -4741,7 +4800,7 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:3375
 msgid "B<BEGIN { TEXTDOMAIN = \"myprog\" }>"
-msgstr ""
+msgstr "B<BEGIN { TEXTDOMAIN = \"myprog\" }>"
 
 #. type: Plain text
 #: gawk.1:3389
@@ -4755,7 +4814,7 @@ msgstr ""
 #: gawk.1:3389
 #, no-wrap
 msgid "2."
-msgstr ""
+msgstr "2."
 
 #. type: Plain text
 #: gawk.1:3392
@@ -4766,7 +4825,7 @@ msgstr ""
 #: gawk.1:3392
 #, no-wrap
 msgid "3."
-msgstr ""
+msgstr "3."
 
 #. type: Plain text
 #: gawk.1:3399
@@ -4779,7 +4838,7 @@ msgstr ""
 #: gawk.1:3399
 #, no-wrap
 msgid "4."
-msgstr ""
+msgstr "4."
 
 #. type: Plain text
 #: gawk.1:3406
@@ -4792,7 +4851,7 @@ msgstr ""
 #: gawk.1:3406
 #, no-wrap
 msgid "5."
-msgstr ""
+msgstr "5."
 
 #. type: Plain text
 #: gawk.1:3411
@@ -4882,7 +4941,7 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:3497
 msgid "B<a = length\t# Holy Algol 60, Batman!>"
-msgstr ""
+msgstr "B<a = length\t# Holy Algol 60, Batman!>"
 
 #. type: Plain text
 #: gawk.1:3501
@@ -4892,12 +4951,12 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:3505
 msgid "B<a = length()>"
-msgstr ""
+msgstr "B<a = length()>"
 
 #. type: Plain text
 #: gawk.1:3507
 msgid "B<a = length($0)>"
-msgstr ""
+msgstr "B<a = length($0)>"
 
 #. type: Plain text
 #: gawk.1:3515
@@ -5306,6 +5365,9 @@ msgid ""
 "I<getuid>(2), I<geteuid>(2), I<getgid>(2), I<getegid>(2), I<getgroups>(2), "
 "I<usleep>(3)"
 msgstr ""
+"I<egrep>(1), I<sed>(1), I<getpid>(2), I<getppid>(2), I<getpgrp>(2), "
+"I<getuid>(2), I<geteuid>(2), I<getgid>(2), I<getegid>(2), I<getgroups>(2), "
+"I<usleep>(3)"
 
 #. type: Plain text
 #: gawk.1:3941
@@ -5321,6 +5383,9 @@ msgid ""
 "of this document is available online at "
 "B<http://www.gnu.org/software/gawk/manual>."
 msgstr ""
+"\\*(EP, Edition 4.1, shipped with the I<gawk> source.  The current version "
+"of this document is available online at "
+"B<http://www.gnu.org/software/gawk/manual>."
 
 #. type: SH
 #: gawk.1:3948
@@ -5341,6 +5406,8 @@ msgid ""
 "B<\tBEGIN\t{ FS = \":\" }\n"
 "\t\t{ print $1 | \"sort\" }>\n"
 msgstr ""
+"B<\tBEGIN\t{ FS = \":\" }\n"
+"\t\t{ print $1 | \"sort\" }>\n"
 
 #. type: Plain text
 #: gawk.1:3958
@@ -5355,6 +5422,8 @@ msgid ""
 "B<\t\t{ nlines++ }\n"
 "\tEND\t{ print nlines }>\n"
 msgstr ""
+"B<\t\t{ nlines++ }\n"
+"\tEND\t{ print nlines }>\n"
 
 #. type: Plain text
 #: gawk.1:3965
@@ -5366,7 +5435,7 @@ msgstr ""
 #: gawk.1:3968
 #, no-wrap
 msgid "B<\t{ print FNR, $0 }>\n"
-msgstr ""
+msgstr "B<\t{ print FNR, $0 }>\n"
 
 #. type: Plain text
 #: gawk.1:3971
@@ -5378,7 +5447,7 @@ msgstr ""
 #: gawk.1:3974
 #, no-wrap
 msgid "B<\t{ print NR, $0 }>\n"
-msgstr ""
+msgstr "B<\t{ print NR, $0 }>\n"
 
 #. type: Plain text
 #: gawk.1:3977
@@ -5394,6 +5463,9 @@ msgid ""
 "\tawk '/myhome.html/ { system(\"nmap \" $1 \"E<gt>E<gt> "
 "logdir/myhome.html\") }'>\n"
 msgstr ""
+"B<\ttail -f access_log |\n"
+"\tawk '/myhome.html/ { system(\"nmap \" $1 \"E<gt>E<gt> "
+"logdir/myhome.html\") }'>\n"
 
 #. type: SH
 #: gawk.1:3983
@@ -5421,6 +5493,9 @@ msgid ""
 "2001, 2002, 2003, 2004, 2005, 2007, 2009, 2010, 2011, 2012, 2013, 2014, 2016 "
 "Free Software Foundation, Inc."
 msgstr ""
+"Copyright \\(co 1989, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, "
+"2001, 2002, 2003, 2004, 2005, 2007, 2009, 2010, 2011, 2012, 2013, 2014, 2016 "
+"Free Software Foundation, Inc."
 
 #. type: Plain text
 #: gawk.1:3996
@@ -5429,6 +5504,9 @@ msgid ""
 "page provided the copyright notice and this permission notice are preserved "
 "on all copies."
 msgstr ""
+"Permission is granted to make and distribute verbatim copies of this manual "
+"page provided the copyright notice and this permission notice are preserved "
+"on all copies."
 
 #. type: Plain text
 #: gawk.1:4007
@@ -5438,6 +5516,10 @@ msgid ""
 "entire resulting derived work is distributed under the terms of a permission "
 "notice identical to this one."
 msgstr ""
+"Permission is granted to copy and distribute modified versions of this "
+"manual page under the conditions for verbatim copying, provided that the "
+"entire resulting derived work is distributed under the terms of a permission "
+"notice identical to this one."
 
 #. type: Plain text
 #: gawk.1:4011
@@ -5447,3 +5529,7 @@ msgid ""
 "versions, except that this permission notice may be stated in a translation "
 "approved by the Foundation."
 msgstr ""
+"Permission is granted to copy and distribute translations of this manual "
+"page into another language, under the above conditions for modified "
+"versions, except that this permission notice may be stated in a translation "
+"approved by the Foundation."

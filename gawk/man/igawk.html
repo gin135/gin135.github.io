@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<title>IGAWK man page</title>
+<meta name="generator" content="roffit">
+<STYLE type="text/css">
+pre {
+  overflow: auto;
+  margin: 0;
+}
+
+P.level0, pre.level0 {
+ padding-left: 2em;
+}
+
+P.level1, pre.level1 {
+ padding-left: 4em;
+}
+
+P.level2, pre.level2 {
+ padding-left: 6em;
+}
+
+span.emphasis {
+ font-style: italic;
+}
+
+span.bold {
+ font-weight: bold;
+}
+
+span.manpage {
+ font-weight: bold;
+}
+
+h2.nroffsh {
+ background-color: #e0e0e0;
+}
+
+span.nroffip {
+ font-weight: bold;
+ font-size: 120%;
+ font-family: monospace;
+}
+
+p.roffit {
+ text-align: center;
+ font-size: 80%;
+}
+</STYLE>
+</head><body>
+
+<p class="level0">
+<p class="level0">
+<p class="level0"><a name=""></a><h2 class="nroffsh">名前</h2>
+<p class="level0">igawk - インクルードファイルを用いる gawk <a name=""></a><h2 class="nroffsh">書式</h2>
+<p class="level0"><span Class="bold">igawk</span> [ all <span Class="emphasis">gawk</span> options ] <span Class="bold">-f</span> <span Class="emphasis">program-file</span> [ <span Class="bold">--</span> ] file ... <br><span Class="bold">igawk</span> [ all <span Class="emphasis">gawk</span> options ] [ <span Class="bold">--</span> ] <span Class="emphasis">program-text</span> file ... <a name=""></a><h2 class="nroffsh">説明</h2>
+<p class="level0"><span Class="emphasis">igawk</span> は、 <span Class="emphasis">gawk</span>(1) に「インクルードファイル」機能を追加する、簡素なシェルスクリプトである。 
+<p class="level0"><span Class="emphasis">igawk</span> で扱う AWK プログラムは <span Class="emphasis">gawk</span> と同じであるが、カレントディレクトリもしくは検索パスディレクトリにあるファイル <span Class="bold">getopt.awk</span> をインクルードする為に、 
+<p class="level1">
+<p class="level1"><span Class="bold">@include getopt.awk</span> 
+<p class="level1">
+<p class="level0">のような行をプログラムに書くことが可能である。 <a name=""></a><h2 class="nroffsh">オプション</h2>
+<p class="level0">AWK 言語および <span Class="emphasis">gawk</span> がサポートするオプションに関する完全な説明は、 <span Class="emphasis">gawk</span>(1) を参照すること。 <a name=""></a><h2 class="nroffsh">例</h2>
+<p class="level0"><pre class="level0">
+<span class="bold">cat &lt;&lt; EOF &gt; test.awk
+@include getopt.awk</span>
+<span class="bold">BEGIN {
+	while (getopt(ARGC, ARGV, "am:q") != -1)
+		...
+}
+EOF</span>
+<span class="bold">igawk -f test.awk</span>
+</pre>
+
+<p class="level0"><a name=""></a><h2 class="nroffsh">関連項目</h2>
+<p class="level0"><span Class="emphasis">gawk</span>(1) 
+<p class="level0"><span Class="emphasis">Effective AWK Programming</span>, Edition 1.0, published by the Free Software Foundation, 1995. 
+<p class="level0">(訳者注: Effective AWK Programming, Edition 1.0 は、古い版の解説書です。最新版は、以下のGNUのWebサイトで公開されています。) 
+<p class="level0"><a href="https://www.gnu.org/software/gawk/manual/">https://www.gnu.org/software/gawk/manual/</a> <a name=""></a><h2 class="nroffsh">著者</h2>
+<p class="level0">Arnold Robbins (<span Class="bold">arnold@skeeve.com</span>). 
+<br><br>
+<hr>
+<p class="roffit">
+
+ This HTML page was made with <a href="http://daniel.haxx.se/projects/roffit/">roffit</a>.
+</body></html>

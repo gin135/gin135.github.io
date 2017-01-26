@@ -5,16 +5,19 @@
 .\"*******************************************************************
 .TH IGAWK 1 "Nov 3 1999" "Free Software Foundation" "Utility Commands"
 .SH 名前
-igawk \- インクルードファイルを用いるgawk
+igawk \- インクルードファイルを用いる gawk
 .SH 書式
 \fBigawk\fP [ all \fIgawk\fP options ] \fB\-f\fP \fIprogram\-file\fP [ \fB\-\^\-\fP ] file
 \&.\^.\^.
 .br
 \fBigawk\fP [ all \fIgawk\fP options ] [ \fB\-\^\-\fP ] \fIprogram\-text\fP file .\^.\^.
 .SH 説明
-\fIIgawk\fPは、\fIgawk\fP(1)に「インクルードファイル」機能を追加する、簡素なシェルスクリプトである。
+\fIigawk\fP は、 \fIgawk\fP(1)
+に「インクルードファイル」機能を追加する、簡素なシェルスクリプトである。
 .PP
-\fIigawk\fPで扱うAWKプログラムは\fIgawk\fPと同じであるが、カレントディレクトリもしくは検索パスディレクトリにあるファイル\fBgetopt.awk\fPをインクルードする為に、
+\fIigawk\fP で扱う AWK プログラムは \fIgawk\fP
+と同じであるが、カレントディレクトリもしくは検索パスディレクトリにあるファイル
+\fBgetopt.awk\fP をインクルードする為に、
 .RS
 .sp
 \fB@include getopt.awk\fP
@@ -22,7 +25,9 @@ igawk \- インクルードファイルを用いるgawk
 .RE
 のような行をプログラムに書くことが可能である。
 .SH オプション
-AWK言語および\fIgawk\fPがサポートするオプションに関する完全な説明は、\fIgawk\fP(1)を参照すること。
+AWK 言語および \fIgawk\fP
+がサポートするオプションに関する完全な説明は、
+\fIgawk\fP(1) を参照すること。
 .SH 例
 .nf
 \fBcat << EOF > test.awk
@@ -41,8 +46,10 @@ EOF\fP
 .PP
 \fIEffective AWK Programming\fP, Edition 1.0, published by the Free Software
 Foundation, 1995.
+
 (訳者注: Effective AWK Programming, Edition 1.0
-は、古い版の解説書です。最新版は、GNUのWebサイトで公開されています。
-.BR https://www.gnu.org/software/gawk/manual/
+は、古い版の解説書です。最新版は、以下のGNUのWebサイトで公開されています。)
+
+https://www.gnu.org/software/gawk/manual/
 .SH 著者
 Arnold Robbins (\fBarnold@skeeve.com\fP).

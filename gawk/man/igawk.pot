@@ -43,7 +43,7 @@ msgstr "名前"
 #. type: Plain text
 #: igawk.1:4
 msgid "igawk - gawk with include files"
-msgstr "igawk - インクルードファイルを用いるgawk"
+msgstr "igawk - インクルードファイルを用いる gawk"
 
 #. type: SH
 #: igawk.1:4
@@ -76,7 +76,7 @@ msgstr "説明"
 msgid ""
 "I<Igawk> is a simple shell script that adds the ability to have ``include "
 "files'' to I<gawk>(1)."
-msgstr "I<Igawk>は、I<gawk>(1)に「インクルードファイル」機能を追加する、簡素なシェルスクリプトである。"
+msgstr "I<igawk> は、 I<gawk>(1) に「インクルードファイル」機能を追加する、簡素なシェルスクリプトである。"
 
 #. type: Plain text
 #: igawk.1:34
@@ -84,7 +84,7 @@ msgid ""
 "AWK programs for I<igawk> are the same as for I<gawk>, except that, in "
 "addition, you may have lines like"
 msgstr ""
-"I<igawk>で扱うAWKプログラムはI<gawk>と同じであるが、カレントディレクトリもしくは検索パスディレクトリにあるファイルB<getopt.awk>をインクルードする為に、"
+"I<igawk> で扱う AWK プログラムは I<gawk> と同じであるが、カレントディレクトリもしくは検索パスディレクトリにあるファイル B<getopt.awk> をインクルードする為に、"
 
 #. type: Plain text
 #: igawk.1:38
@@ -111,7 +111,7 @@ msgid ""
 "See I<gawk>(1)  for a full description of the AWK language and the options "
 "that I<gawk> supports."
 msgstr ""
-"AWK言語およびI<gawk>がサポートするオプションに関する完全な説明は、I<gawk>(1)を参照すること。"
+"AWK 言語および I<gawk> がサポートするオプションに関する完全な説明は、 I<gawk>(1) を参照すること。"
 
 #. type: SH
 #: igawk.1:51
@@ -168,10 +168,10 @@ msgid ""
 "I<Effective AWK Programming>, Edition 1.0, published by the Free Software "
 "Foundation, 1995."
 msgstr ""
-"I<Effective AWK Programming>, Edition 1.0, published by the Free Software Foundation, 1995.\n"
-"(訳者注: Effective AWK Programming, Edition 1.0 は、古い版の解説書です。"
-"最新版は、GNUのWebサイトで公開されています。\n"
-".BR https://www.gnu.org/software/gawk/manual/"
+"I<Effective AWK Programming>, Edition 1.0, published by the Free Software Foundation, 1995."
+"\n\n(訳者注: Effective AWK Programming, Edition 1.0 は、古い版の解説書です。"
+"最新版は、以下のGNUのWebサイトで公開されています。)\n\n"
+"https://www.gnu.org/software/gawk/manual/"
 
 #. type: SH
 #: igawk.1:71

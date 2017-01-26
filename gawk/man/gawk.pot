@@ -210,6 +210,8 @@ msgid ""
 "followed by options for I<gawk> extensions, listed alphabetically by short "
 "option."
 msgstr ""
+"I<Gawk> は、以下のオプションを受け付ける。"
+"初めに標準オプションを、続いて I<gawk> 拡張オプションを、ショートオプションのアルファベット順に記載する。"
 
 #. type: TP
 #: gawk.1:121
@@ -230,6 +232,8 @@ msgid ""
 "from the first command line argument.  Multiple B<-f> (or B<-\\^-file>)  "
 "options may be used."
 msgstr ""
+"コマンドライン上の第一引数の代わりに、ファイル I<program-file> から AWK ソースプログラムを読み込む。"
+"B<-f> (または B<-\\^-file> )オプションは、複数回使用できる。"
 
 #. type: TP
 #: gawk.1:135
@@ -249,6 +253,7 @@ msgid ""
 "Use I<fs> for the input field separator (the value of the B<FS> predefined "
 "variable)."
 msgstr ""
+"入力フィールドセパレータとして I<fs> を用いる( B<FS> の値は定義済み変数である)。"
 
 #. type: TP
 #: gawk.1:147
@@ -269,6 +274,8 @@ msgid ""
 "program begins.  Such variable values are available to the B<BEGIN> rule of "
 "an \\*(AK program."
 msgstr ""
+"プログラム実行前に、値 I<val> を変数 I<var> に割り当てる。"
+"この変数は、 \\*(AK プログラム内の B<BEGIN> ルールでも参照可能である。"
 
 #. type: TP
 #: gawk.1:161
@@ -289,6 +296,9 @@ msgid ""
 "any attention to the locale information when attempting to process strings "
 "as multibyte characters.  The B<-\\^-posix> option overrides this one."
 msgstr ""
+"全入力データを、シングルバイト文字として扱う。"
+"つまり、マルチバイト文字を含んだ文字列を処理する際、ロケール情報を考慮しなくなる。"
+"この機能は、 B<-\\^-posix> オプションが指定された場合も有効になる。"
 
 #. type: TP
 #: gawk.1:174
@@ -313,6 +323,10 @@ msgid ""
 "extensions are recognized.  See B<GNU EXTENSIONS>, below, for more "
 "information."
 msgstr ""
+"I<互換>モードで実行する。"
+"互換モードでは、 I<gawk> は Brian Kernighan の I<awk> と同じように動作する。"
+"\\*(GN 固有拡張は、解釈されない。"
+"詳しくは、下記の B<GNU EXTENSIONS> を参照せよ。"
 
 #. type: TP
 #: gawk.1:193
@@ -332,6 +346,7 @@ msgid ""
 "Print the short version of the \\*(GN copyright information message on the "
 "standard output and exit successfully."
 msgstr ""
+"\\*(GN の短い著作権情報を標準出力へ書き出し、終了ステータス B<0> で終了する。"
 
 #. type: TP
 #: gawk.1:201
@@ -352,6 +367,8 @@ msgid ""
 "I<file>.  If no I<file> is provided, I<gawk> uses a file named "
 "B<awkvars.out> in the current directory."
 msgstr ""
+"グローバル変数を、型と最終値と共にリスト化して、 I<file> に出力する。"
+"I<file> が指定されなかった場合は、カレントディレクトリにファイル B<awkvars.out> として出力する。"
 
 #. type: Plain text
 #: gawk.1:227

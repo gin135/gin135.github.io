@@ -1,15 +1,10 @@
-# SOME DESCRIPTIVE TITLE
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-01-23 19:09+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Tatsunori Aoki <ginjiro.135 at gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -79,7 +74,7 @@ msgstr "名前"
 #. type: Plain text
 #: gawk.1:19
 msgid "gawk - pattern scanning and processing language"
-msgstr ""
+msgstr "gawk - パターン走査・処理言語"
 
 #. type: SH
 #: gawk.1:19
@@ -121,6 +116,10 @@ msgid ""
 "provides the additional features found in the current version of Brian "
 "Kernighan's I<awk> and a number of \\*(GN-specific extensions."
 msgstr ""
+"I<Gawk> は、\\*(GN プロジェクトが実装した、 \\*(AK プログラミング言語処理系である。"
+"本処理系は、 \\*(PX 1003.1 標準での言語の定義に準拠している。"
+"本バージョンは、 Aho, Kernighan, Weinberger の著書 I<The AWK Programming Language> （訳者注: 日本語版『プログラミング言語AWK』）での記述に基づいている。"
+"I<Gawk> は、 Brian Kernighan の最新版 I<awk> の追加機能と、 \\*(GN 固有の拡張機能を備えている。"
 
 #. type: Plain text
 #: gawk.1:61
@@ -129,6 +128,8 @@ msgid ""
 "text (if not supplied via the B<-f> or B<-\\^-file> options), and values to "
 "be made available in the B<ARGC> and B<ARGV> pre-defined \\*(AK variables."
 msgstr ""
+"コマンドラインは、 I<gawk> 自身へのオプション、 \\*(AK プログラム文( B<-f> または B<-\\^-file> オプションが指定されていない場合)、そして残りの引数列で構成される。"
+"残りの引数列は、定義済み AWK 変数 B<ARGC>, B<ARGV> によって利用可能である。"
 
 #. type: Plain text
 #: gawk.1:76
@@ -138,6 +139,9 @@ msgid ""
 "slowly in this mode, and automatically produces an execution profile in the "
 "file B<awkprof.out> when done.  See the B<-\\^-profile> option, below."
 msgstr ""
+"I<gawk> を B<-\\^-profile> オプションを付けて起動した際は、プログラムの実行からプロファイリング統計の収集を開始する。"
+"このモード下では、 I<Gawk> はゆっくりと実行され、実行が完了した際に、 B<awkprof.out> ファイルに実行プロファイルが、自動的に生成される。"
+"下記の B<-\\^-profile> オプションを参照せよ。"
 
 #. type: Plain text
 #: gawk.1:90
@@ -148,6 +152,11 @@ msgid ""
 "for debugging commands.  I<Gawk> can only debug AWK program source provided "
 "with the B<-f> option.  The debugger is documented in \\*(EP."
 msgstr ""
+"I<Gawk> は、デバッガを内蔵している。"
+"対話型デバッグセッションは、コマンドラインに B<-\\^-debug> オプションを指定することで開始できる。"
+"I<gawk> は、 AWK ソースコードを読み込み、デバッグコマンドの入力を促す。"
+"また、 I<Gawk> は、 B<-f> オプションで読み込んだ AWK ソースコードのみ、デバッグ可能である。"
+"デバッガは、 \\*(EP. にて文章化されている。"
 
 #. type: SH
 #: gawk.1:90
@@ -163,6 +172,9 @@ msgid ""
 "while long options start with ``-\\^-''.  Long options are provided for both "
 "\\*(GN-specific features and for \\*(PX-mandated features."
 msgstr ""
+"I<Gawk> のオプションは、伝統的な \\*(PX 形式の一文字オプション、もしくは \\*(GN 形式のロングオプションの、いずれかである。"
+"\\*(PX オプションは単一の ``-'' で始まり、ロングオプションは ``-\\^-'' で始まる。"
+"ロングオプションは、 \\*(GN 固有機能と、 \\*(PX 必須機能の両方で用意されている。"
 
 #. type: Plain text
 #: gawk.1:108
@@ -173,6 +185,9 @@ msgid ""
 "argument.  Long options may be abbreviated, as long as the abbreviation "
 "remains unique."
 msgstr ""
+"I<Gawk> 固有のオプションは、概してロングオプション記法が用いられる。"
+"ロングオプションへの引数は、 オプションと引数を間にスペースを入れずに B<=> 記号で繋ぐか、次のコマンドライン引数として指定する。"
+"省略形が一意であれば、ロングオプションは省略可能である。"
 
 #. type: Plain text
 #: gawk.1:114
@@ -180,6 +195,7 @@ msgid ""
 "Additionally, every long option has a corresponding short option, so that "
 "the option's functionality may be used from within B<#!> executable scripts."
 msgstr ""
+"加えて、全てのロングオプションには対応するショートオプションがあり、オプションの機能は実行スクリプト内のシェバンで使用できる。"
 
 #. type: SH
 #: gawk.1:114

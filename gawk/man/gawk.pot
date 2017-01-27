@@ -578,6 +578,11 @@ msgid ""
 "optional argument of B<invalid>, only warnings about things that are "
 "actually invalid are issued. (This is not fully implemented yet.)"
 msgstr ""
+"他の \\*(AK 実装で動作するか疑わしい、または移植性の無い記述に対して、警告を表示する。"
+"オプション引数に B<fatal> を指定すると、 lint の警告は致命的エラーとなる。"
+"極端ではあるが、このオプションを使うことで、間違いなく綺麗な \\*(AK プログラムの開発が進められるだろう。"
+"オプション引数に B<invalid> を指定すると、実際に無効となっているものだけに対して（エラー種別 B<invalid> もののみという意味？？）、警告が表示される。"
+"（このオプションは、まだ完全に実装されていない）。"
 
 #. type: TP
 #: gawk.1:344
@@ -597,6 +602,8 @@ msgid ""
 "Force arbitrary precision arithmetic on numbers. This option has no effect "
 "if I<gawk> is not compiled to use the GNU MPFR and MP libraries."
 msgstr ""
+"数値に対して、任意精度の算術演算を強制する。"
+"このオプションは、 I<gawk> が GNU MPFR および MP ライブラリを使用するようにコンパイルされていなければ、効果が無い。"
 
 #. type: TP
 #: gawk.1:354
@@ -616,6 +623,8 @@ msgid ""
 "Recognize octal and hexadecimal values in input data.  I<Use this option "
 "with great caution!>"
 msgstr ""
+"入力データ内の8進数と16進数を認識する。"
+"I<このオプションは、最新の注意を払って使用すること！>"
 
 #. type: TP
 #: gawk.1:362
@@ -640,6 +649,8 @@ msgid ""
 "the default behavior, without the full draconian strictness of the "
 "B<-\\^-posix> option."
 msgstr ""
+"入力データの解析時に、 I<gawk> にロケール固有の小数点文字を使うことを強制させる。"
+"POSIX 標準では"
 
 #. type: TP
 #: gawk.1:393

@@ -453,7 +453,105 @@ msgid ""
 "avoid passing in options or source code (!) on the command line from a URL.  "
 "This option disables command-line variable assignments."
 msgstr ""
-""
+"B<-f> オプションに似ているが、このオプションは最後に処理される。"
+"この機能は、実行可能スクリプト、特にCGIアプリケーションにて、URLからコマンドラインにオプションやソースコード(!)を渡さないようにする(訳者注: コマンドインジェクションを防ぐ)ために用いられる。"
+"このオプションは、コマンドラインの変数割り当てを無効化する。"
+
+#. type: TP
+#: gawk.1:271
+#, no-wrap
+msgid "B<-g>"
+msgstr "B<-g>"
+
+#. type: TP
+#: gawk.1:274
+#, no-wrap
+msgid "B<-\\^-gen-pot>"
+msgstr "B<-\\^-gen-pot>"
+
+#. type: Plain text
+#: gawk.1:287
+msgid ""
+"Scan and parse the \\*(AK program, and generate a \\*(GN B<\\&.pot> "
+"(Portable Object Template)  format file on standard output with entries for "
+"all localizable strings in the program.  The program itself is not "
+"executed.  See the \\*(GN I<gettext> distribution for more information on "
+"B<\\&.pot> files."
+msgstr ""
+"\\*(AK プログラムを解析し、プログラム内のローカライズ可能な全文字列のエントリを取得し、標準出力に \\*(GN B<\\&.pot> (Portable Object Template) 形式のファイルを生成する。"
+"プログラム自体は実行されない。"
+"B<\\&.pot> ファイルの詳細な情報は、 \\*(GN I<gettext> のドキュメントを参照せよ。"
+
+#. type: TP
+#: gawk.1:287
+#, no-wrap
+msgid "B<-h>"
+msgstr "B<-h>"
+
+#. type: TP
+#: gawk.1:290
+#, no-wrap
+msgid "B<-\\^-help>"
+msgstr "B<-\\^-help>"
+
+#. type: Plain text
+#: gawk.1:298
+msgid ""
+"Print a relatively short summary of the available options on the standard "
+"output.  (Per the I<GNU Coding Standards>, these options cause an immediate, "
+"successful exit.)"
+msgstr ""
+"利用可能なオプションの概要を、標準出力に表示する。"
+"（ I<GNU コーディング基準> にしたがい、本オプションを指定することで、 \\*(AK は直ちに終了して終了ステータス B<0> を返す。）"
+
+#. type: TP
+#: gawk.1:298
+#, no-wrap
+msgid "B<-i >I<include-file>"
+msgstr "B<-i >I<include-file>"
+
+#. type: TP
+#: gawk.1:301
+#, no-wrap
+msgid "B<-\\^-include>I< include-file>"
+msgstr "B<-\\^-include>I< include-file>"
+
+#. type: Plain text
+#: gawk.1:313
+msgid ""
+"Load an awk source library.  This searches for the library using the "
+"B<AWKPATH> environment variable.  If the initial search fails, another "
+"attempt will be made after appending the B<\\&.awk> suffix.  The file will "
+"be loaded only once (i.e., duplicates are eliminated), and the code does not "
+"constitute the main program source."
+msgstr ""
+"awk ソースライブラリを読み込む。"
+"環境変数 B<AWKPATH> を用いて、ライブラリを検索する。"
+"初めの検索に失敗した場合、 B<<\\&.awk> サフィックスを追加して、再度検索を試みる。"
+"ライブラリは一度だけ読み込まれ（すなわち重複は除去される）、ライブラリのコードはメインプログラムのソースコードに含まれない。"
+
+#. type: TP
+#: gawk.1:313
+#, no-wrap
+msgid "B<-l >I<lib>"
+msgstr "B<-l >I<lib>"
+
+#. type: TP
+#: gawk.1:316
+#, no-wrap
+msgid "B<-\\^-load>I< lib>"
+msgstr "B<-\\^-load>I< lib>"
+
+#. type: Plain text
+#: gawk.1:327
+msgid ""
+"Load a shared library I<lib>.  This searches for the library using the "
+"B<AWKLIBPATH> environment variable.  If the initial search fails, another "
+"attempt will be made after appending the default shared library suffix for "
+"the platform.  The library initialization routine is expected to be named "
+"B<dl_load()>."
+msgstr ""
+"共有ライブラリ I<lib> を読み込む。"
 "環境変数 B<AWKLIBPATH> を用いて、ライブラリを検索する。"
 "初めの検索に失敗した場合、環境標準の共有ライブラリサフィックスを追加して、再度検索を試みる。"
 "ライブラリ初期化ルーチンの名称は、 B<dl_load() である。>"
@@ -480,11 +578,6 @@ msgid ""
 "optional argument of B<invalid>, only warnings about things that are "
 "actually invalid are issued. (This is not fully implemented yet.)"
 msgstr ""
-"他の \\*(AK 実装で動作するか疑わしい、または移植性の無い記述に対して、警告を表示する。"
-"オプション引数に B<fatal> を指定すると、 lint の警告は致命的エラーとなる。"
-"極端ではあるが、このオプションを使うことで、間違いなく綺麗な \\*(AK プログラムの開発が進められるだろう。"
-"オプション引数に B<invalid> を指定すると、実際に無効となっているものだけに対して（エラー種別 B<invalid> もののみという意味？？）、警告が表示される。"
-"（このオプションは、まだ完全に実装されていない）。"
 
 #. type: TP
 #: gawk.1:344
@@ -504,8 +597,6 @@ msgid ""
 "Force arbitrary precision arithmetic on numbers. This option has no effect "
 "if I<gawk> is not compiled to use the GNU MPFR and MP libraries."
 msgstr ""
-"数値に対して、任意精度の算術演算を強制する。"
-"このオプションは、 I<gawk> が GNU MPFR および MP ライブラリを使用するようにコンパイルされていなければ、効果が無い。"
 
 #. type: TP
 #: gawk.1:354
@@ -525,8 +616,6 @@ msgid ""
 "Recognize octal and hexadecimal values in input data.  I<Use this option "
 "with great caution!>"
 msgstr ""
-"入力データ内の8進数と16進数を認識する。"
-"I<このオプションは、最新の注意を払って使用すること！>"
 
 #. type: TP
 #: gawk.1:362
@@ -551,8 +640,6 @@ msgid ""
 "the default behavior, without the full draconian strictness of the "
 "B<-\\^-posix> option."
 msgstr ""
-"入力データの解析時に、 I<gawk> にロケール固有の小数点文字を使うことを強制させる。"
-"POSIX 標準では"
 
 #. type: TP
 #: gawk.1:393

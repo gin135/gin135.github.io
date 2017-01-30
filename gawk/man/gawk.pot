@@ -118,7 +118,7 @@ msgid ""
 msgstr ""
 "I<Gawk> は、\\*(GN プロジェクトが実装した、 \\*(AK プログラミング言語処理系である。"
 "本処理系は、 \\*(PX 1003.1 標準での言語の定義に準拠している。"
-"本バージョンは、 Aho, Kernighan, Weinberger の著書 I<The AWK Programming Language> （訳者注: 日本語版『プログラミング言語AWK』）での記述に基づいている。"
+"本バージョンは、 Aho, Kernighan, Weinberger の著書 I<The AWK Programming Language> (訳者注: 日本語版『プログラミング言語AWK』)での記述に基づいている。"
 "I<Gawk> は、 Brian Kernighan の最新版 I<awk> の追加機能と、 \\*(GN 固有の拡張機能を備えている。"
 
 #. type: Plain text
@@ -382,7 +382,7 @@ msgid ""
 msgstr ""
 "全てのグローバル変数のリストを持つことは、プログラムの誤植を探す良い手掛かりになる。"
 "多くの関数を持つ大規模なプログラムにて、ローカルと意図している変数を、誤って関数がグローバル変数として使用しないためには、このオプションを使うべきである。"
-"（特に、 B<i>, B<j> のような単純な変数名で簡単に起こりうるミスである）。"
+"(特に、 B<i>, B<j> のような単純な変数名で簡単に起こりうるミスである)。"
 
 #. type: TP
 #: gawk.1:227
@@ -405,7 +405,7 @@ msgid ""
 "to execute non-interactively."
 msgstr ""
 "\\*(AK プログラムのデバッギングを有効にする。"
-"デフォルトでは、デバッガはキーボード（標準入力）から、対話的にコマンドを読み込む。"
+"デフォルトでは、デバッガはキーボード(標準入力)から、対話的にコマンドを読み込む。"
 "オプションの I<file> 引数は、デバッガを非対話的に実行させるためのコマンドリストを含むファイルを、指定する。"
 
 #. type: TP
@@ -429,7 +429,7 @@ msgid ""
 "primarily for medium to large \\*(AK programs used in shell scripts."
 msgstr ""
 "I<program-text> を \\*(AK プログラムのソースコードとして用いる。"
-"このオプションは、コマンドラインで入力されたソースコードと、ライブラリ関数（ B<-f> と B<-\\^-file> オプションで使用する）を、容易に混在できるようにする。"
+"このオプションは、コマンドラインで入力されたソースコードと、ライブラリ関数( B<-f> と B<-\\^-file> オプションで使用する)を、容易に混在できるようにする。"
 "この機能は、主にシェルスクリプトで使用される、中～大規模の \\*(AK プログラムを対象としている。"
 
 
@@ -502,7 +502,7 @@ msgid ""
 "successful exit.)"
 msgstr ""
 "利用可能なオプションの概要を、標準出力に表示する。"
-"（ I<GNU コーディング基準> にしたがい、本オプションを指定することで、 \\*(AK は直ちに終了して終了ステータス B<0> を返す。）"
+"( I<GNU コーディング基準> に従い、本オプションを指定することで、 \\*(AK は直ちに終了して終了ステータス B<0> を返す。)"
 
 #. type: TP
 #: gawk.1:298
@@ -528,7 +528,7 @@ msgstr ""
 "awk ソースライブラリを読み込む。"
 "環境変数 B<AWKPATH> を用いて、ライブラリを検索する。"
 "初めの検索に失敗した場合、 B<<\\&.awk> サフィックスを追加して、再度検索を試みる。"
-"ライブラリは一度だけ読み込まれ（すなわち重複は除去される）、ライブラリのコードはメインプログラムのソースコードに含まれない。"
+"ライブラリは一度だけ読み込まれ(すなわち重複は除去される)、ライブラリのコードはメインプログラムのソースコードに含まれない。"
 
 #. type: TP
 #: gawk.1:313
@@ -581,8 +581,8 @@ msgstr ""
 "他の \\*(AK 実装で動作するか疑わしい、または移植性の無い記述に対して、警告を表示する。"
 "オプション引数に B<fatal> を指定すると、 lint の警告は致命的エラーとなる。"
 "極端ではあるが、このオプションを使うことで、間違いなく綺麗な \\*(AK プログラムの開発が進められるだろう。"
-"オプション引数に B<invalid> を指定すると、実際に無効となっているものだけに対して（エラー種別 B<invalid> もののみという意味？？）、警告が表示される。"
-"（このオプションは、まだ完全に実装されていない）。"
+"オプション引数に B<invalid> を指定すると、実際に無効となっているものだけに対して、警告が表示される。"
+"(このオプションは、まだ完全に実装されていない)。"
 
 #. type: TP
 #: gawk.1:344
@@ -650,7 +650,9 @@ msgid ""
 "B<-\\^-posix> option."
 msgstr ""
 "入力データの解析時に、 I<gawk> にロケール固有の小数点文字を使うことを強制させる。"
-"POSIX 標準では"
+"この動作は POSIX 標準では必須であり、 I<gawk> も B<-\\^-posix> が有効な時は同様に振る舞うが、"
+"デフォルトでは従来の動作に従い、ピリオドが小数点文字でないロケールであっても、小数点としてピリオドを使用する。"
+"このオプションは、 B<-\\^-posix> オプションの完全で厳格な厳密さをなしに、デフォルトの動作を上書きする。"
 
 #. type: TP
 #: gawk.1:393
@@ -670,6 +672,8 @@ msgid ""
 "Output a pretty printed version of the program to I<file>.  If no I<file> is "
 "provided, I<gawk> uses a file named B<awkprof.out> in the current directory."
 msgstr ""
+"プログラムの整形された印刷バージョンを I<file> に出力する。"
+"I<file> が与えられなかった場合、 I<gawk> は カレントディレクトリの B<awkprof.out> という名前のファイルを用いる。"
 
 #. type: TP
 #: gawk.1:408
@@ -691,6 +695,9 @@ msgid ""
 "for recursive functions. The I<gawk> maintainer hopes to add additional "
 "optimizations over time."
 msgstr ""
+"プログラムの内部表示の最適化を有効にする。"
+"現状では、単純な定数畳み込みと、末尾再帰のみに、適用される。"
+"I<gawk> メンテナは、最適化を徐々に増やしていきたいと考えている。"
 
 #. type: TP
 #: gawk.1:419
@@ -712,6 +719,9 @@ msgid ""
 "statement in the program in the left margin and function call counts for "
 "each user-defined function."
 msgstr ""
+"プロファイリングセッションを開始し、プロファイリングデータを I<prof-file> に書き込む。"
+"デフォルトでは、プロファイリングデータは B<awkprof.out> である。"
+"プロファイルには、プログラム内の各文の実行回数と、各ユーザ定義関数の呼び出し回数が含まれている。"
 
 #. type: TP
 #: gawk.1:431
@@ -731,6 +741,8 @@ msgid ""
 "This turns on I<compatibility> mode, with the following additional "
 "restrictions:"
 msgstr ""
+"I<互換> モードを有効にする。"
+"互換モードでは、以下の制約が課せられる。"
 
 #. type: TP
 #: gawk.1:441 gawk.1:445 gawk.1:450 gawk.1:456 gawk.1:463 gawk.1:3535 gawk.1:3543 gawk.1:3549 gawk.1:3556 gawk.1:3563 gawk.1:3571 gawk.1:3575 gawk.1:3586 gawk.1:3591 gawk.1:3596 gawk.1:3601 gawk.1:3607 gawk.1:3612 gawk.1:3615 gawk.1:3620 gawk.1:3628 gawk.1:3635 gawk.1:3640 gawk.1:3645 gawk.1:3650 gawk.1:3656 gawk.1:3673 gawk.1:3696
@@ -742,6 +754,7 @@ msgstr "\\(bu"
 #: gawk.1:445
 msgid "B<\\ex> escape sequences are not recognized."
 msgstr ""
+"B<\\ex> エスケープシーケンスを解釈しない。"
 
 #. type: Plain text
 #: gawk.1:450
@@ -749,21 +762,22 @@ msgid ""
 "Only space and tab act as field separators when B<FS> is set to a single "
 "space, newline does not."
 msgstr ""
+"B<FS> が単一の空白に指定された場合、スペースとタブのみがフィールドセパレータとして扱われる。改行はフィールドセパレータとして扱われない。"
 
 #. type: Plain text
 #: gawk.1:456
 msgid "You cannot continue lines after B<?> and B<:>."
-msgstr ""
+msgstr "B<?> および B<:> の後に、行を続けることが出来ない。"
 
 #. type: Plain text
 #: gawk.1:463
 msgid "The synonym B<func> for the keyword B<function> is not recognized."
-msgstr ""
+msgstr "キーワード B<function> の別名 B<func> を認識しない。"
 
 #. type: Plain text
 #: gawk.1:473
 msgid "The operators B<**> and B<**=> cannot be used in place of B<^> and B<^=>."
-msgstr ""
+msgstr "B<^> および B<^=> の代わりに、演算子 B<**> および B<**=> を使用出来ない。"
 
 #. type: TP
 #: gawk.1:474
@@ -787,6 +801,10 @@ msgid ""
 "enabled by default, but this option remains for use with "
 "B<-\\^-traditional>."
 msgstr ""
+"正規表現マッチングで、 I<インターバル表現> を有効にする(下記の B<正規表現> を参照せよ)。"
+"インターバル正規表現は、 \\*AK 言語では伝統的に利用できなかった。"
+"I<awk> と I<egrep> が一貫性を持つように、 \\*PX 標準はインターバル表現を追加した。"
+"この機能はデフォルトで有効になっているが、 B<-\\^-traditional> オプションを使う為に残されている。"
 
 #. type: TP
 #: gawk.1:494
@@ -809,6 +827,10 @@ msgid ""
 "also disabled.  This effectively blocks a script from accessing local "
 "resources (except for the files specified on the command line)."
 msgstr ""
+"I<gawk> をサンドボックスモードで実行する。"
+"B<system()> 関数、 B<getline> を用いた入力リダイレクト、 B<printf> および B<printf> を用いた出力リダイレクト、そして動的拡張の読み込みが無効化される。"
+"(パイプラインを通じた)コマンドの実行も、同様に無効化される。"
+"この機能は、スクリプトがローカルファイル(コマンドラインで指定されたファイルを除く)へアクセスするのを、効果的に防ぐ。"
 
 #. type: TP
 #: gawk.1:512
@@ -828,6 +850,7 @@ msgid ""
 "Provide warnings about constructs that are not portable to the original "
 "version of \\*(UX I<awk>."
 msgstr ""
+"オリジナル版の \\*(UX I<awk> への移植性が無い記述に関して、警告を行う。"
 
 #. type: TP
 #: gawk.1:521
@@ -851,6 +874,10 @@ msgid ""
 "bugs.  (Per the I<GNU Coding Standards>, these options cause an immediate, "
 "successful exit.)"
 msgstr ""
+"実行された I<gawk> のバージョン情報を、標準出力に表示する。"
+"これは主に、システム上の I<gawk> が、 Free Software Foundation が配布している最新版のコピーであるかどうかを知るのに、便利である。"
+"また、バグレポートにも活用できる。"
+"( I<GNU コーディング基準> に従い、本オプションを指定することで、 \\*(AK は直ちに終了して終了ステータス B<0> を返す。)"
 
 #. type: TP
 #: gawk.1:539
@@ -865,6 +892,9 @@ msgid ""
 "\\*(AK program itself to start with a ``-''.  This provides consistency with "
 "the argument parsing convention used by most other \\*(PX programs."
 msgstr ""
+"オプションの終了を表す。"
+"これは、 ``-'' から始まる引数を \\*(AK プログラムに与える際に、有用である。"
+"この機能は、大半の \\*(PX プログラムで用いられている引数解析と、一貫性を保つために実装されている。"
 
 #. type: Plain text
 #: gawk.1:553
@@ -875,6 +905,9 @@ msgid ""
 "array for processing.  This is particularly useful for running \\*(AK "
 "programs via the ``#!'' executable interpreter mechanism."
 msgstr ""
+"互換モードでは、他のオプションは不正だとみなされるか、無視される。"
+"通常の処理では、プログラムテキストがコマンドラインに指定されていれば、未知のオプションは B<ARGV> 配列を通じて \\*(AK プログラムに渡される。"
+"これは、シェバン ``#!'' の仕組みを用いて \\*(AK プログラムを実行する際に、有用である。"
 
 #. type: Plain text
 #: gawk.1:557

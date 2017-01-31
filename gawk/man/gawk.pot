@@ -915,6 +915,7 @@ msgid ""
 "For \\*(PX compatibility, the B<-W> option may be used, followed by the name "
 "of a long option."
 msgstr ""
+"\\*(PX 互換性のため、 B<-W> の後にロングオプションの名称を記述する方法も、使用可能である。"
 
 #. type: SH
 #: gawk.1:557

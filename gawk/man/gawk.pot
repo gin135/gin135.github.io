@@ -929,6 +929,7 @@ msgid ""
 "An \\*(AK program consists of a sequence of pattern-action statements and "
 "optional function definitions."
 msgstr ""
+"\\*(AK プログラムは、一連のパターン・アクション文と、必要に応じて関数定義で構成される。"
 
 #. type: Plain text
 #: gawk.1:564
@@ -963,6 +964,11 @@ msgid ""
 "uses them.  It also provides the ability to mix library functions with "
 "command line programs."
 msgstr ""
+"I<Gawk> は、I<program-file> (複数可)が指定されていればそれらのファイルから、 B<-\\^-source> の引数もしくはオプションでない初めの引数から、プログラムソースを読み込む。"
+"B<-f> および B<-\\^-source> オプションは、複数回使用できる。"
+"I<Gawk> は、全 I<program-file> とコマンドラインで指定したプログラムを連結して、読み込む。"
+"この機能は、新たに作成する \\*(AK プログラムそれぞれにライブラリ関数を埋め込まず、ライブラリを構築する際に有用である。"
+"また、ライブラリ関数とコマンドラインで指定したプログラムを混同して用いることも、可能である。"
 
 #. type: Plain text
 #: gawk.1:600
@@ -971,6 +977,8 @@ msgid ""
 "source files into your program, making library use even easier.  This is "
 "equivalent to using the B<-i> option."
 msgstr ""
+"さらに、 B<@include> で始まる行は、プログラムに他のソースファイルを取り込む為に用いる。この機能によって、ライブラリの利用がより容易になる。"
+"これは、 B<-i> オプションを使用する事と、同等である。"
 
 #. type: Plain text
 #: gawk.1:607
@@ -978,6 +986,8 @@ msgid ""
 "Lines beginning with B<@load> may be used to load shared libraries into your "
 "program.  This is equivalent to using the B<-l> option."
 msgstr ""
+"B<@load> で始まる行は、共有ライブラリをプログラムに読み込む為に用いる。"
+"これは、 B<-l> オプションを使用する事と、同等である。"
 
 #. type: Plain text
 #: gawk.1:623

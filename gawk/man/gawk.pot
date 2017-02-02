@@ -1101,6 +1101,9 @@ msgid ""
 "files.  The behavior is ``undefined'' if they are not.  Most versions of "
 "I<awk> treat a directory on the command line as a fatal error."
 msgstr ""
+"POSIXの規定では、 I<awk> のコマンドラインで指定されるファイルは、テキストファイルでなければならない。"
+"テキストファイル以外が指定された場合の動作は、 ``未定義'' である。"
+"コマンドラインでディレクトリが指定された場合、大半の I<awk> 実装では、致命的なエラーを返す。"
 
 #. type: Plain text
 #: gawk.1:729
@@ -1110,6 +1113,8 @@ msgid ""
 "B<-\\^-posix> or B<-\\^-traditional> options is given, then I<gawk> reverts "
 "to treating directories on the command line as a fatal error."
 msgstr ""
+"I<gawk> バージョン 4.0 からは、コマンドラインでディレクトリが指定された場合は警告を出力するが、それ以外の場合は処理が実行される。"
+"B<-\\^-posix> か B<-\\^-traditional> オプションのどちらかが指定された場合、 I<gawk> はコマンドラインでディレクトリが指定されると、致命的なエラー(終了ステータス B<2> )を返すようになる。"
 
 #. type: SH
 #: gawk.1:729
@@ -1127,6 +1132,7 @@ msgid ""
 "arrays of arrays; see B<Arrays>, below.  Several pre-defined variables are "
 "set as a program runs; these are described as needed and summarized below."
 msgstr ""
+"\\*(AK における変数は動的、すなわち最初に使用された時に生成される。"
 
 #. type: SS
 #: gawk.1:741

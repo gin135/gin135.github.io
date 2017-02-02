@@ -275,7 +275,7 @@ msgid ""
 "an \\*(AK program."
 msgstr ""
 "プログラム実行前に、値 I<val> を変数 I<var> に割り当てる。"
-"この変数は、 \\*(AK プログラム内の B<BEGIN> ルールでも参照可能である。"
+"この変数は、 \\*(AK プログラム内の B<BEGIN> パターンでも参照可能である。"
 
 #. type: TP
 #: gawk.1:161
@@ -999,6 +999,10 @@ msgid ""
 "installed.)  If a file name given to the B<-f> option contains a ``/'' "
 "character, no path search is performed."
 msgstr ""
+"環境変数 B<AWKPATH> は、 B<-f> および B<-i> オプションで指定されたソースファイルを検索する時に使用する検索パスを、指定する。"
+"値が存在しない場合、デフォルトパスは B<\".:/usr/local/share/awk\"> である。"
+"(実際のデフォルトディレクトリは、 I<gawk> のビルド方法およびインストール方法によって異なる。)"
+"B<-f> オプションで指定されたファイル名に ``/'' 文字が含まれている場合、パス検索は実行されない。"
 
 #. type: Plain text
 #: gawk.1:634
@@ -1008,6 +1012,9 @@ msgid ""
 "exist, the default path is B<\"/usr/local/lib/gawk\">.  (The actual "
 "directory may vary, depending upon how I<gawk> was built and installed.)"
 msgstr ""
+"環境変数 B<AWKLIBPATH> は、 B<-l> オプションで指定されたライブラリファイルを検索する時に使用する検索パスを、指定する。"
+"値が存在しない場合、デフォルトパスは B<\".:/usr/local/share/awk\"> である。"
+"(実際のデフォルトディレクトリは、 I<gawk> のビルド方法およびインストール方法によって異なる。)"
 
 #. type: Plain text
 #: gawk.1:657
@@ -1019,6 +1026,12 @@ msgid ""
 "file named in the B<ARGV> array (up to B<ARGV[ARGC]>).  If there are no "
 "files named on the command line, I<gawk> reads the standard input."
 msgstr ""
+"I<Gawk> は、以下の順番で \\(*AK プログラムを実行する。"
+"まず、 B<-v> オプションで指定された全変数の代入が実行される。"
+"次に、プログラムを内部形式にコンパイルする。"
+"そして、 B<BEGIN> パターン(複数可)があれば、実行する。"
+"その後、配列 B<ARGV> ( B<ARGV[ARGC]> まで)で指定された各ファイルを読み込む。"
+"コマンドラインでファイル名が指定されていなければ、 I<gawk> は標準入力を読み込む。"
 
 #. type: Plain text
 #: gawk.1:672
@@ -1031,6 +1044,10 @@ msgid ""
 "fields and records.  It is also useful for controlling state if multiple "
 "passes are needed over a single data file."
 msgstr ""
+"コマンドライン上のファイル名が I<var>B<=>I<val> の形式である場合、変数の代入として扱う。"
+"変数 I<var> は、値 I<val> に設定される。(この処理は、全ての B<BEGIN> パターンが実行された後に、おこなわれる。)"
+"コマンドラインでの変数割当は、フィールドセパレータやレコードセパレータを、 \\*(AK 実行時に動的に変更したい場合に、便利である。"
+"この機能は、単一のデータファイルに対して、セパレータ指定子を変更して複数回実行したい場合にも、有用である。"
 
 #. type: Plain text
 #: gawk.1:678
@@ -1038,6 +1055,7 @@ msgid ""
 "If the value of a particular element of B<ARGV> is empty (B<\"\">), I<gawk> "
 "skips over it."
 msgstr ""
+"B<ARGV> に値が空 (B<\"\">) の要素がある場合、 I<gawk> はその要素を無視して、処理を継続する。"
 
 #. type: Plain text
 #: gawk.1:691
@@ -1047,6 +1065,8 @@ msgid ""
 "I<gawk> executes the code associated with B<ENDFILE> after processing the "
 "file."
 msgstr ""
+"B<BEGINFILE> パターンが存在する場合、 入力ファイル毎に、 I<gawk> は B<BEGINFILE> のアクション部を実行してから、ファイルの中身を処理していく。"
+"同様に、 B<ENDFILE> パターンが存在する場合、ファイルを処理し終わる毎に、 I<gawk> は B<ENDFILE> のアクション部を実行する。"
 
 #. type: Plain text
 #: gawk.1:702
@@ -1056,6 +1076,9 @@ msgid ""
 "I<gawk> executes the associated I<action>.  The patterns are tested in the "
 "order they occur in the program."
 msgstr ""
+"入力レコード毎に、 \\*(AK プログラムのパターンと一致するかどうか、 I<gawk> はマッチングをおこなう。"
+"パターンに一致したレコード毎に、一致したパターンに対応したアクション部を、 I<gawk> は実行する。"
+"パターンマッチングは、プログラム内で記述された順番に、逐次実行される。"
 
 #. type: Plain text
 #: gawk.1:708
@@ -1063,6 +1086,7 @@ msgid ""
 "Finally, after all the input is exhausted, I<gawk> executes the code in the "
 "B<END> rule(s) (if any)."
 msgstr ""
+"最後に、入力を全て処理し終わった後、 B<END> パターンが存在する場合は、 I<gawk> は B<END> のアクション部を実行する。"
 
 #. type: SS
 #: gawk.1:708

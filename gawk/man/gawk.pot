@@ -1132,7 +1132,11 @@ msgid ""
 "arrays of arrays; see B<Arrays>, below.  Several pre-defined variables are "
 "set as a program runs; these are described as needed and summarized below."
 msgstr ""
-"\\*(AK における変数は動的、すなわち最初に使用された時に生成される。"
+"\\*(AK における変数は、動的である。すなわち、最初に使用された時に生成される。"
+"変数型は2種類、文字列と浮動小数点数である。式評価時の状況に応じて、自動的に型推論・型変換がおこなわれる。"
+"また、 \\*(AK では、一次元配列が利用可能である。擬似的にであるが、多次元配列も使用できる。"
+"しかしながら、 I<Gawk> では、本物の二次元配列に対応している(詳細は B<Arrays> を参照せよ)。"
+"プログラムが実行されると、いくつかの定義済み変数が設定される。これらの変数は、以降の文章で、必要に応じて解説する。"
 
 #. type: SS
 #: gawk.1:741
@@ -1154,6 +1158,14 @@ msgid ""
 "always acts as a field separator, in addition to whatever value B<FS> may "
 "have."
 msgstr ""
+"通常、レコードは改行文字によって区切られる。"
+"組み込み変数 B<RS> の値を設定することで、レコードの区切り方法を制御できる。"
+"B<RS> が単一の文字である場合、その文字によってレコードが区切られる。"
+"文字列が設定された場合、 B<RS> は正規表現として扱われる。"
+"この場合、入力のうち、正規表現に一致する文字列で、レコードが区切られる。"
+"ただし、互換性モードでは、 B<RS> に文字列を設定したとしても、初めの文字のみがレコードを区切るために用いられる。"
+"B<RS> が空に設定された場合、レコードは空白行で区切られる。"
+"加えて、 B<FS> の値に関わらず、フィールド区切り文字として、常に改行文字が用いられる。"
 
 #. type: SS
 #: gawk.1:765
@@ -1175,6 +1187,12 @@ msgid ""
 "also affects how fields are split when B<FS> is a regular expression, and "
 "how records are separated when B<RS> is a regular expression."
 msgstr ""
+"入力レコードが読み込まれる毎に、 I<gawk> は B<FS> の値をフィールド区切り文字とし、レコードを I<フィールド> に分割する。"
+"B<FS> が単一の文字である場合、その文字によってフィールドが区切られる。"
+"B<FS> が空である場合、一文字毎に別々のフィールドに区切られる。"
+"B<FS> が文字列である場合、正規表現として扱われる。"
+"特殊な場合として、 I<BS> が単一の空白であるとき、フィールドは連続した空白・タブ・改行によって区切られる(後述の B<POSIX互換> セクションを参照せよ)。"
+"B<注>: B<IGNORECASE> (下記を参照せよ)の値は、 B<FS> や B<RS> が正規表現である場合、フィールド・レコードがどのように分割されるのかに、影響を及ぼす。"
 
 #. type: Plain text
 #: gawk.1:814
@@ -1184,6 +1202,9 @@ msgid ""
 "using the specified widths.  The value of B<FS> is ignored.  Assigning a new "
 "value to B<FS> or B<FPAT> overrides the use of B<FIELDWIDTHS>."
 msgstr ""
+"B<FIELDWIDTHS> 変数が空白で区切られた数字の列である場合、各フィールドは固定長と解釈され、 I<gawk> は指定された幅ごとにフィールドを分割する。"
+"この場合、 B<FS> の値は無視される。"
+"B<FS> もしくは B<FPAT> の値を新たに設定することにより、 B<FIELDWIDTHS> の値は上書きされる(訳者注: B<FIELDWIDTHS> を用いた固定長フィールド分割が無効になる)。"
 
 #. type: Plain text
 #: gawk.1:827
@@ -1194,6 +1215,9 @@ msgid ""
 "themselves, instead of the text that separates the fields.  Assigning a new "
 "value to B<FS> or B<FIELDWIDTHS> overrides the use of B<FPAT>."
 msgstr ""
+"同様に、 B<FPAT> 変数が正規表現を表す文字列に設定された場合、各フィールドはその正規表現に一致するテキストで構成される。"
+"この場合、正規表現はフィールド区切り文字ではなく、フィールド自体を表す事になる。"
+"B<FS> もしくは B<FIELDWIDTHS> の値を新たに設定することにより、 B<FPAT> の値は上書きされる(訳者注: B<FPAT> を用いたフィールド分割が無効になる)。"
 
 #. type: Plain text
 #: gawk.1:835
@@ -1202,6 +1226,9 @@ msgid ""
 "B<$2>, and so on.  B<$0> is the whole record.  Fields need not be referenced "
 "by constants:"
 msgstr ""
+"入力レコード中の各フィールドの値は、 B<$1>, B<$2> といった形式で参照できる。"
+"B<$0> は、レコード全体を表す。"
+"また、フィールドを定数で参照する必要はない。以下に例を示す。"
 
 #. type: Plain text
 #: gawk.1:839
@@ -1216,12 +1243,12 @@ msgstr "B<print $n>"
 #. type: Plain text
 #: gawk.1:845
 msgid "prints the fifth field in the input record."
-msgstr ""
+msgstr "入力レコード中の第5フィールドを表示する。"
 
 #. type: Plain text
 #: gawk.1:849
 msgid "The variable B<NF> is set to the total number of fields in the input record."
-msgstr ""
+msgstr "変数 B<NF> は、入力レコード中のフィールド総数が設定される。"
 
 #. type: Plain text
 #: gawk.1:869
@@ -1235,6 +1262,12 @@ msgid ""
 "values of fields past the new value to be lost, and the value of B<$0> to be "
 "recomputed, with the fields being separated by the value of B<OFS>."
 msgstr ""
+"存在しないフィールド(すなわち B<$NF> 以降のフィールド)を参照した場合、空が得られる。"
+"しかしながら、存在しないフィールドに値を設定する(例えば B<$(NF+2) = 5> )と、 B<NF> の値は増加し、値が空のフィールドが間に作成される。"
+"さらに、 B<$0> の値は、各フィールドの値を B<OFS> で区切ったものとして、再計算される。"
+"負のフィールド番号を参照した場合、致命的なエラー(訳者注: 終了ステータス B<2> )となる。"
+"B<NF> の値を減少させた場合、新たな B<NF> の値を超えるフィールドの値は失われる。"
+"また、 B<$0> の値は、各フィールドの値を B<OFS> で区切ったものとして、再計算される。"
 
 #. type: Plain text
 #: gawk.1:878
@@ -1243,6 +1276,8 @@ msgid ""
 "when B<$0> is referenced.  Similarly, assigning a value to B<$0> causes the "
 "record to be resplit, creating new values for the fields."
 msgstr ""
+"既存のフィールドに値を代入すると、 B<$0> を参照した際、レコード全体が再構築される。"
+"同様に、 B<$0> に値を代入すると、レコードが再分割され、各フィールドに新たな値が作成される。"
 
 #. type: SS
 #: gawk.1:878

@@ -964,7 +964,7 @@ msgid ""
 "uses them.  It also provides the ability to mix library functions with "
 "command line programs."
 msgstr ""
-"I<Gawk> は、I<program-file> (複数可)が指定されていればそれらのファイルから、 B<-\\^-source> の引数もしくはオプションでない初めの引数から、プログラムソースを読み込む。"
+"I<Gawk> は、I<program-file> (複数可)が指定されていればそれらのファイルから、 B<-\\^-source> の引数もしくはオプションでない初めの引数から、ソースプログラムを読み込む。"
 "B<-f> および B<-\\^-source> オプションは、複数回使用できる。"
 "I<Gawk> は、全 I<program-file> とコマンドラインで指定したプログラムを連結して、読み込む。"
 "この機能は、新たに作成する \\*(AK プログラムそれぞれにライブラリ関数を埋め込まず、ライブラリを構築する際に有用である。"
@@ -1288,7 +1288,7 @@ msgstr "組み込み変数"
 #. type: Plain text
 #: gawk.1:882
 msgid "I<Gawk\\^>'s built-in variables are:"
-msgstr ""
+msgstr "I<Gawk> の組み込み変数は、以下のものがある。"
 
 #. type: TP
 #: gawk.1:883
@@ -1302,6 +1302,7 @@ msgid ""
 "The number of command line arguments (does not include options to I<gawk>, "
 "or the program source)."
 msgstr ""
+"コマンドライン引数の個数( I<gawk> へのオプションと、ソースプログラムは含まない)。"
 
 #. type: TP
 #: gawk.1:888
@@ -1312,7 +1313,7 @@ msgstr "B<ARGIND>"
 #. type: Plain text
 #: gawk.1:893
 msgid "The index in B<ARGV> of the current file being processed."
-msgstr ""
+msgstr "現在処理中ファイルの B<ARGV> のインデックス。"
 
 #. type: TP
 #: gawk.1:893
@@ -1327,6 +1328,9 @@ msgid ""
 "1.  Dynamically changing the contents of B<ARGV> can control the files used "
 "for data."
 msgstr ""
+"コマンドライン引数の配列。"
+"配列は、 0 から B<ARGC> - 1 のインデックスを持つ。"
+"B<ARGV> の値を動的に変更することで、データとして用いるファイルを制御できる。"
 
 #. type: TP
 #: gawk.1:902
@@ -1345,6 +1349,12 @@ msgid ""
 "should use binary I/O.  Any other string value is treated as B<\"rw\">, but "
 "generates a warning message."
 msgstr ""
+"入出力における ``バイナリ'' モードの管理フラグ。"
+"非 POSIX システムでは、あらゆるファイル入出力において、 ``バイナリ'' モードを使うように指定される。"
+"数値 1, 2, 3 は、それぞれ入力ファイル、出力ファイル、全ファイルがバイナリ入出力を用いるように指定する。"
+"文字 B<\"r\"> もしくは B<\"w\"> は、それぞれ入力ファイル、出力ファイルがバイナリ入出力を用いるように指定する。"
+"文字 B<\"rw\"> および B<\"wr\"> もまた、それぞれ入力ファイル、出力ファイルがバイナリ入出力を使うようにしている。"
+"上記以外の文字列値は、 <\"rw\"> として扱われるが、警告メッセージが出力される。"
 
 #. type: TP
 #: gawk.1:912
@@ -1355,7 +1365,7 @@ msgstr "B<CONVFMT>"
 #. type: Plain text
 #: gawk.1:915
 msgid "The conversion format for numbers, B<\"%.6g\">, by default."
-msgstr ""
+msgstr "数値の変換フォーマット。デフォルト値は、 B<\"%.6g\"> である。"
 
 #. type: TP
 #: gawk.1:915
@@ -1372,6 +1382,9 @@ msgid ""
 "Changing this array does not affect the environment seen by programs which "
 "I<gawk> spawns via redirection or the B<system()> function."
 msgstr ""
+"現在の環境変数の値を格納した配列。"
+"配列は、環境変数の名称によってインデックス化され、各要素はインデックスに対応する環境変数の値になる(例: B<ENVIRON[\"HOME\"]> の値は、 B<\"/home/arnold\"> )。"
+"この配列を変更しても、 リダイレクトや B<system()> 関数によって I<gawk> が生成したプログラムの実行環境には、影響を及ぼさない。"
 
 #. type: TP
 #: gawk.1:926
@@ -1387,6 +1400,8 @@ msgid ""
 "string describing the error.  The value is subject to translation in "
 "non-English locales."
 msgstr ""
+"B<getline> のリダイレクト、 B<getline> による読み込み、 B<close()> の実行中のいずれかの場合にシステムエラーが発生した際の、エラー内容を示した文字列。"
+"この値は、非英語ロケールでは、翻訳の対象となる。"
 
 #. type: TP
 #: gawk.1:939
@@ -1401,6 +1416,9 @@ msgid ""
 "input into fields of fixed width, instead of using the value of the B<FS> "
 "variable as the field separator.  See B<Fields>, above."
 msgstr ""
+"空白で区切られたフィールド長のリスト。"
+"この変数値が設定された場合、 B<FS> の値を用いてフィールドを分割する代わりに、 I<gawk> は固定長のフィールド分割をおこなう。"
+"前述の B<フィールド> を参照せよ。"
 
 #. type: TP
 #: gawk.1:950
@@ -1415,6 +1433,9 @@ msgid ""
 "command line, the value of B<FILENAME> is ``-''.  However, B<FILENAME> is "
 "undefined inside the B<BEGIN> rule (unless set by B<getline>)."
 msgstr ""
+"処理中の入力ファイル名。"
+"コマンドラインで入力ファイルが指定されていなければ、 B<FILENAME> の値は ``-'' になる。"
+"しかしながら、 B<BEGIN> パターン内での B<FILENAME> の値は、( B<getline> で指定しない限り)未定義である。"
 
 #. type: TP
 #: gawk.1:963
@@ -1425,7 +1446,7 @@ msgstr "B<FNR>"
 #. type: Plain text
 #: gawk.1:966
 msgid "The input record number in the current input file."
-msgstr ""
+msgstr "処理中の入力ファイルにおける、入力レコード番号。"
 
 #. type: TP
 #: gawk.1:966
@@ -1441,6 +1462,9 @@ msgid ""
 "regular expression, instead of using the value of the B<FS> variable as the "
 "field separator.  See B<Fields>, above."
 msgstr ""
+"レコード内のフィールドテキストを表す正規表現。"
+"この値が設定された場合、変数 B<FS> の値をフィールド区切り文字として使用する代わりに、 I<gawk> は入力のうち正規表現と一致する部分を、フィールドの内容自体として分割する。"
+"前述の B<フィールド> を参照せよ。"
 
 #. type: TP
 #: gawk.1:980
@@ -1451,7 +1475,7 @@ msgstr "B<FS>"
 #. type: Plain text
 #: gawk.1:985
 msgid "The input field separator, a space by default.  See B<Fields>, above."
-msgstr ""
+msgstr "入力フィールド区切り文字。デフォルト値は、単一の空白である。前述の B<フィールド> を参照せよ。"
 
 #. type: TP
 #: gawk.1:985
@@ -1466,6 +1490,8 @@ msgid ""
 "user-defined or extension functions in the program.  B<NOTE>: You may not "
 "use the B<delete> statement with the B<FUNCTAB> array."
 msgstr ""
+"プログラム内の全ユーザ定義関数および拡張関数の名称インデックスと、それに対応する値で構成される配列(訳者注: B<FUNCTAB> -> B<func>tion B<tab>le)。"
+"B<注>: 配列 B<FUNCTAB> に対して、 B<delete> 構文を使用することは出来ない。"
 
 #. type: TP
 #: gawk.1:996
@@ -1486,6 +1512,11 @@ msgid ""
 "I<not> affected.  However, the B<asort()> and B<asorti()> functions are "
 "affected."
 msgstr ""
+"正規表現および文字列操作において、大文字・小文字の区別を制御する。"
+"B<IGNORECASE> の値が非 B<0> である場合、パターンにおけるパターンマッチング、 B<FS> および B<FPAT> によるフィールド分割、"
+"B<RS> によるレコード分割、 B<~> および B<!~> による正規表現マッチング、組み込み関数 B<gensub()>, B<gsub()>, B<index()>, B<match()>, "
+"B<patsplit()>, B<split()>, B<sub()> は全て、正規表現処理を実行する際、大文字・小文字の区別を無視する。"
+"B<注>: 配列の添字は影響を受けない。しかし、 関数 B<asort()> および B<asorti()> は影響を受ける。"
 
 #. type: Plain text
 #: gawk.1:1045
@@ -1495,6 +1526,8 @@ msgid ""
 "variables, the initial value of B<IGNORECASE> is zero, so all regular "
 "expression and string operations are normally case-sensitive."
 msgstr ""
+"したがって、 B<IGNORECASE> の値が B<0> でない場合、正規表現 B</aB/> は、文字列 B<\"ab\">, B<\"aB\">, B<\"Ab\">, B<\"AB\"> の全てに一致する。"
+"全ての \\*(AK 変数と同様に、 B<IGNORECASE> の初期値は B<0> であるため、正規表現と文字列操作は全て大文字・小文字を区別する。"
 
 #. type: TP
 #: gawk.1:1045
@@ -1511,6 +1544,10 @@ msgid ""
 "errors, exactly like B<-\\^-lint=fatal>.  Any other true value just prints "
 "warnings."
 msgstr ""
+"\\*(AK プログラム内において、 B<-\\^-lint> オプションの動作を動的に制御するために用いる。"
+"この変数値が真の場合、 I<gawk> は lint 警告を表示する。"
+"値が偽である場合、 lint 警告は表示されない。"
+"文字列 B<\"fatal\"> が割り当てられた場合、 オプションで B<-\\^-lint=fatal> が指定された時と同様に、lint の警告は致命的なエラー扱いになる。"
 
 #. type: TP
 #: gawk.1:1057
@@ -1521,7 +1558,7 @@ msgstr "B<NF>"
 #. type: Plain text
 #: gawk.1:1060
 msgid "The number of fields in the current input record."
-msgstr ""
+msgstr "処理中の入力レコードのフィールド数。"
 
 #. type: TP
 #: gawk.1:1060
@@ -1532,7 +1569,7 @@ msgstr "B<NR>"
 #. type: Plain text
 #: gawk.1:1063
 msgid "The total number of input records seen so far."
-msgstr ""
+msgstr "これまで読み込んだ入力レコード総数。"
 
 #. type: TP
 #: gawk.1:1063
@@ -1543,7 +1580,7 @@ msgstr "B<OFMT>"
 #. type: Plain text
 #: gawk.1:1066
 msgid "The output format for numbers, B<\"%.6g\">, by default."
-msgstr ""
+msgstr "数値の出力フォーマット。デフォルト値は、 B<\"%.6g\"> である。"
 
 #. type: TP
 #: gawk.1:1066
@@ -1554,7 +1591,7 @@ msgstr "B<OFS>"
 #. type: Plain text
 #: gawk.1:1069
 msgid "The output field separator, a space by default."
-msgstr ""
+msgstr "出力時のフィールド区切り文字。デフォルト値は、空白である。"
 
 #. type: TP
 #: gawk.1:1069
@@ -1565,7 +1602,7 @@ msgstr "B<ORS>"
 #. type: Plain text
 #: gawk.1:1072
 msgid "The output record separator, by default a newline."
-msgstr ""
+msgstr "出力時のレコード区切り文字。デフォルト値は、改行である。"
 
 #. type: TP
 #: gawk.1:1072
@@ -1578,7 +1615,7 @@ msgstr "B<PREC>"
 msgid ""
 "The working precision of arbitrary precision floating-point numbers, 53 by "
 "default."
-msgstr ""
+msgstr "任意精度の浮動小数点数の精度。デフォルト値は、 53 である。"
 
 #. type: TP
 #: gawk.1:1076
@@ -1596,6 +1633,12 @@ msgid ""
 "test for these elements.  The following elements are guaranteed to be "
 "available:"
 msgstr ""
+"実行中の \\*(AK プログラムに関する情報を格納した配列。"
+"システムによっては、配列が入れ子になっている場合がある。"
+"その場合、入れ子となっている要素数 I<n> の配列のインデックスは、 B<\"group1\"> から B<\"group>I<n>B<\"> までである。"
+"これは、プロセスが持つ補助的なグループの数である。"
+"入れ子となっている要素にアクセスするには、演算子 B<in> を使用せよ。"
+"B<PROCINFO> の要素として、以下のものが利用可能である。"
 
 #. type: TP
 #: gawk.1:1090
@@ -1606,7 +1649,7 @@ msgstr "B<PROCINFO[\"egid\"]>"
 #. type: Plain text
 #: gawk.1:1095
 msgid "The value of the I<getegid>(2)  system call."
-msgstr ""
+msgstr "システムコール I<getegid>(2) の値。"
 
 #. type: TP
 #: gawk.1:1095
@@ -1617,7 +1660,7 @@ msgstr "B<PROCINFO[\"euid\"]>"
 #. type: Plain text
 #: gawk.1:1100
 msgid "The value of the I<geteuid>(2)  system call."
-msgstr ""
+msgstr "システムコール I<geteuid>(2) の値。"
 
 #. type: TP
 #: gawk.1:1100
@@ -1632,6 +1675,10 @@ msgid ""
 "splitting with B<FPAT> is in effect, or B<\"FIELDWIDTHS\"> if field "
 "splitting with B<FIELDWIDTHS> is in effect."
 msgstr ""
+"フィールド分割方法の種別。"
+"B<FS> によるフィールド分割が有効であるなら B<\"FS\"> が、 B<FPAT> によるフィールド分割が"
+"有効であるなら B<\"FPAT\"> が、 B<FIELDWIDTHS> によるフィールド分割が"
+"有効であるなら B<\"FIELDWIDTHS\"> が、それぞれ設定される。"
 
 #. type: TP
 #: gawk.1:1111
@@ -1642,7 +1689,7 @@ msgstr "B<PROCINFO[\"gid\"]>"
 #. type: Plain text
 #: gawk.1:1116
 msgid "The value of the I<getgid>(2)  system call."
-msgstr ""
+msgstr "システムコール I<getgid>(2) の値。"
 
 #. type: TP
 #: gawk.1:1116
@@ -1659,6 +1706,10 @@ msgid ""
 "program runs.  For each identifier, the value of the element is one of the "
 "following:"
 msgstr ""
+"AWK プログラムで使用されている、全ての識別子の名称でインデックス化された、二次元配列。"
+"各要素の値は、 I<gawk> がプログラムの解析を完了した後の、識別子の種別である。"
+"この配列は、プログラムの実行中は更新されない。"
+"各識別子について、要素の値は次のいずれかである。"
 
 #. type: TP
 #: gawk.1:1127
@@ -1669,7 +1720,7 @@ msgstr "B<\"array\">"
 #. type: Plain text
 #: gawk.1:1130
 msgid "The identifier is an array."
-msgstr ""
+msgstr "配列を表す。"
 
 #. type: TP
 #: gawk.1:1130
@@ -1680,7 +1731,7 @@ msgstr "B<\"builtin\">"
 #. type: Plain text
 #: gawk.1:1133
 msgid "The identifier is a built-in function."
-msgstr ""
+msgstr "組み込み関数を表す。"
 
 #. type: TP
 #: gawk.1:1133
@@ -1691,7 +1742,7 @@ msgstr "B<\"extension\">"
 #. type: Plain text
 #: gawk.1:1139
 msgid "The identifier is an extension function loaded via B<@load> or B<-l>."
-msgstr ""
+msgstr "B<@load> もしくは B<-l> によって読み込まれた、拡張機能を表す。"
 
 #. type: TP
 #: gawk.1:1139
@@ -1702,7 +1753,7 @@ msgstr "B<\"scalar\">"
 #. type: Plain text
 #: gawk.1:1142
 msgid "The identifier is a scalar."
-msgstr ""
+msgstr "スカラを表す。"
 
 #. type: TP
 #: gawk.1:1142
@@ -1716,6 +1767,7 @@ msgid ""
 "The identifier is untyped (could be used as a scalar or array, I<gawk> "
 "doesn't know yet)."
 msgstr ""
+"型なしを表す(スカラもしくは配列として利用可能だが、 I<gawk> はまだ判別していない状態)。"
 
 #. type: TP
 #: gawk.1:1147
@@ -1726,7 +1778,7 @@ msgstr "B<\"user\">"
 #. type: Plain text
 #: gawk.1:1150
 msgid "The identifier is a user-defined function."
-msgstr ""
+msgstr "ユーザ定義関数を表す。"
 
 #. type: TP
 #: gawk.1:1151
@@ -1737,7 +1789,7 @@ msgstr "B<PROCINFO[\"pgrpid\"]>"
 #. type: Plain text
 #: gawk.1:1154
 msgid "The process group ID of the current process."
-msgstr ""
+msgstr "現在のプロセス(訳者注: I<gawk> 自身)のプロセスグループID。"
 
 #. type: TP
 #: gawk.1:1154
@@ -1748,7 +1800,7 @@ msgstr "B<PROCINFO[\"pid\"]>"
 #. type: Plain text
 #: gawk.1:1157
 msgid "The process ID of the current process."
-msgstr ""
+msgstr "現在のプロセス(訳者注: I<gawk> 自身)のプロセスID。"
 
 #. type: TP
 #: gawk.1:1157
@@ -1759,7 +1811,7 @@ msgstr "B<PROCINFO[\"ppid\"]>"
 #. type: Plain text
 #: gawk.1:1160
 msgid "The parent process ID of the current process."
-msgstr ""
+msgstr "現在のプロセス(訳者注: I<gawk> 自身)の親プロセスID。"
 
 #. type: TP
 #: gawk.1:1160
@@ -1770,7 +1822,7 @@ msgstr "B<PROCINFO[\"strftime\"]>"
 #. type: Plain text
 #: gawk.1:1164
 msgid "The default time format string for B<strftime()>."
-msgstr ""
+msgstr "B<strftime()> の時刻書式のデフォルト値。"
 
 #. type: TP
 #: gawk.1:1164
@@ -1781,7 +1833,7 @@ msgstr "B<PROCINFO[\"uid\"]>"
 #. type: Plain text
 #: gawk.1:1169
 msgid "The value of the I<getuid>(2)  system call."
-msgstr ""
+msgstr "システムコール I<getuid>(2) の値。"
 
 #. type: TP
 #: gawk.1:1169
@@ -1792,7 +1844,7 @@ msgstr "B<PROCINFO[\"version\"]>"
 #. type: Plain text
 #: gawk.1:1173
 msgid "the version of I<gawk>."
-msgstr ""
+msgstr "実行中の I<gawk> のバージョン"
 
 #. type: Plain text
 #: gawk.1:1176
@@ -1800,6 +1852,7 @@ msgid ""
 "The following elements are present if loading dynamic extensions is "
 "available:"
 msgstr ""
+"以下の要素は、動的拡張が読み込まれた場合、利用できる。"
 
 #. type: TP
 #: gawk.1:1176
@@ -1810,7 +1863,7 @@ msgstr "B<PROCINFO[\"api_major\"]>"
 #. type: Plain text
 #: gawk.1:1179
 msgid "The major version of the extension API."
-msgstr ""
+msgstr "拡張 API のメジャーバージョン。"
 
 #. type: TP
 #: gawk.1:1179
@@ -1821,7 +1874,7 @@ msgstr "B<PROCINFO[\"api_minor\"]>"
 #. type: Plain text
 #: gawk.1:1182
 msgid "The minor version of the extension API."
-msgstr ""
+msgstr "拡張 API のマイナーバージョン。"
 
 #. type: Plain text
 #: gawk.1:1186
@@ -1829,6 +1882,7 @@ msgid ""
 "The following elements are available if MPFR support is compiled into "
 "I<gawk\\^>:"
 msgstr ""
+"以下の要素は、 I<gawk> が MPFR 拡張を有効にしてコンパイルされている場合、利用できる。"
 
 #. type: TP
 #: gawk.1:1186
@@ -1842,6 +1896,7 @@ msgid ""
 "The version of the GNU MP library used for arbitrary precision number "
 "support in I<gawk>."
 msgstr ""
+"ライブラリ GNU MP のバージョン。"
 
 #. type: TP
 #: gawk.1:1191
@@ -1855,6 +1910,7 @@ msgid ""
 "The version of the GNU MPFR library used for arbitrary precision number "
 "support in I<gawk>."
 msgstr ""
+"ライブラリ GNU MPFR のバージョン。"
 
 #. type: TP
 #: gawk.1:1196
@@ -1868,6 +1924,7 @@ msgid ""
 "The maximum precision supported by the GNU MPFR library for arbitrary "
 "precision floating-point numbers."
 msgstr ""
+"任意精度の浮動小数点数に対して、ライブラリ GNU MPFR がサポートする、最大精度。"
 
 #. type: TP
 #: gawk.1:1200
@@ -1881,11 +1938,12 @@ msgid ""
 "The minimum precision allowed by the GNU MPFR library for arbitrary "
 "precision floating-point numbers."
 msgstr ""
+"任意精度の浮動小数点数に対して、ライブラリ GNU MPFR が許容する、最小精度。"
 
 #. type: Plain text
 #: gawk.1:1209
 msgid "The following elements may set by a program to change I<gawk>'s behavior:"
-msgstr ""
+msgstr "以下の要素は、プログラム内で値を設定することで、 I<gawk> の動作を変更する。"
 
 #. type: TP
 #: gawk.1:1209
@@ -1899,6 +1957,8 @@ msgid ""
 "Use a pseudo-tty for two-way communication with I<command> instead of "
 "setting up two one-way pipes."
 msgstr ""
+"<command> との双方向通信に、パイプの代わりに、疑似端末を利用するかどうかの値。"
+"B<1> を指定すると、パイプの代わりに擬似端末を用いる。"
 
 #. type: TP
 #: gawk.1:1214
@@ -1913,6 +1973,9 @@ msgid ""
 "is a redirection string or a filename. A value of zero or less than zero "
 "means no timeout."
 msgstr ""
+"I<入力>からデータを読み取る際の、タイムアウト値(ミリ秒)。"
+"ここでいうI<入力>は、リダイレクト文字列もしくはファイル名である。"
+"B<0> もしくは B<0> 未満の値は、タイムアウト無しを意味する。"
 
 #. type: TP
 #: gawk.1:1222
@@ -1931,6 +1994,12 @@ msgid ""
 "B<\"@val_num_desc\">, and B<\"@unsorted\">.  The value can also be the name "
 "of any comparison function defined as follows:"
 msgstr ""
+"B<PROCINFO> にこの要素が存在する場合、配列要素を B<for> ループで探索する際の順序を制御する。"
+"使用可能な値は、 B<\"@ind_str_asc\">, B<\"@ind_num_asc\">, B<\"@val_type_asc\">, "
+"B<\"@val_str_asc\">, B<\"@val_num_asc\">, B<\"@ind_str_desc\">, "
+"B<\"@ind_num_desc\">, B<\"@val_type_desc\">, B<\"@val_str_desc\">, "
+"B<\"@val_num_desc\">, B<\"@unsorted\"> である。"
+"これらの値は、次のように定義された、比較関数の名称と考えると良い。"
 
 #. type: Plain text
 #: gawk.1:1248
@@ -1945,6 +2014,8 @@ msgid ""
 "number less than, equal to, or greater than 0, depending on how the elements "
 "of the array are to be ordered."
 msgstr ""
+"ここで、 I<i1> および I<i2> はインデックスであり、 I<v1> および I<v2> は比較される2つの要素に対応する値である。"
+"配列要素の並び順に応じて、 0 未満、 0 と同値、 0 より大のいずれかの値を返す。"
 
 #. type: TP
 #: gawk.1:1263
@@ -1962,6 +2033,13 @@ msgid ""
 "or B<\"z\"> for roundTowardZero, and if your version of GNU MPFR library "
 "supports it, B<\"A\"> or B<\"a\"> for roundTiesToAway."
 msgstr ""
+"数値の任意精度演算に使用する、端数処理モード。"
+"デフォルトでは、 B<\"N\"> (IEEE-754 roundTiesToEven モード)である。"
+"値は、 roundTiesToEven では B<\"N\"> または B<\"n\"> 、"
+"roundTowardPositive では B<\"U\"> または B<\"u\"> 、"
+"roundTowardNegative では B<\"D\"> または B<\"d\"> 、"
+"roundTowardZeroでは B<\"Z\"> または B<\"z\"> が、それぞれ使用可能である。"
+"また、 GNU MPFR ライブラリが有効である場合は、 roundTiesToAway モード、 B<\"A\"> または B<\"a\"> が利用できる。"
 
 #. type: TP
 #: gawk.1:1274
@@ -1972,7 +2050,7 @@ msgstr "B<RS>"
 #. type: Plain text
 #: gawk.1:1277
 msgid "The input record separator, by default a newline."
-msgstr ""
+msgstr "入力レコード区切り文字。デフォルトでは、改行である。"
 
 #. type: TP
 #: gawk.1:1277
@@ -1985,7 +2063,7 @@ msgstr "B<RT>"
 msgid ""
 "The record terminator.  I<Gawk> sets B<RT> to the input text that matched "
 "the character or regular expression specified by B<RS>."
-msgstr ""
+msgstr "レコード末端文字。 I<Gawk> は、 B<RS> で指定された文字、もしくは正規表現にマッチする入力テキストを、 B<RT> に設定する。"
 
 #. type: TP
 #: gawk.1:1286
@@ -1999,6 +2077,9 @@ msgid ""
 "The index of the first character matched by B<match()>; 0 if no match.  "
 "(This implies that character indices start at one.)"
 msgstr ""
+"B<match()> によって一致した、初めの文字の位置。"
+"0 は、一致しなかった事を表す。"
+"(つまり、 B<RSTART> は、 1 から始まることを意味する。)"
 
 #. type: TP
 #: gawk.1:1292
@@ -2009,7 +2090,7 @@ msgstr "B<RLENGTH>"
 #. type: Plain text
 #: gawk.1:1297
 msgid "The length of the string matched by B<match()>; -1 if no match."
-msgstr ""
+msgstr "B<match()> によって一致した文字列の長さ。 -1 は、一致しなかった事を表す。"
 
 #. type: TP
 #: gawk.1:1297
@@ -2023,6 +2104,8 @@ msgid ""
 "The character used to separate multiple subscripts in array elements, by "
 "default B<\"\\e034\">."
 msgstr ""
+"疑似的な多次元配列の添字の、区切り文字。"
+"デフォルトでは、 B<\"\\e034\"> である。"
 
 #. type: TP
 #: gawk.1:1301
@@ -2037,6 +2120,8 @@ msgid ""
 "variables and arrays in the program.  The array may be used for indirect "
 "access to read or write the value of a variable:"
 msgstr ""
+"プログラム内で定義された全てのグローバル変数と配列の名前をインデックス化した配列。"
+"この配列は、変数値の読み書き、間接アクセスに利用できる。"
 
 #. type: Plain text
 #: gawk.1:1313
@@ -2056,6 +2141,8 @@ msgid ""
 "The B<isarray()> function may be used to test if an element in B<SYMTAB> is "
 "an array.  You may not use the B<delete> statement with the B<SYMTAB> array."
 msgstr ""
+"B<SYMTAB> の要素が配列かどうかを判別するには、 B<isarray()> 関数を用いる。"
+"配列 B<SYMTAB> に対して、 B<delete> 構文を使用することは出来ない。"
 
 #. type: TP
 #: gawk.1:1327
@@ -2069,6 +2156,7 @@ msgid ""
 "The text domain of the \\*(AK program; used to find the localized "
 "translations for the program's strings."
 msgstr ""
+"\\*(AK プログラムのテキスト領域。プログラム中の文字列のうち、特定の言語に翻訳されたものを見つけるために用いる。"
 
 #. type: SS
 #: gawk.1:1331

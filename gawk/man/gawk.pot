@@ -1706,7 +1706,7 @@ msgid ""
 "program runs.  For each identifier, the value of the element is one of the "
 "following:"
 msgstr ""
-"AWK プログラムで使用されている、全ての識別子の名称でインデックス化された、二次元配列。"
+"AWK プログラムで使用されている、全ての識別子の名称でインデックス化された、副配列。"
 "各要素の値は、 I<gawk> がプログラムの解析を完了した後の、識別子の種別である。"
 "この配列は、プログラムの実行中は更新されない。"
 "各識別子について、要素の値は次のいずれかである。"
@@ -2174,6 +2174,10 @@ msgid ""
 "variable.  This facility is used to simulate multiply dimensioned arrays.  "
 "For example:"
 msgstr ""
+"配列は、角括弧( B<[> と B<]> )の間の式によって、要素を指定する。"
+"要素に指定した式が、式のリスト( I<expr>, I<expr> .\\|.\\|.)である場合、配列添字は、各式の値(文字列)を組み込み変数 B<SUBSEP> の値で連結した文字列である。"
+"この機能は、多次元配列を擬似的に実現するために用いる。"
+"例:"
 
 #. type: Plain text
 #: gawk.1:1348
@@ -2192,6 +2196,8 @@ msgid ""
 "which is indexed by the string B<\"A\\e034B\\e034C\">.  All arrays in \\*(AK "
 "are associative, i.e., indexed by string values."
 msgstr ""
+"この例では、文字列 B<\"A\\e034B\\e034C\"> でインデックス化された配列 B<x> の要素に、文字列 B<\"hello, world\\en\"> が割り当てられる。"
+"\\*(AK の(一次元・疑似多次元)配列は連想配列、すなわち文字列によってインデックス化される。"
 
 #. type: Plain text
 #: gawk.1:1362
@@ -2199,6 +2205,7 @@ msgid ""
 "The special operator B<in> may be used to test if an array has an index "
 "consisting of a particular value:"
 msgstr ""
+"特殊演算子 B<in> を用いることで、配列内に特定の値(文字列)で構成される要素が存在するかどうかを、判別できる。"
 
 #. type: Plain text
 #: gawk.1:1368
@@ -2213,7 +2220,7 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:1374
 msgid "If the array has multiple subscripts, use B<(i, j) in array>."
-msgstr ""
+msgstr "疑似多次元配列の場合、 B<(i, j) in array> を用いれば良い。"
 
 #. type: Plain text
 #: gawk.1:1385
@@ -2222,6 +2229,8 @@ msgid ""
 "the elements of an array.  However, the B<(i, j) in array> construct only "
 "works in tests, not in B<for> loops."
 msgstr ""
+"B<in> 構文は、 B<for> ループ内で、配列の全要素を処理する際にも利用できる。"
+"しかし、 BB<(i, j) in array> 構文は、 B<for> ループ内では使用できない( B<if> 構文のみ使用できる)。"
 
 #. type: Plain text
 #: gawk.1:1393
@@ -2230,6 +2239,8 @@ msgid ""
 "B<delete> statement may also be used to delete the entire contents of an "
 "array, just by specifying the array name without a subscript."
 msgstr ""
+"B<delete> 構文を用いることで、配列から要素を削除できる。"
+"B<delete> 構文は、添字を付けずに配列名を指定することで、配列全体を削除することも可能である。"
 
 #. type: Plain text
 #: gawk.1:1398
@@ -2237,6 +2248,9 @@ msgid ""
 "I<gawk> supports true multidimensional arrays. It does not require that such "
 "arrays be ``rectangular'' as in C or C++.  For example:"
 msgstr ""
+"I<gawk> では、前述の疑似多次元配列だけでなく、真の多次元配列も実装されている。"
+"この多次元配列は、 C や C++ のように、「矩形」である必要は無い。"
+"以下に例を示す。"
 
 #. type: Plain text
 #: gawk.1:1405
@@ -2258,6 +2272,8 @@ msgid ""
 "second argument to B<split()>).  You can do this by creating an element in "
 "the subarray and then deleting it with the B<delete> statement."
 msgstr ""
+"B<注>: I<gawk> が配列を期待する( B<split()> の第二引数のように)場面では、実際には副配列を渡すことを、明確にする必要がある。"
+"副配列内に要素を作成し、 B<delete> 構文でその要素を削除することで、 I<gawk> に副配列であることを明示できる。"
 
 #. type: SS
 #: gawk.1:1420

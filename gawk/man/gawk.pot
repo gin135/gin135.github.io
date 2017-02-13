@@ -432,7 +432,6 @@ msgstr ""
 "このオプションは、コマンドラインで入力されたソースコードと、ライブラリ関数( B<-f> と B<-\\^-file> オプションで使用する)を、容易に混在できるようにする。"
 "この機能は、主にシェルスクリプトで使用される、中～大規模の \\*(AK プログラムを対象としている。"
 
-
 #. type: TP
 #: gawk.1:256
 #, no-wrap
@@ -1265,7 +1264,7 @@ msgstr ""
 "存在しないフィールド(すなわち B<$NF> 以降のフィールド)を参照した場合、空が得られる。"
 "しかしながら、存在しないフィールドに値を設定する(例えば B<$(NF+2) = 5> )と、 B<NF> の値は増加し、値が空のフィールドが間に作成される。"
 "さらに、 B<$0> の値は、各フィールドの値を B<OFS> で区切ったものとして、再計算される。"
-"負のフィールド番号を参照した場合、致命的なエラー(訳者注: 終了ステータス B<2> )となる。"
+"負のフィールド番号を参照した場合、致命的なエラーとなる。"
 "B<NF> の値を減少させた場合、新たな B<NF> の値を超えるフィールドの値は失われる。"
 "また、 B<$0> の値は、各フィールドの値を B<OFS> で区切ったものとして、再計算される。"
 
@@ -2289,6 +2288,9 @@ msgid ""
 "used in a numeric expression, it will be treated as a number; if used as a "
 "string it will be treated as a string."
 msgstr ""
+"変数およびフィールドのデータ型は、(浮動小数点)数値もしくは文字列である。"
+"変数の型は、状況に応じて適切な方に解釈される。"
+"数値演算で用いられれば数値として、文字列として用いられれば文字列として、解釈される。"
 
 #. type: Plain text
 #: gawk.1:1430
@@ -2296,6 +2298,8 @@ msgid ""
 "To force a variable to be treated as a number, add 0 to it; to force it to "
 "be treated as a string, concatenate it with the null string."
 msgstr ""
+"変数を強制的に数値として扱いたい場合は、変数に 0 を加える。"
+"文字列として扱いたい場合は、空と結合すれば良い。"
 
 #. type: Plain text
 #: gawk.1:1433
@@ -2303,6 +2307,7 @@ msgid ""
 "Uninitialized variables have the numeric value 0 and the string value \"\" "
 "(the null, or empty, string)."
 msgstr ""
+"初期化されていない変数は、数値 0 と文字列 \"\" ( null もしくは 空)の値を持つ。"
 
 #. type: Plain text
 #: gawk.1:1446
@@ -2314,6 +2319,10 @@ msgid ""
 "are floating-point, integral values are I<always> converted as integers.  "
 "Thus, given"
 msgstr ""
+"文字列を数値に変換する際、変換は I<strtod>(3) を用いておこなわれる。"
+"数値は、 B<CONVFMT> の値を書式文字列として用いて、 I<sprintf>(3) によっておこなわれる。"
+"ただし、 \\*(AK における全ての数値は浮動小数点数であるが、整数の文字列を数値に変換する際は、常に整数として変換される。"
+"したがって、次の場合は、"
 
 #. type: Plain text
 #: gawk.1:1453
@@ -2330,7 +2339,7 @@ msgstr ""
 #. type: Plain text
 #: gawk.1:1460
 msgid "the variable B<b> has a string value of B<\"12\"> and not B<\"12.00\">."
-msgstr ""
+msgstr "変数 B<b> は B<\"12.00\"> ではなく、数値 B<\"12\"> に変換される。"
 
 #. type: Plain text
 #: gawk.1:1471
@@ -2341,6 +2350,10 @@ msgid ""
 "I<gawk> must conform to what your locale would expect, be it a comma (,) or "
 "a period (.)."
 msgstr ""
+"B<注意>: POSIX モード( B<-\\^-posix> オプション等)で動作している場合、ロケール設定によって小数点の扱いが異なる可能性があることに、留意せよ。"
+"I<gawk> に与える数値の小数点区切り文字は、コンマ (,) もしくはピリオド (.) の、どちらかである。"
+"自身が使用しているロケールの小数点区切り文字と、一致するようにせよ。"
+
 
 #. type: Plain text
 #: gawk.1:1480
@@ -2352,6 +2365,11 @@ msgid ""
 "string comparison is performed.  Two strings are compared, of course, as "
 "strings."
 msgstr ""
+"I<Gawk> は、以下のようにして変数の比較をおこなう。"
+"2つの変数が数値ならば、数値として比較する。"
+"一方が数値で、他方が「数値文字列」である場合、数値として比較をおこなう。"
+"それ以外の場合、数値が文字列として変換され、文字列比較が実行される。"
+"当然ながら、2つの変数が文字列ならば、文字列として比較する。"
 
 #. type: Plain text
 #: gawk.1:1501
@@ -2363,6 +2381,9 @@ msgid ""
 "numeric strings.  The basic idea is that I<user input>, and only user input, "
 "that looks numeric, should be treated that way."
 msgstr ""
+"B<\"57\"> のような文字列定数は、数値文字列ではなく文字列定数であることに、注意すること。"
+"「数値文字列」の概念は、フィールド、 B<getline> 入力、 B<FILENAME> 、 B<ARGV> 要素、 B<ENVIRON> 要素、数値文字列から B<split()> や B<patsplit()> で生成された配列要素のみに、適用される。"
+"基本的な考え方は、 I<ユーザ入力> 、それも数値に見えるユーザ入力のみが、数値として扱われる。"
 
 #. type: SS
 #: gawk.1:1501

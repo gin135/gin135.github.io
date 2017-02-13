@@ -2389,7 +2389,7 @@ msgstr ""
 #: gawk.1:1501
 #, no-wrap
 msgid "Octal and Hexadecimal Constants"
-msgstr "8進/16進数定数"
+msgstr "8進/16進定数"
 
 #. type: Plain text
 #: gawk.1:1511
@@ -2405,7 +2405,7 @@ msgstr ""
 #: gawk.1:1511
 #, no-wrap
 msgid "String Constants"
-msgstr "文字定数"
+msgstr "文字列定数"
 
 #. type: Plain text
 #: gawk.1:1517
@@ -2414,6 +2414,9 @@ msgid ""
 "double quotes (like B<\"value\">).  Within strings, certain I<escape "
 "sequences> are recognized, as in C.  These are:"
 msgstr ""
+"\\*(AK における文字列定位数は、二重引用符で囲まれた文字列(例: B<\"value\"> )である。"
+"文字列内では、C言語のように、特定の I<エスケープシーケンス> が認識される。"
+"使用できるエスケープシーケンスには、以下のものがある。"
 
 #. type: TP
 #: gawk.1:1518
@@ -2424,7 +2427,7 @@ msgstr "B<\\e\\e>"
 #. type: Plain text
 #: gawk.1:1521
 msgid "A literal backslash."
-msgstr ""
+msgstr "バックスラッシュ文字。"
 
 #. type: TP
 #: gawk.1:1521
@@ -2438,6 +2441,7 @@ msgid ""
 "The ``alert'' character; usually the \\s-1ASCII\\s+1 \\s-1BEL\\s+1 "
 "character."
 msgstr ""
+"「警告」文字。通常は、 \\s-1ASCII\\s+1 \\s-1BEL\\s+1 である。"
 
 #. type: TP
 #: gawk.1:1524
@@ -2448,7 +2452,7 @@ msgstr "B<\\eb>"
 #. type: Plain text
 #: gawk.1:1527
 msgid "Backspace."
-msgstr ""
+msgstr "バックスペース。"
 
 #. type: TP
 #: gawk.1:1527
@@ -2459,7 +2463,7 @@ msgstr "B<\\ef>"
 #. type: Plain text
 #: gawk.1:1530
 msgid "Form-feed."
-msgstr ""
+msgstr "改ページ(フォームフィード)。"
 
 #. type: TP
 #: gawk.1:1530
@@ -2470,7 +2474,7 @@ msgstr "B<\\en>"
 #. type: Plain text
 #: gawk.1:1533
 msgid "Newline."
-msgstr ""
+msgstr "改行。"
 
 #. type: TP
 #: gawk.1:1533
@@ -2481,7 +2485,7 @@ msgstr "B<\\er>"
 #. type: Plain text
 #: gawk.1:1536
 msgid "Carriage return."
-msgstr ""
+msgstr "復帰(キャリッジリターン)。"
 
 #. type: TP
 #: gawk.1:1536
@@ -2492,7 +2496,7 @@ msgstr "B<\\et>"
 #. type: Plain text
 #: gawk.1:1539
 msgid "Horizontal tab."
-msgstr ""
+msgstr "水平タブ。"
 
 #. type: TP
 #: gawk.1:1539
@@ -2503,7 +2507,7 @@ msgstr "B<\\ev>"
 #. type: Plain text
 #: gawk.1:1542
 msgid "Vertical tab."
-msgstr ""
+msgstr "垂直タブ。"
 
 #. type: TP
 #: gawk.1:1542
@@ -2520,6 +2524,10 @@ msgid ""
 "language design by committee.)  E.g., B<\"\\ex1B\"> is the \\s-1ASCII\\s+1 "
 "\\s-1ESC\\s+1 (escape) character."
 msgstr ""
+"B<\\ex> に続く、16進数で表された文字。"
+"ISO C と同様に、 B<\\ex> に続く16進数は、全てエスケープシーケンスの一部だとみなされる。"
+"(この機能から、開発者らによる言語デザインが伺える。)"
+"例えば、 B<\"\\ex1B\"> は、\\s-1ASCII\\s+1 \\s-1ESC\\s+1 (エスケープ)文字として、解釈される。"
 
 #. type: TP
 #: gawk.1:1551
@@ -2534,6 +2542,8 @@ msgid ""
 "digits.  E.g., B<\"\\e033\"> is the \\s-1ASCII\\s+1 \\s-1ESC\\s+1 (escape) "
 "character."
 msgstr ""
+"1桁、2桁、または3桁の8進数で表された文字。"
+"例えば、B<\"\\e033\"> は、 \\s-1ASCII\\s+1 \\s-1ESC\\s+1 (エスケープ)文字である。"
 
 #. type: TP
 #: gawk.1:1556
@@ -2544,7 +2554,7 @@ msgstr "B<\\e>I<c>"
 #. type: Plain text
 #: gawk.1:1560
 msgid "The literal character I<c\\^>."
-msgstr ""
+msgstr "文字 I<c\\^> 。"
 
 #. type: Plain text
 #: gawk.1:1565
@@ -2552,6 +2562,7 @@ msgid ""
 "The escape sequences may also be used inside constant regular expressions "
 "(e.g., B</[\\ \\et\\ef\\en\\er\\ev]/> matches whitespace characters)."
 msgstr ""
+"エスケープシーケンスは、正規表現定数内でも使用できる(例: B</[\\ \\et\\ef\\en\\er\\ev]/> は、空白文字に一致する)。"
 
 #. type: Plain text
 #: gawk.1:1572
@@ -2560,6 +2571,8 @@ msgid ""
 "escape sequences are treated literally when used in regular expression "
 "constants.  Thus, B</a\\e52b/> is equivalent to B</a\\e*b/>."
 msgstr ""
+"互換モードでは、8進および16進のエスケープシーケンスで表された文字は、正規表現定数として使用された場合、対応するエスケープシーケンスとして扱われる。"
+"ゆえに、B</a\\e52b/> は、 B</a\\e*b/> と等価である。"
 
 #. type: SH
 #: gawk.1:1572

@@ -2589,6 +2589,12 @@ msgid ""
 "both.  If the pattern is missing, the action is executed for every single "
 "record of input.  A missing action is equivalent to"
 msgstr ""
+"\\*(AK は、行指向言語である。"
+"始めにパターン、次にアクションが続く。"
+"アクションは、 B<{> と B<}> で括られる。"
+"パターンとアクションは、どちらかを省略することが出来る。"
+"パターンを省略した場合、アクションは全ての入力レコードに対して実行される。"
+"アクションを省略した場合、以下と同等の処理をおこなう。"
 
 #. type: Plain text
 #: gawk.1:1585
@@ -2598,7 +2604,7 @@ msgstr "B<{ print }>"
 #. type: Plain text
 #: gawk.1:1588
 msgid "which prints the entire record."
-msgstr ""
+msgstr "これは、レコード全体を出力する。"
 
 #. type: Plain text
 #: gawk.1:1610
@@ -2611,6 +2617,11 @@ msgid ""
 "following line.  In other cases, a line can be continued by ending it with a "
 "``\\e'', in which case the newline is ignored."
 msgstr ""
+"コメントは、文字 B<#> から始まり、行末まで続く。"
+"空行は、構文を区切るために使用できる。"
+"通常、構文は改行で終了するが、コンマ、 B<{> 、 B<?> 、 B<:> 、 B<&&> 、 B<||> で終わる行の場合、この限りでない。"
+"B<do> や B<else> で終わる行も、構文は自動的に次の行へ続いているものとしてみなされる。"
+"上記以外の文字が行末にあり、構文を継続したい場合は、行末を ``\\e'' にすれば、続く改行を無視し、連続した構文として処理される。"
 
 #. type: Plain text
 #: gawk.1:1616
@@ -2620,6 +2631,8 @@ msgid ""
 "pattern-action pair (the usual case), and to the pattern-action statements "
 "themselves."
 msgstr ""
+"``;'' で区切ることによって、1行に複数の構文を記述可能である。"
+"これは、アクション部の構文だけでなく、パターン・アクションの組を区切る場合にも、利用可能である。"
 
 #. type: SS
 #: gawk.1:1616

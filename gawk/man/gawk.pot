@@ -2398,6 +2398,8 @@ msgid ""
 "source code.  For example, the octal value B<011> is equal to decimal B<9>, "
 "and the hexadecimal value B<0x11> is equal to decimal 17."
 msgstr ""
+"AWK プログラムのソースコードでは、C言語スタイルの8進定数と16進定数が使用できる。"
+"例を挙げると、8進数値 B<011> は10進数値 B<9> に、16進数値 B<0x11> は10進数値 B<17> に等しい。"
 
 #. type: SS
 #: gawk.1:1511

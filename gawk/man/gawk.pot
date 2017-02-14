@@ -2643,7 +2643,7 @@ msgstr "パターン"
 #. type: Plain text
 #: gawk.1:1618
 msgid "\\*(AK patterns may be one of the following:"
-msgstr ""
+msgstr "\\*(AK のパターンは、以下のいずれかである。"
 
 #. type: Plain text
 #: gawk.1:1633
@@ -2687,6 +2687,12 @@ msgid ""
 "with other patterns in pattern expressions.  B<BEGIN> and B<END> patterns "
 "cannot have missing action parts."
 msgstr ""
+"B<BEGIN> と B<END> は、入力に対して比較をおこなわない、特殊なパターンである。"
+"B<BEGIN> パターンが複数ある場合、それぞれのアクション部は結合され、単一の B<BEGIN> パターン内のアクションであるかのように、実行される。"
+"これらのアクションは、全ての入力に先立って実行される。"
+"同様に、全ての B<END> パターンは結合され、全ての入力の処理が完了した(もしくは B<exit> 構文が実行された)後、アクション部が実行される。"
+"B<BEGIN> および B<END> パターンは、パターン式もしくは他のパターンと組み合わせることは出来ない。"
+"また、 B<BEGIN> および B<END> パターンは、アクション部を省略することは出来ない。"
 
 #. type: Plain text
 #: gawk.1:1679
@@ -2699,6 +2705,10 @@ msgid ""
 "should use B<nextfile> to skip it. If that is not done, I<gawk> produces its "
 "usual fatal error for files that cannot be opened."
 msgstr ""
+"B<BEGINFILE> と B<ENDFILE> は、それぞれコマンドラインで指定された各入力ファイルのレコードを読み込む前と、各入力ファイルの最終レコードを読み込んだ後に処理される、特殊なパターンである。"
+"B<BEGINFILE> パターン内でファイルが正常にオープンされた場合、 B<ERRNO> の値は空になる。"
+"B<ERRNO> の値が空でない場合は、ファイルに何らかの問題が発生しているため、 B<nextfile> 構文を用いて処理を飛ばす必要がある。"
+"この例外処理をおこなわないと、オープンできないファイルに対して、 I<gawk> は致命的なエラーを出力する。"
 
 #. type: Plain text
 #: gawk.1:1687
@@ -2707,6 +2717,8 @@ msgid ""
 "executed for each input record that matches the regular expression.  Regular "
 "expressions are the same as those in I<egrep>(1), and are summarized below."
 msgstr ""
+"B</>I<regular expression>B</> (正規表現)パターンの場合、アクション部の処理は、正規表現 B</>I<regular expression>B</> に一致する全てのレコードに対して、実行される。"
+"正規表現の記法は、 I<egrep>(1) のものと同様である。また、後に概要を記す。"
 
 #. type: Plain text
 #: gawk.1:1692
@@ -2715,6 +2727,8 @@ msgid ""
 "section on actions.  These generally test whether certain fields match "
 "certain regular expressions."
 msgstr ""
+"I<relational expression> (関係式)では、後述のアクション節で記す演算子を、使用することができる。"
+"これらの演算子は、大半のものは、特定のフィールドが正規表現に一致するかどうかを調べるために、用いられる。"
 
 #. type: Plain text
 #: gawk.1:1702
@@ -2725,6 +2739,9 @@ msgid ""
 "in most languages, parentheses may be used to change the order of "
 "evaluation."
 msgstr ""
+"演算子 B<&&> 、 B<||> 、 B<!> は、C言語と同様に、それぞれ論理積、論理和、論理否定を表す。"
+"これらはC言語と同じく、短絡評価をおこない、複数のパターン式を結合するために用いられる。"
+"大抵の言語と同様に、丸括弧を使用して、評価順序を変更することが出来る。"
 
 #. type: Plain text
 #: gawk.1:1708
@@ -2733,6 +2750,9 @@ msgid ""
 "is true then the pattern used for testing is the second pattern, otherwise "
 "it is the third.  Only one of the second and third patterns is evaluated."
 msgstr ""
+"B<?\\^:> 演算子(三項演算子)は、C言語の同様の演算子に似た動作をする。"
+"一番目のパターンが真であれば、二番目のパターンを評価し、一番目のパターンが偽であれば、三番目のパターンを評価する。"
+"二番目もしくは三番目のパターンのみが、評価される。"
 
 #. type: Plain text
 #: gawk.1:1718
@@ -2742,6 +2762,9 @@ msgid ""
 "I<pattern1>, and continuing until a record that matches I<pattern2>, "
 "inclusive.  It does not combine with any other sort of pattern expression."
 msgstr ""
+"I<pattern1>B<, >I<pattern2> パターンは、 I<範囲パターン> と呼称する。"
+"このパターンは、 I<pattern1> と一致するレコードから、 I<pattern2> と一致するレコードまでに対して、アクションを実行する。"
+"このパターンは、他のパターンと組み合わせることは出来ない。"
 
 #. type: SS
 #: gawk.1:1718

@@ -3398,6 +3398,9 @@ msgid ""
 "in most languages.  The operators, control statements, and input/output "
 "statements available are patterned after those in C."
 msgstr ""
+"アクション文は、ブレース記号 B<{> と B<}> で囲まれる。"
+"アクション文は、大抵の言語で用いられる、通常の代入、条件・反復構文で構成される。"
+"使用可能な演算子、制御文、入出力文は、 C 言語とほぼ同様である。"
 
 #. type: SS
 #: gawk.1:2018
@@ -3408,7 +3411,7 @@ msgstr "演算子"
 #. type: Plain text
 #: gawk.1:2021
 msgid "The operators in \\*(AK, in order of decreasing precedence, are:"
-msgstr ""
+msgstr "以下、 \\*(AK における演算子を、優先順位が高いものから列挙する。"
 
 #. type: TP
 #: gawk.1:2022
@@ -3419,12 +3422,12 @@ msgstr "B<(>\\&.\\|.\\|.B<)>"
 #. type: Plain text
 #: gawk.1:2025
 msgid "Grouping"
-msgstr ""
+msgstr "グループ化。"
 
 #. type: Plain text
 #: gawk.1:2028
 msgid "Field reference."
-msgstr ""
+msgstr "フィールド参照。"
 
 #. type: TP
 #: gawk.1:2028
@@ -3435,14 +3438,14 @@ msgstr "B<++ -\\^->"
 #. type: Plain text
 #: gawk.1:2031
 msgid "Increment and decrement, both prefix and postfix."
-msgstr ""
+msgstr "インクリメント・デクリメント。前置および後置の両方が可能。"
 
 #. type: Plain text
 #: gawk.1:2035
 msgid ""
 "Exponentiation (B<**> may also be used, and B<**=> for the assignment "
 "operator)."
-msgstr ""
+msgstr "べき乗( B<**> も、等価である。また、代入演算子 B<**=> も使用できる)。"
 
 #. type: TP
 #: gawk.1:2035
@@ -3453,7 +3456,7 @@ msgstr "B<+ - !>"
 #. type: Plain text
 #: gawk.1:2038
 msgid "Unary plus, unary minus, and logical negation."
-msgstr ""
+msgstr "単項プラス、単項マイナス、論理否定。"
 
 #. type: TP
 #: gawk.1:2038
@@ -3464,7 +3467,7 @@ msgstr "B<* / %>"
 #. type: Plain text
 #: gawk.1:2041
 msgid "Multiplication, division, and modulus."
-msgstr ""
+msgstr "乗算、除算、剰余。"
 
 #. type: TP
 #: gawk.1:2041
@@ -3475,7 +3478,7 @@ msgstr "B<+ ->"
 #. type: Plain text
 #: gawk.1:2044
 msgid "Addition and subtraction."
-msgstr ""
+msgstr "加算、減算。"
 
 #. type: TP
 #: gawk.1:2044 gawk.1:2415
@@ -3486,7 +3489,7 @@ msgstr "I<space>"
 #. type: Plain text
 #: gawk.1:2047
 msgid "String concatenation."
-msgstr ""
+msgstr "文字列結合。"
 
 #. type: TP
 #: gawk.1:2047
@@ -3497,7 +3500,7 @@ msgstr "B<|   |&>"
 #. type: Plain text
 #: gawk.1:2054
 msgid "Piped I/O for B<getline>, B<print>, and B<printf>."
-msgstr ""
+msgstr "B<getline>, B<print>, B<printf> のパイプ I/O 。"
 
 #. type: TP
 #: gawk.1:2054
@@ -3508,7 +3511,7 @@ msgstr "B<E<lt> E<gt> E<lt>= E<gt>= != ==>"
 #. type: Plain text
 #: gawk.1:2057
 msgid "The regular relational operators."
-msgstr ""
+msgstr "通常の関係演算子。"
 
 #. type: TP
 #: gawk.1:2057
@@ -3525,6 +3528,11 @@ msgid ""
 "the same meaning as B<(($0 ~ /foo/) ~ >I<exp>B<)>.  This is usually I<not> "
 "what you want."
 msgstr ""
+"正規表現マッチ、否定マッチ。"
+"B<注意>: B<~> もしくは B<!~> 演算子の左辺に、正規表現定数( B</foo/> 等)を用いることは出来ない。"
+"正規表現定数は、右辺のみに用いることが出来る。"
+"正規表現 B</foo/ ~ >I<exp> は、 B<(($0 ~ /foo/) ~ >I<exp>B<)> と等価である。"
+"これは、通常意図するものでは無いだろう。"
 
 #. type: TP
 #: gawk.1:2073
@@ -3535,7 +3543,7 @@ msgstr "B<in>"
 #. type: Plain text
 #: gawk.1:2076
 msgid "Array membership."
-msgstr ""
+msgstr "配列要素。"
 
 #. type: TP
 #: gawk.1:2076
@@ -3546,7 +3554,7 @@ msgstr "B<&&>"
 #. type: Plain text
 #: gawk.1:2079
 msgid "Logical AND."
-msgstr ""
+msgstr "論理積。"
 
 #. type: TP
 #: gawk.1:2079
@@ -3557,7 +3565,7 @@ msgstr "B<||>"
 #. type: Plain text
 #: gawk.1:2082
 msgid "Logical OR."
-msgstr ""
+msgstr "論理和。"
 
 #. type: TP
 #: gawk.1:2082
@@ -3572,6 +3580,11 @@ msgid ""
 ">I<expr3>\\&.  If I<expr1> is true, the value of the expression is I<expr2>, "
 "otherwise it is I<expr3>.  Only one of I<expr2> and I<expr3> is evaluated."
 msgstr ""
+"三項演算。"
+"C 言語と同様に、 I<expr1>B< ? >I<expr2>B< : >I<expr3>\\& の形式を用いる。"
+"I<expr1> が真である場合、式の値は I<expr2> になる。"
+"I<expr1> が偽である場合、式の値は I<expr3> となる。"
+"I<expr2> と I<expr3> は、どちらか一方のみが評価される。"
 
 #. type: TP
 #: gawk.1:2098
@@ -3585,6 +3598,8 @@ msgid ""
 "Assignment.  Both absolute assignment B<(>I<var>B< = >I<value>B<)> and "
 "operator-assignment (the other forms) are supported."
 msgstr ""
+"代入。"
+"絶対代入 B<(>I<var>B< = >I<value>B<)> と演算子代入( B<(>I<var>B< = >I<value>B<)> 以外の形式)が、サポートされている。"
 
 #. type: SS
 #: gawk.1:2103
@@ -3595,7 +3610,7 @@ msgstr "制御構文"
 #. type: Plain text
 #: gawk.1:2107
 msgid "The control statements are as follows:"
-msgstr ""
+msgstr "制御構文は、以下の通りである。"
 
 #. type: Plain text
 #: gawk.1:2126
@@ -3644,7 +3659,7 @@ msgstr "入出力構文"
 #. type: Plain text
 #: gawk.1:2131
 msgid "The input/output statements are as follows:"
-msgstr ""
+msgstr "入出力構文は、以下の通りである。"
 
 #. type: TP
 #: gawk.1:2132

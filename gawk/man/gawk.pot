@@ -118,7 +118,7 @@ msgid ""
 msgstr ""
 "I<Gawk> は、\\*(GN プロジェクトが実装した、 \\*(AK プログラミング言語処理系である。"
 "本処理系は、 \\*(PX 1003.1 標準での言語の定義に準拠している。"
-"本バージョンは、 Aho, Kernighan, Weinberger の著書 I<The AWK Programming Language> (訳者注: 日本語版『プログラミング言語AWK』)での記述に基づいている。"
+"本バージョンは、 Aho, Kernighan, Weinberger の著書 I<The AWK Programming Language> (日本語版『プログラミング言語AWK』)での記述に基づいている。"
 "I<Gawk> は、 Brian Kernighan の最新版 I<awk> の追加機能と、 \\*(GN 固有の拡張機能を備えている。"
 
 #. type: Plain text
@@ -453,7 +453,7 @@ msgid ""
 "This option disables command-line variable assignments."
 msgstr ""
 "B<-f> オプションに似ているが、このオプションは最後に処理される。"
-"この機能は、実行可能スクリプト、特にCGIアプリケーションにて、URLからコマンドラインにオプションやソースコード(!)を渡さないようにする(訳者注: コマンドインジェクションを防ぐ)ために用いられる。"
+"この機能は、実行可能スクリプト、特にCGIアプリケーションにて、URLからコマンドラインにオプションやソースコード(!)を渡さないようにする(コマンドインジェクションを防ぐ)ために用いられる。"
 "このオプションは、コマンドラインの変数割り当てを無効化する。"
 
 #. type: TP
@@ -801,8 +801,8 @@ msgid ""
 "B<-\\^-traditional>."
 msgstr ""
 "正規表現マッチングで、 I<インターバル表現> を有効にする(下記の B<正規表現> を参照せよ)。"
-"インターバル正規表現は、 \\*AK 言語では伝統的に利用できなかった。"
-"I<awk> と I<egrep> が一貫性を持つように、 \\*PX 標準はインターバル表現を追加した。"
+"インターバル正規表現は、 \\*(AK 言語では伝統的に利用できなかった。"
+"I<awk> と I<egrep> が一貫性を持つように、 \\*(PX 標準はインターバル表現を追加した。"
 "この機能はデフォルトで有効になっているが、 B<-\\^-traditional> オプションを使う為に残されている。"
 
 #. type: TP
@@ -1203,7 +1203,7 @@ msgid ""
 msgstr ""
 "B<FIELDWIDTHS> 変数が空白で区切られた数字の列である場合、各フィールドは固定長と解釈され、 I<gawk> は指定された幅ごとにフィールドを分割する。"
 "この場合、 B<FS> の値は無視される。"
-"B<FS> もしくは B<FPAT> の値を新たに設定することにより、 B<FIELDWIDTHS> の値は上書きされる(訳者注: B<FIELDWIDTHS> を用いた固定長フィールド分割が無効になる)。"
+"B<FS> もしくは B<FPAT> の値を新たに設定することにより、 B<FIELDWIDTHS> の値は上書きされる( B<FIELDWIDTHS> を用いた固定長フィールド分割が無効になる)。"
 
 #. type: Plain text
 #: gawk.1:827
@@ -1216,7 +1216,7 @@ msgid ""
 msgstr ""
 "同様に、 B<FPAT> 変数が正規表現を表す文字列に設定された場合、各フィールドはその正規表現に一致するテキストで構成される。"
 "この場合、正規表現はフィールド区切り文字ではなく、フィールド自体を表す事になる。"
-"B<FS> もしくは B<FIELDWIDTHS> の値を新たに設定することにより、 B<FPAT> の値は上書きされる(訳者注: B<FPAT> を用いたフィールド分割が無効になる)。"
+"B<FS> もしくは B<FIELDWIDTHS> の値を新たに設定することにより、 B<FPAT> の値は上書きされる( B<FPAT> を用いたフィールド分割が無効になる)。"
 
 #. type: Plain text
 #: gawk.1:835
@@ -1489,7 +1489,7 @@ msgid ""
 "user-defined or extension functions in the program.  B<NOTE>: You may not "
 "use the B<delete> statement with the B<FUNCTAB> array."
 msgstr ""
-"プログラム内の全ユーザ定義関数および拡張関数の名称インデックスと、それに対応する値で構成される配列(訳者注: B<FUNCTAB> → B<func>tion B<tab>le)。"
+"プログラム内の全ユーザ定義関数および拡張関数の名称インデックスと、それに対応する値で構成される配列( B<FUNCTAB> → B<func>tion B<tab>le)。"
 "B<注>: 配列 B<FUNCTAB> に対して、 B<delete> 構文を使用することは出来ない。"
 
 #. type: TP
@@ -1788,7 +1788,7 @@ msgstr "B<PROCINFO[\"pgrpid\"]>"
 #. type: Plain text
 #: gawk.1:1154
 msgid "The process group ID of the current process."
-msgstr "現在のプロセス(訳者注: I<gawk> 自身)のプロセスグループID。"
+msgstr "現在のプロセス( I<gawk> 自身)のプロセスグループID。"
 
 #. type: TP
 #: gawk.1:1154
@@ -1799,7 +1799,7 @@ msgstr "B<PROCINFO[\"pid\"]>"
 #. type: Plain text
 #: gawk.1:1157
 msgid "The process ID of the current process."
-msgstr "現在のプロセス(訳者注: I<gawk> 自身)のプロセスID。"
+msgstr "現在のプロセス( I<gawk> 自身)のプロセスID。"
 
 #. type: TP
 #: gawk.1:1157
@@ -1810,7 +1810,7 @@ msgstr "B<PROCINFO[\"ppid\"]>"
 #. type: Plain text
 #: gawk.1:1160
 msgid "The parent process ID of the current process."
-msgstr "現在のプロセス(訳者注: I<gawk> 自身)の親プロセスID。"
+msgstr "現在のプロセス( I<gawk> 自身)の親プロセスID。"
 
 #. type: TP
 #: gawk.1:1160
@@ -2062,7 +2062,7 @@ msgstr "B<RT>"
 msgid ""
 "The record terminator.  I<Gawk> sets B<RT> to the input text that matched "
 "the character or regular expression specified by B<RS>."
-msgstr "レコード末端文字。 I<Gawk> は、 B<RS> で指定された文字、もしくは正規表現にマッチする入力テキストを、 B<RT> に設定する。"
+msgstr "レコード末端文字。 I<Gawk> は、 B<RS> で指定された文字、もしくは正規表現に一致する入力テキストを、 B<RT> に設定する。"
 
 #. type: TP
 #: gawk.1:1286
@@ -2778,6 +2778,8 @@ msgid ""
 "Regular expressions are the extended kind found in I<egrep>.  They are "
 "composed of characters as follows:"
 msgstr ""
+"AWK の正規表現は、 I<egrep> と同様に、拡張正規表現である。"
+"拡張正規表現は、以下の要素で構成される。"
 
 #. type: TP
 #: gawk.1:1722
@@ -2788,7 +2790,7 @@ msgstr "I<c>"
 #. type: Plain text
 #: gawk.1:1726
 msgid "Matches the non-metacharacter I<c>."
-msgstr ""
+msgstr "非メタ文字の I<c> に一致する。"
 
 #. type: TP
 #: gawk.1:1726
@@ -2799,7 +2801,7 @@ msgstr "I<\\ec>"
 #. type: Plain text
 #: gawk.1:1730
 msgid "Matches the literal character I<c>."
-msgstr ""
+msgstr "リテラル文字 I<c> に一致する。"
 
 #. type: TP
 #: gawk.1:1730
@@ -2810,7 +2812,7 @@ msgstr "B<.>"
 #. type: Plain text
 #: gawk.1:1735
 msgid "Matches any character I<including> newline."
-msgstr ""
+msgstr "改行を I<含む> 任意の一文字に一致する。"
 
 #. type: TP
 #: gawk.1:1735 gawk.1:2031
@@ -2821,7 +2823,7 @@ msgstr "B<^>"
 #. type: Plain text
 #: gawk.1:1738
 msgid "Matches the beginning of a string."
-msgstr ""
+msgstr "文字列の先頭に一致する。"
 
 #. type: TP
 #: gawk.1:1738 gawk.1:2025
@@ -2832,7 +2834,7 @@ msgstr "B<$>"
 #. type: Plain text
 #: gawk.1:1741
 msgid "Matches the end of a string."
-msgstr ""
+msgstr "文字列の末端に一致する。"
 
 #. type: TP
 #: gawk.1:1741
@@ -2846,6 +2848,7 @@ msgid ""
 "A character list: matches any of the characters I<abc.\\|.\\|.>.  You may "
 "include a range of characters by separating them with a dash."
 msgstr ""
+"文字リスト。 I<abc.\\|.\\|.> のいずれか一文字に一致する。文字をダッシュ B<-> で区切ることで、特定範囲の文字を指定可能である。"
 
 #. type: TP
 #: gawk.1:1746
@@ -2856,7 +2859,7 @@ msgstr "B<[^>I<abc.\\|.\\|.>B<]>"
 #. type: Plain text
 #: gawk.1:1750
 msgid "A negated character list: matches any character except I<abc.\\|.\\|.>."
-msgstr ""
+msgstr "否定文字リスト。 I<abc.\\|.\\|.> を除いた、任意の一文字に一致する。"
 
 #. type: TP
 #: gawk.1:1750
@@ -2867,7 +2870,7 @@ msgstr "I<r1>B<|>I<r2>"
 #. type: Plain text
 #: gawk.1:1756
 msgid "Alternation: matches either I<r1> or I<r2>."
-msgstr ""
+msgstr "選言。 I<r1> もしくは I<r2> のどちらかを満たす文字列に一致する。"
 
 #. type: TP
 #: gawk.1:1756
@@ -2878,7 +2881,7 @@ msgstr "I<r1r2>"
 #. type: Plain text
 #: gawk.1:1762
 msgid "Concatenation: matches I<r1>, and then I<r2>."
-msgstr ""
+msgstr "連言。 I<r1> かつ I<r2> を満たす文字列に一致する。"
 
 #. type: TP
 #: gawk.1:1762
@@ -2889,7 +2892,7 @@ msgstr "I<r\\^>B<+>"
 #. type: Plain text
 #: gawk.1:1766
 msgid "Matches one or more I<r\\^>'s."
-msgstr ""
+msgstr "I<r\\^> が1回以上続く文字列に一致する。"
 
 #. type: TP
 #: gawk.1:1766
@@ -2900,7 +2903,7 @@ msgstr "I<r>B<*>"
 #. type: Plain text
 #: gawk.1:1770
 msgid "Matches zero or more I<r\\^>'s."
-msgstr ""
+msgstr "I<r\\^> が0回以上続く文字列に一致する。"
 
 #. type: TP
 #: gawk.1:1770
@@ -2911,7 +2914,7 @@ msgstr "I<r\\^>B<?>"
 #. type: Plain text
 #: gawk.1:1774
 msgid "Matches zero or one I<r\\^>'s."
-msgstr ""
+msgstr "I<r\\^> が0回もしくは1回出現する文字列に一致する。"
 
 #. type: TP
 #: gawk.1:1774
@@ -2922,7 +2925,7 @@ msgstr "B<(>I<r>B<)>"
 #. type: Plain text
 #: gawk.1:1778
 msgid "Grouping: matches I<r>."
-msgstr ""
+msgstr "グループ化。 I<r> に一致する。"
 
 #. type: TP
 #: gawk.1:1778
@@ -2951,6 +2954,10 @@ msgid ""
 "repeated I<n> to I<m> times.  If there is one number followed by a comma, "
 "then I<r> is repeated at least I<n> times."
 msgstr ""
+"インターバル表現。波括弧 B<{}> 内に1つもしくは2つの数値を指定する。"
+"数値が1つの場合、直前の正規表現 I<r> を I<n> 回繰り返すことを表す。"
+"2つの数値がコンマで区切られている場合、 I<r> を I<n> から I<m> 回繰り返すことを表す。"
+"1つの数値に続いてコンマを記載した場合、 I<r> を最低 I<n> 回繰り返すことを表す。"
 
 #. type: TP
 #: gawk.1:1805
@@ -2961,7 +2968,7 @@ msgstr "B<\\ey>"
 #. type: Plain text
 #: gawk.1:1809
 msgid "Matches the empty string at either the beginning or the end of a word."
-msgstr ""
+msgstr "単語の先頭もしくは末尾の空白文字列に一致する。"
 
 #. type: TP
 #: gawk.1:1809
@@ -2972,7 +2979,7 @@ msgstr "B<\\eB>"
 #. type: Plain text
 #: gawk.1:1812
 msgid "Matches the empty string within a word."
-msgstr ""
+msgstr "単語中の空白文字列に一致する。"
 
 #. type: TP
 #: gawk.1:1812
@@ -2983,7 +2990,7 @@ msgstr "B<\\eE<lt>>"
 #. type: Plain text
 #: gawk.1:1815
 msgid "Matches the empty string at the beginning of a word."
-msgstr ""
+msgstr "単語の先頭の空白文字列に一致する。"
 
 #. type: TP
 #: gawk.1:1815
@@ -2994,7 +3001,7 @@ msgstr "B<\\eE<gt>>"
 #. type: Plain text
 #: gawk.1:1818
 msgid "Matches the empty string at the end of a word."
-msgstr ""
+msgstr "単語の末尾の空白文字列に一致する。"
 
 #. type: TP
 #: gawk.1:1818
@@ -3005,7 +3012,7 @@ msgstr "B<\\es>"
 #. type: Plain text
 #: gawk.1:1821
 msgid "Matches any whitespace character."
-msgstr ""
+msgstr "空白一文字に一致する。"
 
 #. type: TP
 #: gawk.1:1821
@@ -3016,7 +3023,7 @@ msgstr "B<\\eS>"
 #. type: Plain text
 #: gawk.1:1824
 msgid "Matches any nonwhitespace character."
-msgstr ""
+msgstr "空白以外の一文字に一致する。"
 
 #. type: TP
 #: gawk.1:1824
@@ -3027,7 +3034,7 @@ msgstr "B<\\ew>"
 #. type: Plain text
 #: gawk.1:1827
 msgid "Matches any word-constituent character (letter, digit, or underscore)."
-msgstr ""
+msgstr "任意の単語構成文字(アルファベット、数値、アンダースコア)に一致する。"
 
 #. type: TP
 #: gawk.1:1827
@@ -3038,7 +3045,7 @@ msgstr "B<\\eW>"
 #. type: Plain text
 #: gawk.1:1830
 msgid "Matches any character that is not word-constituent."
-msgstr ""
+msgstr "単語構成文字以外の一文字に一致する。"
 
 #. type: TP
 #: gawk.1:1830
@@ -3049,7 +3056,7 @@ msgstr "B<\\e`>"
 #. type: Plain text
 #: gawk.1:1833
 msgid "Matches the empty string at the beginning of a buffer (string)."
-msgstr ""
+msgstr "バッファ(文字列)先頭の空白文字列に一致する。"
 
 #. type: TP
 #: gawk.1:1833
@@ -3060,7 +3067,7 @@ msgstr "B<\\e'>"
 #. type: Plain text
 #: gawk.1:1836
 msgid "Matches the empty string at the end of a buffer."
-msgstr ""
+msgstr "バッファ末尾の空白文字列に一致する。"
 
 #. type: Plain text
 #: gawk.1:1840
@@ -3068,6 +3075,7 @@ msgid ""
 "The escape sequences that are valid in string constants (see B<String "
 "Constants>)  are also valid in regular expressions."
 msgstr ""
+"文字列定数( B<文字列定数> を参照せよ)で用いることが出来るエスケープシーケンスは、正規表現中でも使用可能である。"
 
 #. type: Plain text
 #: gawk.1:1848
@@ -3079,6 +3087,10 @@ msgid ""
 "set.  For example, the notion of what is an alphabetic character differs in "
 "the USA and in France."
 msgstr ""
+"I<文字クラス> は、 \\*(PX 標準で導入された機能である。"
+"文字クラスは、特定の属性を持つ文字リストを記述するための、特別な記法である。"
+"しかし、文字クラスが実際に表す文字は、国や文字セットによって異なる。"
+"例えば、アルファベット文字の概念は、アメリカ合衆国とフランスで異なっている。"
 
 #. type: Plain text
 #: gawk.1:1857
@@ -3088,6 +3100,9 @@ msgid ""
 "denoting the class, and B<:]>.  The character classes defined by the \\*(PX "
 "standard are:"
 msgstr ""
+"文字クラスは、角括弧 I<[]> 内の正規表現のみで、有効である。"
+"文字クラスは、 B<[:> 、クラスを表す文字列、そして B<:]> で構成される。"
+"\\*(PX 標準で規定されている文字列クラスには、以下のものがある。"
 
 #. type: TP
 #: gawk.1:1857
@@ -3098,7 +3113,7 @@ msgstr "B<[:alnum:]>"
 #. type: Plain text
 #: gawk.1:1860
 msgid "Alphanumeric characters."
-msgstr ""
+msgstr "算用数字とアルファベット。"
 
 #. type: TP
 #: gawk.1:1860
@@ -3109,7 +3124,7 @@ msgstr "B<[:alpha:]>"
 #. type: Plain text
 #: gawk.1:1863
 msgid "Alphabetic characters."
-msgstr ""
+msgstr "アルファベット。"
 
 #. type: TP
 #: gawk.1:1863
@@ -3120,7 +3135,7 @@ msgstr "B<[:blank:]>"
 #. type: Plain text
 #: gawk.1:1866
 msgid "Space or tab characters."
-msgstr ""
+msgstr "空白とタブ文字。"
 
 #. type: TP
 #: gawk.1:1866
@@ -3131,7 +3146,7 @@ msgstr "B<[:cntrl:]>"
 #. type: Plain text
 #: gawk.1:1869
 msgid "Control characters."
-msgstr ""
+msgstr "制御文字。"
 
 #. type: TP
 #: gawk.1:1869
@@ -3142,7 +3157,7 @@ msgstr "B<[:digit:]>"
 #. type: Plain text
 #: gawk.1:1872
 msgid "Numeric characters."
-msgstr ""
+msgstr "数値文字。"
 
 #. type: TP
 #: gawk.1:1872
@@ -3155,7 +3170,7 @@ msgstr "B<[:graph:]>"
 msgid ""
 "Characters that are both printable and visible.  (A space is printable, but "
 "not visible, while an B<a> is both.)"
-msgstr ""
+msgstr "印刷可能な可視文字。空白は印刷可能だが、不可視である。 B<a> は、印刷可能で可視である。"
 
 #. type: TP
 #: gawk.1:1878
@@ -3166,7 +3181,7 @@ msgstr "B<[:lower:]>"
 #. type: Plain text
 #: gawk.1:1881
 msgid "Lowercase alphabetic characters."
-msgstr ""
+msgstr "小文字アルファベット。"
 
 #. type: TP
 #: gawk.1:1881
@@ -3177,7 +3192,7 @@ msgstr "B<[:print:]>"
 #. type: Plain text
 #: gawk.1:1884
 msgid "Printable characters (characters that are not control characters.)"
-msgstr ""
+msgstr "印刷可能な文字(制御文字は含まない)。"
 
 #. type: TP
 #: gawk.1:1884
@@ -3190,7 +3205,7 @@ msgstr "B<[:punct:]>"
 msgid ""
 "Punctuation characters (characters that are not letter, digits, control "
 "characters, or space characters)."
-msgstr ""
+msgstr "句読点文字。アルファベット、数値、制御文字、空白のいずれにも該当しない文字。"
 
 #. type: TP
 #: gawk.1:1888
@@ -3201,7 +3216,7 @@ msgstr "B<[:space:]>"
 #. type: Plain text
 #: gawk.1:1891
 msgid "Space characters (such as space, tab, and formfeed, to name a few)."
-msgstr ""
+msgstr "空白文字(半角スペース、タブ、改ページ等)。"
 
 #. type: TP
 #: gawk.1:1891
@@ -3212,7 +3227,7 @@ msgstr "B<[:upper:]>"
 #. type: Plain text
 #: gawk.1:1894
 msgid "Uppercase alphabetic characters."
-msgstr ""
+msgstr "大文字アルファベット。"
 
 #. type: TP
 #: gawk.1:1894
@@ -3223,7 +3238,7 @@ msgstr "B<[:xdigit:]>"
 #. type: Plain text
 #: gawk.1:1897
 msgid "Characters that are hexadecimal digits."
-msgstr ""
+msgstr "16進数数値。"
 
 #. type: Plain text
 #: gawk.1:1910
@@ -3237,6 +3252,11 @@ msgid ""
 "alphabetic and numeric characters in your character set, no matter what it "
 "is."
 msgstr ""
+"例えば、 \\*(PX 標準策定以前では、英数字に一致させるには、 B</[A-Za-z0-9]/> と書かなければならなかった。"
+"しかし、使用しているロケールの文字セットに、別のアルファベット文字が含まれている場合、上記の正規表現には一致しない。"
+"また、上記の正規表現は、 \\s-1ASCII\\s+1 英数字とは異なる文字セットの英数字と、一致してしまうかもしれない。"
+"\\*(PX 文字クラスでは、 B</[[:alnum:]]/> と記述することが可能である。"
+"これは、現在使用しているロケールの文字セットの英数字に一致する。"
 
 #. type: Plain text
 #: gawk.1:1920
@@ -3248,12 +3268,16 @@ msgid ""
 "sorting, purposes.  (E.g., in French, a plain ``e'' and a grave-accented "
 "``e\\h'-\\w:e:u'\\`'' are equivalent.)"
 msgstr ""
+"加えて、文字リストでは、2つの特殊シーケンスを利用できる。"
+"これらの特殊シーケンスは、複数の文字で表現される単一のシンボル( I<照合要素> と呼ぶ)を持つ。"
+"照合文字は、非 ASCII 文字集合に適用され、複数の文字が I<照合> やソートにおいて等価とみなされる。"
+"例: フランス語において、単なる ``e'' とグレイブアクセント付きの ``e\\h'-\\w:e:u'\\`'' は、等価である。"
 
 #. type: TP
 #: gawk.1:1920
 #, no-wrap
 msgid "Collating Symbols"
-msgstr ""
+msgstr "照合シンボル"
 
 #. type: Plain text
 #: gawk.1:1936
@@ -3263,12 +3287,15 @@ msgid ""
 "is a regular expression that matches this collating element, while B<[ch]> "
 "is a regular expression that matches either B<c> or B<h>."
 msgstr ""
+"照合シンボルは、 B<[.> と B<.]> で囲まれた、複数文字の照合要素である。"
+"例えば、 B<ch> が照合要素である場合、 B<[[.ch.]]> は、照合要素に一致する正規表現である。"
+"一方、 B<[ch]> は、 B<c> か B<h> のどちらか一文字に一致する正規表現である。"
 
 #. type: TP
 #: gawk.1:1936
 #, no-wrap
 msgid "Equivalence Classes"
-msgstr ""
+msgstr "等価クラス"
 
 #. type: Plain text
 #: gawk.1:1955
@@ -3279,6 +3306,10 @@ msgid ""
 "and ``e\\h'-\\w:e:u'\\`''.  In this case, B<[[=e=]]> is a regular expression "
 "that matches any of B<e>, B<e\\h'-\\w:e:u'\\'>, or B<e\\h'-\\w:e:u'\\`>."
 msgstr ""
+"等価クラスは、等価な文字リストを指す、ロケール固有の名称である。"
+"名称は、 B<[=> と B<=]> で括られている。"
+"例えば、名称 B<e> は、 ``e'', ``e\\h'-\\w:e:u'\\''', ``e\\h'-\\w:e:u'\\`'' をすべて表すために用いられる。"
+"この場合、 B<[[=e=]]> は、 B<e>, B<e\\h'-\\w:e:u'\\'>, B<e\\h'-\\w:e:u'\\`> のいずれかに一致する正規表現となる。"
 
 #. type: Plain text
 #: gawk.1:1962
@@ -3288,6 +3319,9 @@ msgid ""
 "currently only recognize \\*(PX character classes; they do not recognize "
 "collating symbols or equivalence classes."
 msgstr ""
+"これらの機能は、非英語圏のロケールにおいて、非常に有用である。"
+"しかしながら、現在 I<gawk> が正規表現マッチング処理に利用しているライブラリ関数は、 \\*(PX 文字クラスのみを認識する。"
+"すなわち、照合シンボルと等価クラスは、認識されない。"
 
 #. type: Plain text
 #: gawk.1:1978
@@ -3296,6 +3330,8 @@ msgid ""
 "B<\\eW>, B<\\e`>, and B<\\e'> operators are specific to I<gawk>; they are "
 "extensions based on facilities in the \\*(GN regular expression libraries."
 msgstr ""
+"B<\\ey>, B<\\eB>, B<\\eE<lt>>, B<\\eE<gt>>, B<\\es>, B<\\eS>, B<\\ew>, B<\\eW>, B<\\e`>, B<\\e'> は、 I<gawk> 固有の正規表現演算子である。"
+"また、これらの演算子は、 \\(GN 正規表現ライブラリの機能に基づいた拡張である。"
 
 #. type: Plain text
 #: gawk.1:1983
@@ -3303,12 +3339,13 @@ msgid ""
 "The various command line options control how I<gawk> interprets characters "
 "in regular expressions."
 msgstr ""
+"様々なコマンドラインオプションを用いることで、 I<gawk> が正規表現中の文字をどのように解釈するのか、制御可能である。"
 
 #. type: TP
 #: gawk.1:1983
 #, no-wrap
 msgid "No options"
-msgstr ""
+msgstr "オプション無し"
 
 #. type: Plain text
 #: gawk.1:1989
@@ -3316,6 +3353,7 @@ msgid ""
 "In the default case, I<gawk> provides all the facilities of \\*(PX regular "
 "expressions and the \\*(GN regular expression operators described above."
 msgstr ""
+"デフォルトでは、前述した \\*(PX 正規表現および \\*(GN 正規表現の全機能が、有効になる。"
 
 #. type: Plain text
 #: gawk.1:1996
@@ -3323,6 +3361,8 @@ msgid ""
 "Only \\*(PX regular expressions are supported, the \\*(GN operators are not "
 "special.  (E.g., B<\\ew> matches a literal B<w>)."
 msgstr ""
+"\\*(PX 正規表現のみが有効になる。"
+"\\*(GN 演算子は無効になる(例: B<\\ew> は、文字 B<w> に一致する)。"
 
 #. type: Plain text
 #: gawk.1:2004
@@ -3332,6 +3372,9 @@ msgid ""
 "Characters described by octal and hexadecimal escape sequences are treated "
 "literally, even if they represent regular expression metacharacters."
 msgstr ""
+"伝統的な \\*(UX I<awk> 正規表現が、有効になる。"
+"\\*(GN 演算子およびインターバル表現は、無効となる。"
+"8進数または16進数のエスケープシーケンスで表現される文字は、正規表現のメタ文字に該当する場合でも、単なる文字として扱われる。"
 
 #. type: Plain text
 #: gawk.1:2009
@@ -3339,6 +3382,7 @@ msgid ""
 "Allow interval expressions in regular expressions, even if "
 "B<-\\^-traditional> has been provided."
 msgstr ""
+"B<-\\^-traditional> オプションが指定されていたとしても、正規表現中でインターバル表現を有効にする。"
 
 #. type: SS
 #: gawk.1:2009
